@@ -5,6 +5,7 @@
   --primary-blue: #0755e9;
   --primary-black: #141414;
   --primary-white: #ffffff;
+  --off-white: #f7f7f7;
   --primary-orange: #ff6016;
 
   /* font weights */
@@ -218,252 +219,160 @@ button:focus {
   color: var(--primary-white);
 }
 
-/* .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 8rem;
-  margin: 1.5rem 0 0 0;
+/* HOME PAGE STYLES */
+.page-container {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
-.desktop-logo {
-  width: 134px;
-  height: 55.22px;
-}
-
-.nav-ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2.8rem;
-}
-
-.nav-ul a {
-  font-size: 16px;
-  font-weight: var(--regular-weight) px;
-}
-
-.nav-ul a:last-of-type {
-  background: var(--primary-blue);
-  border-radius: 31px;
-  padding: 0.6rem 2.5rem;
-  color: var(--primary-white);
-} */
-
-/* display based on the condition that the current page is visible */
-/* .underline-effect::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 5px;
-  background: var(--primary-blue);
-  margin-top: 0.5rem;
-} */
-
-/* hero section styles */
 .hero-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  margin-top: 5rem;
   gap: 3rem;
+  text-align: center;
 }
 
 .hero-heading {
-  width: 954px;
   font-size: 96px;
-  font-weight: var(--heading-weight);
   line-height: 99%;
-  color: #2c2c2c;
-  margin-bottom: 1rem;
+  width: 954px;
 }
 
 .hero-text {
-  width: 731px;
   font-size: 18px;
-  font-weight: var(--regular-weight);
+  font-weight: 300;
   line-height: 143%;
-  margin-bottom: 3rem;
-  color: #898784;
+  width: 731px;
 }
 
-.hero-inner-section {
+.hero-image-container {
   display: flex;
   flex-direction: column;
 }
 
-.hero-icon {
-  z-index: 99;
-  align-self: flex-end;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90.39px;
-  height: 89.46px;
-  border: solid 4.47px var(--primary-white);
-  border-radius: 100%;
-  background-color: var(--primary-blue);
+.hero-img-circle {
   position: relative;
-  top: 2.5rem;
+  top: 3rem;
   right: 7rem;
-  margin-top: -5rem;
+  align-self: end;
 }
 
-.hero-icon ion-icon {
-  color: var(--primary-white);
-  font-size: 35px;
-  font-weight: var(--regular-weight);
-}
-
-.hero-img {
+.hero-image {
   width: 1229.99px;
   height: 588.18px;
 }
 
-.after-hero {
-  background: #f7f7ff;
+.know-more-section {
+  width: 1237px;
+  height: 565px;
   display: flex;
   flex-direction: column;
-  width: 1229.99px;
+  align-items: center;
+  justify-content: center;
   gap: 3rem;
-  padding: 2rem;
-  margin: 3rem 0;
+  padding: 0 2.5rem;
+  background: var(--off-white);
   border-radius: 33px;
+}
+
+.know-more-content {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.know-more-heading {
+  font-size: 80px;
+  line-height: 86px;
+  font-weight: 400;
+  width: 973px;
+  height: 258px;
+  align-self: start;
   text-align: left;
 }
 
-.after-hero-heading {
-  font-size: 80px;
-  font-weight: var(--heading-weight);
-  line-height: 86px;
-  margin: 0;
+.know-more-content {
+  align-self: start;
+  gap: 10rem;
 }
 
-.after-hero-inner-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-}
-
-.after-hero-text {
+.know-more-text {
+  width: 675px;
+  height: 111px;
+  text-align: left;
   font-size: 20px;
-  font-weight: var(--regular-weight);
   line-height: 186%;
 }
 
-.after-hero-inner-section div {
+.know-more-btn {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
-  width: var(--regular-weight) px;
+  width: 300px;
   height: 103px;
+  border: none;
   border-radius: 53px;
-  font-size: 31px;
-  font-weight: var(--regular-weight);
-  color: var(--primary-white);
   background: var(--primary-orange);
+  color: var(--off-white);
+  font-size: 31px;
+  line-height: 100%;
 }
 
-/* Services Section */
-.services {
-  width: 100%;
+.service-container {
+  padding: 0 2rem;
+  background: var(--primary-black);
+}
+
+.service-section {
+  width: 98%;
   height: 530px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
-  background: var(--primary-black);
+  gap: 4rem;
   color: var(--primary-white);
 }
 
-.services-heading {
-  width: 1229px;
+.service-descriptions {
+  width: 100%;
   display: flex;
+  /* margin: 0 2rem; */
   justify-content: space-between;
   align-items: center;
+  font-weight: 300;
 }
 
-.services-heading p:first-of-type {
-  font-size: 56px;
-  font-weight: var(--heading-weight);
+.service-heading {
+  width: 477px;
+  height: 112px;
+  font-size: 56.28px;
   line-height: 99%;
+  font-weight: 400;
 }
 
-.services-heading p:last-of-type {
+.service-text {
+  width: 308px;
+  height: 96px;
   font-size: 14px;
-  font-weight: var(--regular-weight);
   line-height: 173%;
 }
 
-.services-body {
-  width: 1229px;
+.service-list {
   display: flex;
-  flex-direction: column;
-  font-size: 25px;
-  font-weight: var(--regular-weight);
+  align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
-.services-body ul {
-  display: flex;
-  gap: 1.5rem;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.services-body ul li {
+.service {
   border: solid 1px var(--primary-white);
-  border-radius: 49.26px;
-  padding: 1rem 2.5rem;
-}
-
-/* Portfolio styles */
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin: 3rem;
-}
-
-.portfolio > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.portfolio > div:first-of-type p:first-of-type {
-  font-size: 56px;
-  font-weight: var(--heading-weight);
-  line-height: 99%;
-}
-
-.portfolio > div:first-of-type p:last-of-type {
-  font-size: 22px;
-  line-height: 32px;
-}
-
-.portfolio-description {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.portfolio-heading {
-  font-size: 42px;
-  font-weight: var(--heading-weight);
-}
-
-.portfolio-description > p:last-of-type {
-  font-size: 16px;
-}
-
-.portfolio-description div {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  font-size: 29.41px;
+  font-weight: 300;
+  line-height: 100%;
+  letter-spacing: 1%;
+  border-radius: 49.62px;
+  padding: 1.5rem 2rem;
 }
