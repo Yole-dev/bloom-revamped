@@ -3,6 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import headerLogo from "../assets/header_logo.png";
 // import footerLogo from "../assets/footer_logo.png";
 
+import CircleButton from "./Circlebtn";
+
 export default function Layout({ children }) {
   // const [isOpen, setIsOpen] = useState(false);
 
@@ -104,7 +106,16 @@ function FooterHeroTexts() {
 
       <button className="footer-contact-btn">
         Let's talk
-        {/* insert reusable circle component */}
+        <span>
+          <CircleButton
+            height={27.62}
+            width={27.62}
+            border="none"
+            background="#ff6016"
+          >
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </CircleButton>
+        </span>
       </button>
     </div>
   );

@@ -158,7 +158,11 @@ button:focus {
   color: var(--primary-white);
 }
 
-.footer-hero-texts button {
+.footer-contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   background: var(--primary-white);
   width: 119.89px;
   height: 37.66px;
