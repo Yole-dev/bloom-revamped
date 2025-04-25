@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import headerLogo from "../assets/header_logo.png";
+// import footerLogo from "../assets/footer_logo.png";
 
 export default function Layout({ children }) {
   // const [isOpen, setIsOpen] = useState(false);
@@ -11,46 +12,29 @@ export default function Layout({ children }) {
 
   return (
     <div className="app-container">
-      {/* Header/Navigation */}
-      <header className="header">
-        <Logo />
-        {/* 
-        {!isOpen && (
-          <ion-icon
-            name="menu-sharp"
-            className="hamburger-icon"
-            onClick={handleNavToggle}
-          ></ion-icon>
-        )} */}
-        {/* Desktop Navigation */}
-        <div className="nav-container">
-          <ul className="navbar">
-            <NavList />
-          </ul>
-
-          <Button />
-        </div>
-        {/* Mobile Navigation */}
-        {/* {isOpen && (
-          <div className="mobile-nav-container">
-            <ion-icon
-              name="close-sharp"
-              className="close-icon"
-              onClick={handleNavToggle}
-            ></ion-icon>
-
-            <ul className="mobile-nav-bar">
-              <NavList />
-            </ul>
-          </div>
-        )} */}
-      </header>
+      <Header />
 
       {/* page contents */}
-      <main>{children}</main>
+      <main className="main">{children}</main>
 
-      <footer></footer>
+      <Footer />
     </div>
+  );
+}
+
+function Header() {
+  return (
+    <header className="header">
+      <Logo />
+
+      <div className="nav-container">
+        <ul className="navbar">
+          <NavList />
+        </ul>
+
+        <Button />
+      </div>
+    </header>
   );
 }
 
@@ -85,4 +69,119 @@ function NavList() {
 
 function Button() {
   return <button className="header-btn"> Let's talk </button>;
+}
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-content-container">
+        <FooterHero />
+        <div className="footer-sub-container">
+          <FooterNav />
+          <hr />
+          <FooterCopyrightText />
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+function FooterHero() {
+  return (
+    <div className="footer-hero">
+      <FooterHeroTexts />
+      <FooterIcons />
+    </div>
+  );
+}
+
+function FooterHeroTexts() {
+  return (
+    <div className="footer-hero-texts">
+      <p>
+        Want to Start <br /> a Project?
+      </p>
+
+      <button className="footer-contact-btn">
+        Let's talk
+        {/* insert reusable circle component */}
+      </button>
+    </div>
+  );
+}
+
+function FooterIcons() {
+  return (
+    <ul className="social-icons">
+      <li>
+        <ion-icon name="logo-instagram"></ion-icon>
+      </li>
+      <li>
+        <ion-icon name="logo-behance"></ion-icon>
+      </li>
+      <li>
+        <ion-icon name="logo-dribbble"></ion-icon>
+      </li>
+
+      <li>
+        <ion-icon name="logo-twitter"></ion-icon>
+      </li>
+
+      <li>
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </li>
+    </ul>
+  );
+}
+
+function FooterNav() {
+  return (
+    <div className="footer-nav">
+      <Logo />
+      <FooterNavList />
+    </div>
+  );
+}
+
+// use the FooterLogo component after the image issue is fixed from rendering a blank image
+
+// function FooterLogo() {
+//   return (
+//     <img src={footerLogo} alt="white company logo" className="footer-logo" />
+//   );
+// }
+
+function FooterNavList() {
+  const navItems = [
+    { path: "/", name: "Home" },
+    { path: "/ourservices", name: "Our Services" },
+    { path: "/portfolio", name: "Portfolio" },
+    { path: "/aboutus", name: "About us" },
+    { path: "/blog", name: "Blog" },
+    { path: "/branding", name: "Branding" },
+    { path: "/webdevelopment", name: "Web Development" },
+    { path: "/ui_ux", name: "UI/UX Design" },
+    { path: "/ecommerce", name: "Ecommerce" },
+  ];
+
+  return (
+    <ul className="footer-nav-list">
+      {navItems.map((item) => (
+        <li key={item.path}>
+          <Link to={item.path}>{item.name}</Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function FooterCopyrightText() {
+  const year = new Date().getFullYear();
+
+  return (
+    <p className="copyright-text">
+      {year} Bloom. All rights reserved Cookie Settings, Anti Spam, Privacy,
+      User agreement, Legal Notice and Responsible Disclosure
+    </p>
+  );
 }
