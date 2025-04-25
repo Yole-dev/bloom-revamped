@@ -10,16 +10,18 @@
   /* font weights */
   --heading-weight: 400;
   --regular-weight: 300;
+  --default-font-family: "Montserrat Alternates";
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--default-font-family);
 }
 
 body {
-  font-family: "Montserrat Alternates", -apple-system, BlinkMacSystemFont,
+  font-family: var(--default-font-family), -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -38,7 +40,59 @@ a {
 
 /* Header styles */
 
+.header {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 2.5rem;
+}
+
+.header-logo {
+  max-width: 134px;
+  height: 55.22px;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
 .navbar {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.navbar .active::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 0.3rem;
+  width: 100%;
+  height: 4px;
+  background: var(--primary-blue);
+}
+
+.header-btn {
+  width: 174px;
+  height: 60px;
+  background: var(--primary-blue);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 31px;
+  cursor: pointer;
+}
+
+/* .navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -68,10 +122,10 @@ a {
   border-radius: 31px;
   padding: 0.6rem 2.5rem;
   color: var(--primary-white);
-}
+} */
 
 /* display based on the condition that the current page is visible */
-.underline-effect::after {
+/* .underline-effect::after {
   content: "";
   display: block;
   width: 100%;
@@ -79,7 +133,7 @@ a {
   border-radius: 5px;
   background: var(--primary-blue);
   margin-top: 0.5rem;
-}
+} */
 
 /* hero section styles */
 .hero-section {
