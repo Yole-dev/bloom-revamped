@@ -7,6 +7,7 @@
   --primary-white: #ffffff;
   --off-white: #f7f7f7;
   --primary-orange: #ff6016;
+  --faint-border: #a4a4a4a4;
 
   /* font weights */
   --heading-weight: 400;
@@ -375,4 +376,145 @@ button:focus {
   letter-spacing: 1%;
   border-radius: 49.62px;
   padding: 1.5rem 2rem;
+}
+
+.services-portfolio-section {
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+  margin: 7rem 0;
+}
+
+.services-portfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.services-portfolio-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services-portfolio-heading {
+  width: 515px;
+  height: 112px;
+  font-size: 56.28px;
+  font-weight: 400;
+  line-height: 99%;
+}
+
+.services-portfolio-text {
+  width: 377px;
+  height: 128px;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 1%;
+}
+
+.portfolio-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service-image-container {
+  width: 614.94px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-portfolio-image {
+  width: 614.94px;
+  height: 560.7px;
+}
+
+.service-circle-button {
+  position: relative;
+  bottom: 3rem;
+}
+
+.content-container {
+  width: 491px;
+  height: 173px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.detail-heading {
+  font-size: 42.15px;
+  font-weight: 400;
+  line-height: 40.64px;
+  letter-spacing: -2.5%;
+}
+
+.detail-text {
+  font-size: 16.56px;
+  font-weight: 300;
+  line-height: 27.09px;
+  letter-spacing: -2.5%;
+}
+
+.detail-boxes {
+  display: flex;
+  gap: 2rem;
+}
+
+.detail-box {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.58px;
+  letter-spacing: -2.5%;
+  border: solid 1px var(--faint-border);
+  border-radius: 75.26px;
+  padding: 1rem 2rem;
+}
+
+.service-portfolio-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.service-portfolio-footer p {
+  font-size: 75.32px;
+  font-weight: 500;
+  line-height: 82.85px;
+  letter-spacing: -4%;
+}
+
+.service-portfolio-footer-btn {
+  align-self: center;
+  position: absolute;
+  top: 4rem;
+}
+
+.service-portfolio-footer p:last-of-type {
+  align-self: end;
+  text-align: right;
+}
+
+.service-portfolio-footer hr {
+  width: 205.62px;
+  height: 1px;
+  background: var(--primary-black);
+  position: relative;
+}
+
+.service-portfolio-footer p:first-of-type hr {
+  left: 19rem;
+}
+
+.service-portfolio-footer p:last-of-type hr {
+  right: 4rem;
+  top: 4.7rem;
 }
