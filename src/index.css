@@ -10,6 +10,7 @@
   --faint-border: #a4a4a4a4;
   --testimonial-background: #f1f4f8;
   --gold: #ffc250;
+  --light-gray: #949596;
 
   /* font weights */
   --heading-weight: 400;
@@ -623,6 +624,113 @@ button:focus {
   padding-left: 2rem;
 }
 
+/* OUR SERVICES PAGE STYLES */
+.our-service-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  margin: 3rem 0;
+}
+
+.heading-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.heading-first-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heading-first-section div {
+  display: flex;
+  flex-direction: column;
+  height: 267px;
+}
+
+.heading-first-section div p:first-of-type {
+  width: 476px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 127%;
+}
+
+.heading-first-section div p:last-of-type {
+  width: 475px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 143%;
+}
+
+.heading-circle {
+  position: absolute;
+}
+
+.heading-first-section div:last-of-type {
+  justify-content: space-between;
+}
+
+.heading-second-section {
+  width: 1240px;
+  height: 660px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: var(--light-gray);
+  border-radius: 50px;
+  color: var(--primary-white);
+}
+
+.heading-second-section img {
+  width: 1097px;
+  height: 408px;
+  border-radius: 28px;
+}
+
+.heading-second-section > div {
+  width: 1097px;
+  height: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading-second-section > div > div {
+  height: inherit;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading-second-section > div > p {
+  width: 680px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.heading-second-section > div > div > p:first-of-type {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2.5%;
+}
+
+.heading-second-section > div > div > p:last-of-type {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 127%;
+}
+
+/* mobile view */
 @media (max-width: 768px) {
   .embla__slide {
     flex: 0 0 calc(100% - 2rem); /* 1 slide on mobile */
