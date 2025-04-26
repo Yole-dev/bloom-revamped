@@ -32,7 +32,7 @@ export default function CircleButton({
       style={customBtnStyle}
       role={role}
       type={type}
-      ariaLable={ariaLabel}
+      aria-lable={ariaLabel}
       className={className}
       onClick={onClick}
     >

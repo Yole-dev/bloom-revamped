@@ -3,6 +3,7 @@
 :root {
   /* page primary colors */
   --primary-blue: #0755e9;
+  --secondary-blue: #5b94ff;
   --primary-black: #141414;
   --primary-white: #ffffff;
   --off-white: #f7f7f7;
@@ -629,6 +630,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 7rem;
   padding: 0 2rem;
   margin: 3rem 0;
 }
@@ -656,7 +658,7 @@ button:focus {
 .heading-first-section div p:first-of-type {
   width: 476px;
   font-size: 50px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 127%;
 }
 
@@ -728,6 +730,106 @@ button:focus {
   font-size: 40px;
   font-weight: 400;
   line-height: 127%;
+}
+
+.our-services-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.our-services-section {
+  width: 1240px;
+  height: 493.19px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.our-services-section div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.our-services-section div > p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.14px;
+}
+
+.our-services-section div > div > p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21.14px;
+}
+
+.contact-us-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: -5rem;
+}
+
+.contact-us-section > div:first-of-type {
+  align-self: end;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  position: relative;
+  top: 7.5rem;
+  background: var(--primary-white);
+}
+
+.odd-icon {
+  transform: rotate(-40deg);
+}
+
+.contact-us-section > div:last-of-type {
+  width: 1240px;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+  background: var(--secondary-blue);
+  color: var(--primary-white);
+  border-radius: 27px;
+  padding: 2rem;
+}
+
+.contact-us-section > div:last-of-type div {
+  width: 636px;
+  height: 261px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-us-section > div:last-of-type div p:first-of-type {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 127%;
+}
+
+.contact-us-section > div:last-of-type div p:last-of-type {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28.42px;
+}
+
+.contact-btn {
+  width: 333px;
+  height: 72.91px;
+  font-size: 21px;
+  font-size: 300;
+  line-height: 100%;
+  color: var(--primary-white);
+  border: none;
+  border-radius: 37px;
+  background: var(--primary-orange);
 }
 
 /* mobile view */
