@@ -8,6 +8,8 @@
   --off-white: #f7f7f7;
   --primary-orange: #ff6016;
   --faint-border: #a4a4a4a4;
+  --testimonial-background: #f1f4f8;
+  --gold: #ffc250;
 
   /* font weights */
   --heading-weight: 400;
@@ -154,7 +156,7 @@ button:focus {
 
 .footer-hero-texts p {
   font-size: 100.43px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 106.7px;
   letter-spacing: -2.5%;
   color: var(--primary-white);
@@ -171,7 +173,7 @@ button:focus {
   border: none;
   border-radius: 62.77px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 22.6px;
   letter-spacing: -2.5%;
 }
@@ -517,4 +519,86 @@ button:focus {
 .service-portfolio-footer p:last-of-type hr {
   right: 4rem;
   top: 4.7rem;
+}
+
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 7rem;
+  padding: 0 2rem;
+}
+
+.testimonial-heading {
+  width: 440px;
+  height: 82px;
+  font-size: 41.12px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2.5%;
+  text-align: center;
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.testimony {
+  width: 396px;
+  height: 512px;
+  border-radius: 29px;
+  background: var(--testimonial-background);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimony-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30.84px;
+}
+
+.client-details {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.user-image {
+  width: 44.05px;
+  height: 44.05px;
+  border-radius: 100%;
+}
+
+.client-details > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.client-details div p {
+  font-size: 19.09px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -2.5%;
+}
+
+.stars {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.star-icon {
+  font-size: 11px;
+  color: var(--gold);
+}
+
+.carousel-buttons-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }

@@ -191,8 +191,8 @@ function FooterCopyrightText() {
 
   return (
     <p className="copyright-text">
-      {year} Bloom. All rights reserved Cookie Settings, Anti Spam, Privacy,
-      User agreement, Legal Notice and Responsible Disclosure
+      {year} Bloom. All rights reserved Privacy policy, Terms of service, Cookie
+      settings.
     </p>
   );
 }

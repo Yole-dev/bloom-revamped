@@ -5,12 +5,15 @@ import portfolioImage2 from "../assets/home/portfolio2.png";
 import portfolioImage3 from "../assets/home/portfolio3.png";
 import portfolioImage4 from "../assets/home/portfolio4.png";
 
+import clientImage from "../assets/home/client2.png";
+
 export default function Home() {
   return (
     <div className="page-container">
       <HeroSection />
       <ServicesSection />
       <ServicesPortfolio />
+      <TestimonialsSection />
     </div>
   );
 }
@@ -266,6 +269,108 @@ function Detail({
       </div>
 
       <div className="content-container">{children}</div>
+    </div>
+  );
+}
+
+function TestimonialsSection() {
+  return (
+    <div className="testimonial-section">
+      <p className="testimonial-heading">
+        What our Clients are saying about Us
+      </p>
+      <Testimonials />
+
+      <CarouselButtons />
+    </div>
+  );
+}
+
+function Testimonials() {
+  return (
+    <div className="testimonials-container">
+      <Testimonial name="Ashley Cooper">
+        While the company wishes they had more time to work out the kinks with
+        the Bloom, they are quite happy with the result of the project. The
+        resulting website that the team devoloped is fast and the communication
+        with the vender was very good. The company will work with them again.
+      </Testimonial>
+
+      <Testimonial name="Anton de Swardt">
+        Bloom delivered the site with the timeline as they requested. In the
+        end, the client found a 50 increase in traffic with in days since its
+        launch. They also had an impressive ability to use technologies that the
+        company hasn`t used, which have also proved to be easy to use and
+        reliable.
+      </Testimonial>
+
+      <Testimonial name="Samuel King">
+        Bloom of work , our brand now has the image we were looking for -
+        playful yet professio nals. We have received positive from partners ,
+        the team, and our community to the new look of our Brand
+      </Testimonial>
+    </div>
+  );
+}
+
+function Testimonial({
+  children,
+  name = "",
+  src = `${clientImage}`,
+  rating = 5,
+}) {
+  return (
+    <div className="testimony">
+      <p className="testimony-text"> {children} </p>
+
+      <div className="client-details">
+        <img src={src} alt={name} className="user-image" />
+
+        <div>
+          <p> {name} </p>
+
+          <StarRating rating={rating} />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function StarRating({ rating }) {
+  return (
+    <div className="stars">
+      {Array.from({ length: rating }, () => (
+        <ion-icon name="star" className="star-icon"></ion-icon>
+      ))}
+    </div>
+  );
+}
+
+function CarouselButtons() {
+  return (
+    <div className="carousel-buttons-container">
+      <CircleButton
+        background="#F1F6F8"
+        width={44.05}
+        height={44.05}
+        color="#141414"
+        fontSize={13}
+        border="none"
+        className="previous"
+      >
+        <ion-icon name="arrow-back"></ion-icon>
+      </CircleButton>
+
+      <CircleButton
+        background="#ff6016"
+        width={44.05}
+        height={44.05}
+        fontSize={13}
+        border="none"
+        className="next"
+      >
+        <ion-icon name="arrow-forward"></ion-icon>
+      </CircleButton>
     </div>
   );
 }
