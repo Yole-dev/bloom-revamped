@@ -602,3 +602,29 @@ button:focus {
   align-items: center;
   gap: 1rem;
 }
+
+/* embla carousel styling*/
+.embla {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 2rem;
+}
+
+.embla__container {
+  display: flex;
+  gap: 2rem;
+  margin-left: -2rem;
+}
+
+.embla__slide {
+  flex: 0 0 396px;
+  min-width: 0;
+  padding-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .embla__slide {
+    flex: 0 0 calc(100% - 2rem); /* 1 slide on mobile */
+  }
+}

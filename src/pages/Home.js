@@ -1,4 +1,10 @@
+// imported carousel library
+import useEmblaCarousel from "embla-carousel-react";
+
+// imported reusable button component
 import CircleButton from "../components/Circlebtn";
+
+// imported images
 import heroImage from "../assets/home/hero_image.png";
 import portfolioImage1 from "../assets/home/portfolio1.png";
 import portfolioImage2 from "../assets/home/portfolio2.png";
@@ -274,42 +280,88 @@ function Detail({
 }
 
 function TestimonialsSection() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    align: "start",
+    containScroll: "trimSnaps",
+    slidesToScroll: 3,
+  });
+
+  const scrollPrev = () => emblaApi?.scrollPrev();
+  const scrollNext = () => emblaApi?.scrollNext();
+
   return (
     <div className="testimonial-section">
       <p className="testimonial-heading">
         What our Clients are saying about Us
       </p>
-      <Testimonials />
 
-      <CarouselButtons />
+      <div className="embla" ref={emblaRef}>
+        <div className="embla__container">
+          <Testimonials emblaApi={emblaApi} />
+        </div>
+      </div>
+
+      <CarouselButtons onPrev={scrollPrev} onNext={scrollNext} />
     </div>
   );
 }
 
-function Testimonials() {
-  return (
-    <div className="testimonials-container">
-      <Testimonial name="Ashley Cooper">
-        While the company wishes they had more time to work out the kinks with
-        the Bloom, they are quite happy with the result of the project. The
-        resulting website that the team devoloped is fast and the communication
-        with the vender was very good. The company will work with them again.
-      </Testimonial>
-
-      <Testimonial name="Anton de Swardt">
-        Bloom delivered the site with the timeline as they requested. In the
+function Testimonials({ emblaApi }) {
+  const testimonialData = [
+    {
+      name: "Ashley Cooper",
+      content: `Bloom delivered the site with the timeline as they requested. In the
         end, the client found a 50 increase in traffic with in days since its
         launch. They also had an impressive ability to use technologies that the
-        company hasn`t used, which have also proved to be easy to use and
-        reliable.
-      </Testimonial>
+        company hasn't used, which have also proved to be easy to use and
+        reliable.`,
+    },
 
-      <Testimonial name="Samuel King">
-        Bloom of work , our brand now has the image we were looking for -
-        playful yet professio nals. We have received positive from partners ,
-        the team, and our community to the new look of our Brand
-      </Testimonial>
-    </div>
+    {
+      name: "Anton de Swardt",
+      content: `While the company wishes they had more time to work out the kinks with
+        the Bloom, they are quite happy with the result of the project. The
+        resulting website that the team devoloped is fast and the communication
+        with the vender was very good. The company will work with them again.`,
+    },
+
+    {
+      name: "Samuel King",
+      content: `Bloom of work, our brand now has the image we were looking for -
+        playful yet professionals. We have received positive from partners,
+        the team, and our community to the new look of our Brand`,
+    },
+
+    {
+      name: "Page",
+      content: `Bloom of work, our brand now has the image we were looking for -
+        playful yet professionals. `,
+    },
+
+    {
+      name: "Roy",
+      content: `We have received positive from partners,
+        the team, and our community to the new look of our Brand`,
+    },
+
+    {
+      name: "Ronald",
+      content: `Bloom of work, our brand now has the image we were looking for -
+        playful yet professio nals. We have received positive from partners,
+        the team, and our community to the new look of our Brand`,
+    },
+  ];
+
+  return (
+    <>
+      {testimonialData.map((testimonial, i) => (
+        <div className="testimonials-container embla__slide" key={i}>
+          <Testimonial name={testimonial.name}>
+            {testimonial.content}
+          </Testimonial>
+        </div>
+      ))}
+    </>
   );
 }
 
@@ -346,7 +398,7 @@ function StarRating({ rating }) {
   );
 }
 
-function CarouselButtons() {
+function CarouselButtons({ onPrev, onNext }) {
   return (
     <div className="carousel-buttons-container">
       <CircleButton
@@ -357,6 +409,7 @@ function CarouselButtons() {
         fontSize={13}
         border="none"
         className="previous"
+        onClick={onPrev}
       >
         <ion-icon name="arrow-back"></ion-icon>
       </CircleButton>
@@ -368,6 +421,7 @@ function CarouselButtons() {
         fontSize={13}
         border="none"
         className="next"
+        onClick={onNext}
       >
         <ion-icon name="arrow-forward"></ion-icon>
       </CircleButton>

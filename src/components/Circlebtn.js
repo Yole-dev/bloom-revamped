@@ -9,6 +9,7 @@ export default function CircleButton({
   borderRadius = 100,
   cursor = "pointer",
   className = "",
+  role = "",
 }) {
   const customBtnStyle = {
     display: "flex",
@@ -25,7 +26,7 @@ export default function CircleButton({
   };
 
   return (
-    <div style={customBtnStyle} className={className}>
+    <div style={customBtnStyle} role={role} className={className}>
       {children}
     </div>
   );
