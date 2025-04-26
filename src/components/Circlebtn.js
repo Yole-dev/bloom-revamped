@@ -7,6 +7,7 @@ export default function CircleButton({
   color = "#ffffff",
   fontSize = 14,
   borderRadius = 100,
+  cursor = "pointer",
   className = "",
 }) {
   const customBtnStyle = {
@@ -20,6 +21,7 @@ export default function CircleButton({
     fontSize: `${fontSize}px`,
     border,
     borderRadius: `${borderRadius}%`,
+    cursor,
   };
 
   return (
