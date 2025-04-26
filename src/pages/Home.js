@@ -1,3 +1,5 @@
+import React from "react";
+
 // imported carousel library
 import useEmblaCarousel from "embla-carousel-react";
 
@@ -286,8 +288,18 @@ function TestimonialsSection() {
     slidesToScroll: 3,
   });
 
-  const scrollPrev = () => emblaApi?.scrollPrev();
-  const scrollNext = () => emblaApi?.scrollNext();
+  const scrollPrev = React.useCallback(
+    () => emblaApi?.scrollPrev(),
+    [emblaApi]
+  );
+  const scrollNext = React.useCallback(
+    () => emblaApi?.scrollNext(),
+    [emblaApi]
+  );
+
+  React.useEffect(() => {
+    if (emblaApi) console.log("Embla ready!", emblaApi);
+  }, [emblaApi]);
 
   return (
     <div className="testimonial-section">
@@ -355,10 +367,12 @@ function Testimonials({ emblaApi }) {
   return (
     <>
       {testimonialData.map((testimonial, i) => (
-        <div className="testimonials-container embla__slide" key={i}>
-          <Testimonial name={testimonial.name}>
-            {testimonial.content}
-          </Testimonial>
+        <div className="embla__slide" key={i}>
+          <div className="testimony">
+            <Testimonial name={testimonial.name}>
+              {testimonial.content}
+            </Testimonial>
+          </div>
         </div>
       ))}
     </>
@@ -372,7 +386,7 @@ function Testimonial({
   rating = 5,
 }) {
   return (
-    <div className="testimony">
+    <>
       <p className="testimony-text"> {children} </p>
 
       <div className="client-details">
@@ -384,7 +398,7 @@ function Testimonial({
           <StarRating rating={rating} />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -410,6 +424,9 @@ function CarouselButtons({ onPrev, onNext }) {
         border="none"
         className="previous"
         onClick={onPrev}
+        role="button"
+        type="button"
+        ariaLabel="Previous testimonial"
       >
         <ion-icon name="arrow-back"></ion-icon>
       </CircleButton>
@@ -422,6 +439,9 @@ function CarouselButtons({ onPrev, onNext }) {
         border="none"
         className="next"
         onClick={onNext}
+        role="button"
+        type="button"
+        ariaLabel="Next testimonial"
       >
         <ion-icon name="arrow-forward"></ion-icon>
       </CircleButton>

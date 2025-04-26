@@ -7,9 +7,11 @@ export default function CircleButton({
   color = "#ffffff",
   fontSize = 14,
   borderRadius = 100,
-  cursor = "pointer",
   className = "",
+  onClick,
   role = "",
+  type = "",
+  ariaLabel = "",
 }) {
   const customBtnStyle = {
     display: "flex",
@@ -22,11 +24,18 @@ export default function CircleButton({
     fontSize: `${fontSize}px`,
     border,
     borderRadius: `${borderRadius}%`,
-    cursor,
+    pointerEvents: "auto !important",
   };
 
   return (
-    <div style={customBtnStyle} role={role} className={className}>
+    <div
+      style={customBtnStyle}
+      role={role}
+      type={type}
+      ariaLable={ariaLabel}
+      className={className}
+      onClick={onClick}
+    >
       {children}
     </div>
   );
