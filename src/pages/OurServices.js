@@ -1,5 +1,6 @@
 //imported reusable component
 import CircleButton from "../components/Circlebtn";
+import Button from "../components/Button";
 import RequestForCallSection from "../components/RequestForCallSection";
 
 // imported images
@@ -180,7 +181,17 @@ function OurServiceSection() {
             <p>Contact us today to discuss your project and get started</p>
           </div>
 
-          <button className="contact-btn">Contact Us</button>
+          {/* remember to include onClick event to this button when you have a page path */}
+          <Button
+            width={333}
+            height={72.91}
+            fontSize={21}
+            fontWeight={300}
+            borderRadius={37}
+            background="#FF6016"
+          >
+            Contact Us
+          </Button>
         </div>
       </div>
     </section>

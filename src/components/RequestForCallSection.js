@@ -1,4 +1,5 @@
 import CircleButton from "./Circlebtn";
+import Button from "./Button";
 
 export default function RequestForCallSection() {
   return (
@@ -6,7 +7,16 @@ export default function RequestForCallSection() {
       <div className="request-for-call-container">
         <p>Offering The Best Experience Of Digital Branding Services</p>
 
-        <button className="request-btn">
+        <Button
+          gap={0.5}
+          width={305}
+          height={63}
+          borderRadius={104.71}
+          fontSize={23.04}
+          fontWeight={400}
+          background="#ffffff"
+          color="#141414"
+        >
           Request A Free Call
           <CircleButton
             background="#ff6016"
@@ -16,7 +26,7 @@ export default function RequestForCallSection() {
           >
             <ion-icon name="call"></ion-icon>
           </CircleButton>
-        </button>
+        </Button>
       </div>
     </section>
   );
