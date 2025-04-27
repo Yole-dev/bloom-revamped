@@ -10,12 +10,44 @@ import serviceImage5 from "../assets/our_services/service_image5.png";
 import serviceImage6 from "../assets/our_services/service_image6.png";
 import { useState } from "react";
 
+const faqs = [
+  {
+    question: "What services does Bloom offer?",
+    answer:
+      "We offer branding, web development, UIUX design and Ecommerce solutions",
+  },
+
+  {
+    question: "How do you approach new projects?",
+    answer:
+      "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
+  },
+
+  {
+    question: "What industries do you specialize in?",
+    answer:
+      "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
+  },
+
+  {
+    question: "How long does a typical project take?",
+    answer:
+      "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
+  },
+
+  {
+    question: "How can we get started with Bloom?",
+    answer:
+      "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
+  },
+];
+
 export default function OurServices() {
   return (
     <div className="our-service-page-container">
       <HeadingSection />
       <OurServiceSection />
-      <FaqSection />
+      <FaqSection data={faqs} />
     </div>
   );
 }
@@ -153,44 +185,8 @@ function OurServiceSection() {
   );
 }
 
-function FaqSection() {
-  const questionDetails = [
-    {
-      question: "What services does Bloom offer?",
-      answer:
-        "We offer branding, web development, UIUX design and Ecommerce solutions",
-    },
-
-    {
-      question: "How do you approach new projects?",
-      answer:
-        "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
-    },
-
-    {
-      question: "What industries do you specialize in?",
-      answer:
-        "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
-    },
-
-    {
-      question: "How long does a typical project take?",
-      answer:
-        "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
-    },
-
-    {
-      question: "How can we get started with Bloom?",
-      answer:
-        "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
-    },
-  ];
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  function handleToggle() {
-    setIsOpen(!isOpen);
-  }
+function FaqSection({ data }) {
+  const [curOpen, setCurOpen] = useState(null);
 
   return (
     <section className="faq-section-container">
@@ -204,15 +200,15 @@ function FaqSection() {
       </div>
 
       <div className="faq-container">
-        {questionDetails.map((question, i) => (
+        {data.map((question, i) => (
           <Faq
             questionNumber={i + 1}
             question={question.question}
             key={i + 1}
-            isOpen={isOpen}
-            onToggle={handleToggle}
+            curOpen={curOpen}
+            onOpen={setCurOpen}
           >
-            {isOpen && question.answer}
+            {curOpen && question.answer}
           </Faq>
         ))}
       </div>
@@ -220,7 +216,13 @@ function FaqSection() {
   );
 }
 
-function Faq({ children, questionNumber, question, onToggle, isOpen }) {
+function Faq({ children, questionNumber, question, onOpen, curOpen }) {
+  const isOpen = questionNumber === curOpen;
+
+  function handleToggle() {
+    onOpen(isOpen ? null : questionNumber);
+  }
+
   return (
     <div className="faq-content">
       <div className="question-content">
@@ -228,10 +230,10 @@ function Faq({ children, questionNumber, question, onToggle, isOpen }) {
           {questionNumber}. {question}
         </p>
 
-        <p className="faq-answer"> {children}</p>
+        <p className="faq-answer"> {isOpen ? children : ""}</p>
       </div>
 
-      <div onClick={onToggle}>
+      <div onClick={handleToggle}>
         <ion-icon
           name={isOpen ? "arrow-back-outline" : "arrow-forward-outline"}
           className="arrow-icon"
