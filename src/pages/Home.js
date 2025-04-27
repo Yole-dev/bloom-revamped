@@ -3,6 +3,10 @@ import React from "react";
 // imported carousel library
 import useEmblaCarousel from "embla-carousel-react";
 
+// imported animation components
+import PageAnimation from "../components/PageAnimation";
+import ComponentAnimation from "../components/ComponentAnimation";
+
 // imported reusable button component
 import CircleButton from "../components/Circlebtn";
 import Button from "../components/Button";
@@ -18,78 +22,90 @@ import clientImage from "../assets/home/client2.png";
 
 export default function Home() {
   return (
-    <div className="page-container">
-      <HeroSection />
-      <ServicesSection />
-      <ServicesPortfolio />
-      <TestimonialsSection />
-    </div>
+    <PageAnimation>
+      <div className="page-container">
+        <HeroSection />
+        <ServicesSection />
+        <ServicesPortfolio />
+        <TestimonialsSection />
+      </div>
+    </PageAnimation>
   );
 }
 
 function HeroSection() {
   return (
-    <section className="hero-section">
-      <p className="hero-heading">Choose Bloom as your web design agency</p>
-      <p className="hero-text">
-        Provide top quality service with unlimited revisions, dedicated to
-        helping businesses thrive through captivating and effective visuals.
-      </p>
-
-      <div className="hero-image-container">
-        <CircleButton fontSize={26} className="hero-img-circle">
-          <ion-icon name="arrow-down-outline"></ion-icon>
-        </CircleButton>
-        <img src={heroImage} alt="Hero" className="hero-image" />
-      </div>
-
-      <div className="know-more-section">
-        <p className="know-more-heading">
-          Provide the best service, with ideas that are out of the box
+    <ComponentAnimation>
+      <section className="hero-section">
+        <p className="hero-heading">Choose Bloom as your web design agency</p>
+        <p className="hero-text">
+          Provide top quality service with unlimited revisions, dedicated to
+          helping businesses thrive through captivating and effective visuals.
         </p>
 
-        <div className="know-more-content">
-          <p className="know-more-text">
-            At Boom Agency we’re passionate about customer experience and team
-            culture. When you chose to join Bloom Agency you are joining a team
-            that genuinely loves what they do.
-          </p>
+        <ComponentAnimation>
+          <div className="hero-image-container">
+            <CircleButton fontSize={26} className="hero-img-circle">
+              <ion-icon name="arrow-down-outline"></ion-icon>
+            </CircleButton>
+            <img src={heroImage} alt="Hero" className="hero-image" />
+          </div>
+        </ComponentAnimation>
 
-          <Button
-            width={300}
-            height={103}
-            gap={2}
-            borderRadius={53}
-            fontSize={31}
-            fontWeight={400}
-            background="#ff6016"
-          >
-            Know more
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </Button>
-        </div>
-      </div>
-    </section>
+        <ComponentAnimation>
+          <div className="know-more-section">
+            <p className="know-more-heading">
+              Provide the best service, with ideas that are out of the box
+            </p>
+
+            <div className="know-more-content">
+              <p className="know-more-text">
+                At Boom Agency we’re passionate about customer experience and
+                team culture. When you chose to join Bloom Agency you are
+                joining a team that genuinely loves what they do.
+              </p>
+
+              <Button
+                width={300}
+                height={103}
+                gap={2}
+                borderRadius={53}
+                fontSize={31}
+                fontWeight={400}
+                background="#ff6016"
+              >
+                Know more
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+              </Button>
+            </div>
+          </div>
+        </ComponentAnimation>
+      </section>
+    </ComponentAnimation>
   );
 }
 
 function ServicesSection() {
   return (
-    <section className="service-container">
-      <div className="service-section">
-        <div className="service-descriptions">
-          <p className="service-heading">We offer several service for you</p>
+    <ComponentAnimation>
+      <section className="service-container">
+        <div className="service-section">
+          <div className="service-descriptions">
+            <p className="service-heading">We offer several service for you</p>
 
-          <p className="service-text">
-            Bloom is your one-stop web design agency, offering a full range of
-            services to elevate your brand, enhance your online presence, and
-            drive business growth.
-          </p>
+            <p className="service-text">
+              Bloom is your one-stop web design agency, offering a full range of
+              services to elevate your brand, enhance your online presence, and
+              drive business growth.
+            </p>
+          </div>
+
+          <ComponentAnimation>
+            <ServiceList />
+          </ComponentAnimation>
         </div>
-
-        <ServiceList />
-      </div>
-    </section>
+      </section>
+    </ComponentAnimation>
   );
 }
 
@@ -103,8 +119,8 @@ function ServiceList() {
     "Ecommerce",
     "Full Stack Development",
   ];
+
   return (
-    // remember to add on click event onClick={path} to these button so they can direct the path
     <div className="service-list">
       {serviceList.map((service, i) => (
         <div className="service" key={i}>
@@ -117,49 +133,52 @@ function ServiceList() {
 
 function ServicesPortfolio() {
   return (
-    <section className="services-portfolio-section">
-      <div className="services-portfolio">
-        <div className="services-portfolio-header">
-          <p className="services-portfolio-heading">
-            Selected work we’ve done so far
-          </p>
+    <ComponentAnimation>
+      <section className="services-portfolio-section">
+        <div className="services-portfolio">
+          <div className="services-portfolio-header">
+            <p className="services-portfolio-heading">
+              Selected work we’ve done so far
+            </p>
 
-          <p className="services-portfolio-text">
-            We’ve loved working with many fantastic companies, and are really
-            proud of what we`ve achieved together.
-          </p>
+            <p className="services-portfolio-text">
+              We’ve loved working with many fantastic companies, and are really
+              proud of what we`ve achieved together.
+            </p>
+          </div>
+
+          <PortfolioDetails />
+
+          <ComponentAnimation className="service-portfolio-footer">
+            <p>
+              Take a Look <br /> at What
+              <span>
+                <hr />
+              </span>
+            </p>
+
+            {/* remember to add onclick event that leads to the portfolio page or so */}
+            <CircleButton
+              height={180.77}
+              width={180.77}
+              fontSize={22.6}
+              className="service-portfolio-footer-btn"
+              cursor="pointer"
+            >
+              All Work
+            </CircleButton>
+
+            <p>
+              We Can Do <br />
+              <span>
+                <hr />
+              </span>
+              For You
+            </p>
+          </ComponentAnimation>
         </div>
-
-        <PortfolioDetails />
-
-        <div className="service-portfolio-footer">
-          <p>
-            Take a Look <br /> at What
-            <span>
-              <hr />
-            </span>
-          </p>
-
-          {/* remember to add onclick event that leads to the portfolio page or so */}
-          <CircleButton
-            height={180.77}
-            width={180.77}
-            fontSize={22.6}
-            className="service-portfolio-footer-btn"
-          >
-            All Work
-          </CircleButton>
-
-          <p>
-            We Can Do <br />
-            <span>
-              <hr />
-            </span>
-            For You
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </ComponentAnimation>
   );
 }
 

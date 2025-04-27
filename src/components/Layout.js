@@ -1,8 +1,11 @@
-// import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import headerLogo from "../assets/header_logo.png";
 // import footerLogo from "../assets/footer_logo.png";
 
+// imported animation component
+import PageAnimation from "../components/PageAnimation";
+
+// imported reusable component
 import CircleButton from "./Circlebtn";
 import Button from "./Button";
 
@@ -14,14 +17,16 @@ export default function Layout({ children }) {
   // }
 
   return (
-    <div className="app-container">
-      <Header />
+    <PageAnimation>
+      <div className="app-container">
+        <Header />
 
-      {/* page contents */}
-      <main className="main">{children}</main>
+        {/* page contents */}
+        <main className="main">{children}</main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </PageAnimation>
   );
 }
 

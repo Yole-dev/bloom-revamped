@@ -12,6 +12,7 @@ export default function CircleButton({
   role = "",
   type = "",
   ariaLabel = "",
+  cursor = "",
 }) {
   const customBtnStyle = {
     display: "flex",
@@ -25,6 +26,7 @@ export default function CircleButton({
     border,
     borderRadius: `${borderRadius}%`,
     pointerEvents: "auto !important",
+    cursor,
   };
 
   return (

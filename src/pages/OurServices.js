@@ -1,3 +1,7 @@
+// imported animation components
+import PageAnimation from "../components/PageAnimation";
+import ComponentAnimation from "../components/ComponentAnimation";
+
 //imported reusable component
 import CircleButton from "../components/Circlebtn";
 import Button from "../components/Button";
@@ -46,12 +50,14 @@ const faqs = [
 
 export default function OurServices() {
   return (
-    <div className="our-service-page-container">
-      <HeadingSection />
-      <OurServiceSection />
-      <FaqSection data={faqs} />
-      <RequestForCallSection />
-    </div>
+    <PageAnimation>
+      <div className="our-service-page-container">
+        <HeadingSection />
+        <OurServiceSection />
+        <FaqSection data={faqs} />
+        <RequestForCallSection />
+      </div>
+    </PageAnimation>
   );
 }
 
