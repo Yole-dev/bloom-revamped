@@ -8,12 +8,14 @@ import serviceImage3 from "../assets/our_services/service_image3.png";
 import serviceImage4 from "../assets/our_services/service_image4.png";
 import serviceImage5 from "../assets/our_services/service_image5.png";
 import serviceImage6 from "../assets/our_services/service_image6.png";
+import { useState } from "react";
 
 export default function OurServices() {
   return (
     <div className="our-service-page-container">
       <HeadingSection />
       <OurServiceSection />
+      <FaqSection />
     </div>
   );
 }
@@ -148,5 +150,90 @@ function OurServiceSection() {
         </div>
       </div>
     </section>
+  );
+}
+
+function FaqSection() {
+  const questionDetails = [
+    {
+      question: "What services does Bloom offer?",
+      answer:
+        "We offer branding, web development, UIUX design and Ecommerce solutions",
+    },
+
+    {
+      question: "How do you approach new projects?",
+      answer:
+        "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
+    },
+
+    {
+      question: "What industries do you specialize in?",
+      answer:
+        "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
+    },
+
+    {
+      question: "How long does a typical project take?",
+      answer:
+        "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
+    },
+
+    {
+      question: "How can we get started with Bloom?",
+      answer:
+        "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
+    },
+  ];
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  function handleToggle() {
+    setIsOpen(!isOpen);
+  }
+
+  const iconName = `${isOpen ? "arrow-back-outline" : "arrow-forward-outline"}`;
+
+  return (
+    <section className="faq-section-container">
+      <div className="faq-heading">
+        <p>Frequently Asked Questions</p>
+
+        <p>
+          Have questions ? We’ve got answers to help you understand our services
+          better.
+        </p>
+      </div>
+
+      <div className="faq-container">
+        {questionDetails.map((question, i) => (
+          <Faq
+            questionNumber={i + 1}
+            question={question.question}
+            key={i + 1}
+            icon={<ion-icon name={iconName} className="arrow-icon"></ion-icon>}
+            onToggle={handleToggle}
+          >
+            {isOpen && question.answer}
+          </Faq>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function Faq({ children, questionNumber, question, icon, onToggle }) {
+  return (
+    <div className="faq-content">
+      <div className="question-content">
+        <p className="faq-question">
+          {questionNumber}. {question}
+        </p>
+
+        <p className="faq-answer"> {children}</p>
+      </div>
+
+      <div onClick={onToggle}>{icon}</div>
+    </div>
   );
 }
