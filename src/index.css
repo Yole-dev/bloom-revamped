@@ -110,17 +110,6 @@ button:focus {
   background: var(--primary-blue);
 }
 
-.header-btn {
-  width: 174px;
-  height: 60px;
-  background: var(--primary-blue);
-  color: white;
-  font-size: 18px;
-  border: none;
-  border-radius: 31px;
-  cursor: pointer;
-}
-
 .main {
   justify-self: center;
   margin-top: 7rem;
@@ -175,22 +164,6 @@ button:focus {
   line-height: 106.7px;
   letter-spacing: -2.5%;
   color: var(--primary-white);
-}
-
-.footer-contact-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  background: var(--primary-white);
-  width: 119.89px;
-  height: 37.66px;
-  border: none;
-  border-radius: 62.77px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22.6px;
-  letter-spacing: -2.5%;
 }
 
 .social-icons {
@@ -321,21 +294,6 @@ button:focus {
   text-align: left;
   font-size: 20px;
   line-height: 186%;
-}
-
-.know-more-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  width: 300px;
-  height: 103px;
-  border: none;
-  border-radius: 53px;
-  background: var(--primary-orange);
-  color: var(--off-white);
-  font-size: 31px;
-  line-height: 100%;
 }
 
 .service-container {
@@ -922,6 +880,8 @@ button:focus {
   font-size: 30px;
   transform: rotate(-40deg);
 }
+
+/* STYLES FOR REQUEST SECTION REUSABLE COMPONENT */
 
 .request-for-call-section {
   width: 100%;

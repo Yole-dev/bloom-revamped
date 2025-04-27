@@ -4,6 +4,7 @@ import headerLogo from "../assets/header_logo.png";
 // import footerLogo from "../assets/footer_logo.png";
 
 import CircleButton from "./Circlebtn";
+import Button from "./Button";
 
 export default function Layout({ children }) {
   // const [isOpen, setIsOpen] = useState(false);
@@ -69,10 +70,6 @@ function NavList() {
   );
 }
 
-function Button() {
-  return <button className="header-btn"> Let's talk </button>;
-}
-
 function Footer() {
   return (
     <footer className="footer">
@@ -104,19 +101,25 @@ function FooterHeroTexts() {
         Want to Start <br /> a Project?
       </p>
 
-      <button className="footer-contact-btn">
+      <Button
+        background="#ffffff"
+        color="#141414"
+        fontSize={13.81}
+        fontWeight={500}
+        width={119.89}
+        height={37.66}
+        borderRadius={62.77}
+      >
         Let's talk
-        <span>
-          <CircleButton
-            height={27.62}
-            width={27.62}
-            border="none"
-            background="#ff6016"
-          >
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </CircleButton>
-        </span>
-      </button>
+        <CircleButton
+          height={27.62}
+          width={27.62}
+          border="none"
+          background="#ff6016"
+        >
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </CircleButton>
+      </Button>
     </div>
   );
 }

@@ -5,6 +5,7 @@ import useEmblaCarousel from "embla-carousel-react";
 
 // imported reusable button component
 import CircleButton from "../components/Circlebtn";
+import Button from "../components/Button";
 
 // imported images
 import heroImage from "../assets/home/hero_image.png";
@@ -54,12 +55,18 @@ function HeroSection() {
             that genuinely loves what they do.
           </p>
 
-          <button className="know-more-btn">
+          <Button
+            width={300}
+            height={103}
+            gap={2}
+            borderRadius={53}
+            fontSize={31}
+            fontWeight={400}
+            background="#ff6016"
+          >
             Know more
-            <span>
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </span>
-          </button>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </Button>
         </div>
       </div>
     </section>
@@ -97,6 +104,7 @@ function ServiceList() {
     "Full Stack Development",
   ];
   return (
+    // remember to add on click event onClick={path} to these button so they can direct the path
     <div className="service-list">
       {serviceList.map((service, i) => (
         <div className="service" key={i}>
@@ -132,6 +140,7 @@ function ServicesPortfolio() {
             </span>
           </p>
 
+          {/* remember to add onclick event that leads to the portfolio page or so */}
           <CircleButton
             height={180.77}
             width={180.77}

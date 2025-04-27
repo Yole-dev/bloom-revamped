@@ -1,5 +1,6 @@
 //imported reusable component
 import CircleButton from "../components/Circlebtn";
+import RequestForCallSection from "../components/RequestForCallSection";
 
 // imported images
 import serviceImage1 from "../assets/our_services/service_image1.png";
@@ -241,27 +242,5 @@ function Faq({ children, questionNumber, question, onOpen, curOpen }) {
         ></ion-icon>
       </div>
     </div>
-  );
-}
-
-function RequestForCallSection() {
-  return (
-    <section className="request-for-call-section">
-      <div className="request-for-call-container">
-        <p>Offering The Best Experience Of Digital Branding Services</p>
-
-        <button className="request-btn">
-          Request A Free Call
-          <CircleButton
-            background="#ff6016"
-            width={46.07}
-            height={46.07}
-            fontSize={24}
-          >
-            <ion-icon name="call"></ion-icon>
-          </CircleButton>
-        </button>
-      </div>
-    </section>
   );
 }
