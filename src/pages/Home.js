@@ -6,6 +6,8 @@ import useEmblaCarousel from "embla-carousel-react";
 // imported animation components
 import PageAnimation from "../components/PageAnimation";
 import ComponentAnimation from "../components/ComponentAnimation";
+import RightComponentAnimation from "../components/RightComponentAnimation";
+import LeftComponentAnimation from "../components/LeftComponentAnimation";
 
 // imported reusable button component
 import CircleButton from "../components/Circlebtn";
@@ -190,81 +192,89 @@ function PortfolioDetails() {
 
   return (
     <div className="portfolio-details">
-      <Detail src={portfolioImage1} background="#141414">
-        <>
-          <p className="detail-heading">Website Design</p>
-          <p className="detail-text">
-            Bringing Your Brand to Life with Exceptional Web Design
-          </p>
+      <RightComponentAnimation>
+        <Detail src={portfolioImage1} background="#141414">
+          <>
+            <p className="detail-heading">Website Design</p>
+            <p className="detail-text">
+              Bringing Your Brand to Life with Exceptional Web Design
+            </p>
 
-          <div className="detail-boxes">
-            {websiteDetail.map((detail) => (
-              <div className="detail-box" key={detail}>
-                {detail}
-              </div>
-            ))}
-          </div>
-        </>
-      </Detail>
+            <div className="detail-boxes">
+              {websiteDetail.map((detail) => (
+                <div className="detail-box" key={detail}>
+                  {detail}
+                </div>
+              ))}
+            </div>
+          </>
+        </Detail>
+      </RightComponentAnimation>
 
-      <Detail
-        src={portfolioImage2}
-        background="#ff6016"
-        flexDirection="row-reverse"
-      >
-        <>
-          <p className="detail-heading">Branding Design</p>
-          <p className="detail-text">
-            From Concept to identity - Build Your Brand with Us
-          </p>
+      <LeftComponentAnimation>
+        <Detail
+          src={portfolioImage2}
+          background="#ff6016"
+          flexDirection="row-reverse"
+        >
+          <>
+            <p className="detail-heading">Branding Design</p>
+            <p className="detail-text">
+              From Concept to identity - Build Your Brand with Us
+            </p>
 
-          <div className="detail-boxes">
-            {brandingDetail.map((detail) => (
-              <div className="detail-box" key={detail}>
-                {detail}
-              </div>
-            ))}
-          </div>
-        </>
-      </Detail>
+            <div className="detail-boxes">
+              {brandingDetail.map((detail) => (
+                <div className="detail-box" key={detail}>
+                  {detail}
+                </div>
+              ))}
+            </div>
+          </>
+        </Detail>
+      </LeftComponentAnimation>
 
-      <Detail src={portfolioImage3} background="#141414">
-        <>
-          <p className="detail-heading">UI/UX</p>
-          <p className="detail-text">
-            Blending Aesthetics with Functionality for Impactful Experiences.
-          </p>
+      <RightComponentAnimation>
+        <Detail src={portfolioImage3} background="#141414">
+          <>
+            <p className="detail-heading">UI/UX</p>
+            <p className="detail-text">
+              Blending Aesthetics with Functionality for Impactful Experiences.
+            </p>
 
-          <div className="detail-boxes">
-            {uiuxDetail.map((detail) => (
-              <div className="detail-box" key={detail}>
-                {detail}
-              </div>
-            ))}
-          </div>
-        </>
-      </Detail>
+            <div className="detail-boxes">
+              {uiuxDetail.map((detail) => (
+                <div className="detail-box" key={detail}>
+                  {detail}
+                </div>
+              ))}
+            </div>
+          </>
+        </Detail>
+      </RightComponentAnimation>
 
-      <Detail
-        src={portfolioImage4}
-        background="#0755e9"
-        flexDirection="row-reverse"
-      >
-        <>
-          <p className="detail-heading">Full Stack Web Development</p>
-          <p className="detail-text">
-            From Frontend to Backend - We Handle It All.
-          </p>
+      <LeftComponentAnimation>
+        <Detail
+          src={portfolioImage4}
+          background="#0755e9"
+          flexDirection="row-reverse"
+        >
+          <>
+            <p className="detail-heading">Full Stack Web Development</p>
+            <p className="detail-text">
+              From Frontend to Backend - We Handle It All.
+            </p>
 
-          <div className="detail-boxes">
-            {fullstackWebDetail.map((detail) => (
-              <div className="detail-box" key={detail}>
-                {detail}
-              </div>
-            ))}
-          </div>
-        </>
-      </Detail>
+            <div className="detail-boxes">
+              {fullstackWebDetail.map((detail) => (
+                <div className="detail-box" key={detail}>
+                  {detail}
+                </div>
+              ))}
+            </div>
+          </>
+        </Detail>
+      </LeftComponentAnimation>
     </div>
   );
 }
@@ -330,19 +340,21 @@ function TestimonialsSection() {
   }, [emblaApi]);
 
   return (
-    <div className="testimonial-section">
-      <p className="testimonial-heading">
-        What our Clients are saying about Us
-      </p>
+    <ComponentAnimation>
+      <div className="testimonial-section">
+        <p className="testimonial-heading">
+          What our Clients are saying about Us
+        </p>
 
-      <div className="embla" ref={emblaRef}>
-        <div className="embla__container">
-          <Testimonials emblaApi={emblaApi} />
+        <div className="embla" ref={emblaRef}>
+          <div className="embla__container">
+            <Testimonials emblaApi={emblaApi} />
+          </div>
         </div>
-      </div>
 
-      <CarouselButtons onPrev={scrollPrev} onNext={scrollNext} />
-    </div>
+        <CarouselButtons onPrev={scrollPrev} onNext={scrollNext} />
+      </div>
+    </ComponentAnimation>
   );
 }
 
