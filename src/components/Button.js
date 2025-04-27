@@ -26,6 +26,7 @@ export default function Button({
     borderRadius: `${borderRadius}px`,
     fontSize: `${fontSize}px`,
     fontWeight,
+    cursor: "pointer",
   };
 
   return (
