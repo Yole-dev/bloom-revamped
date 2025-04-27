@@ -26,7 +26,7 @@ export default function Layout({ children }) {
 
 function Header() {
   return (
-    <header className="header">
+    <div className="header">
       <Logo />
 
       <div className="nav-container">
@@ -36,7 +36,7 @@ function Header() {
 
         <Button />
       </div>
-    </header>
+    </div>
   );
 }
 

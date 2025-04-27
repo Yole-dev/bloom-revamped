@@ -63,12 +63,18 @@ button:focus {
 }
 
 .header {
+  position: fixed;
   width: 95%;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 2rem 2.5rem;
+  padding: 1rem;
   justify-self: start;
+  background: var(--off-white);
+  border-radius: 2rem;
+  z-index: 999;
 }
 
 .header-logo {
@@ -117,6 +123,7 @@ button:focus {
 
 .main {
   justify-self: center;
+  margin-top: 7rem;
 }
 
 .footer {
