@@ -192,8 +192,6 @@ function FaqSection() {
     setIsOpen(!isOpen);
   }
 
-  const iconName = `${isOpen ? "arrow-back-outline" : "arrow-forward-outline"}`;
-
   return (
     <section className="faq-section-container">
       <div className="faq-heading">
@@ -211,7 +209,7 @@ function FaqSection() {
             questionNumber={i + 1}
             question={question.question}
             key={i + 1}
-            icon={<ion-icon name={iconName} className="arrow-icon"></ion-icon>}
+            isOpen={isOpen}
             onToggle={handleToggle}
           >
             {isOpen && question.answer}
@@ -222,7 +220,7 @@ function FaqSection() {
   );
 }
 
-function Faq({ children, questionNumber, question, icon, onToggle }) {
+function Faq({ children, questionNumber, question, onToggle, isOpen }) {
   return (
     <div className="faq-content">
       <div className="question-content">
@@ -233,7 +231,12 @@ function Faq({ children, questionNumber, question, icon, onToggle }) {
         <p className="faq-answer"> {children}</p>
       </div>
 
-      <div onClick={onToggle}>{icon}</div>
+      <div onClick={onToggle}>
+        <ion-icon
+          name={isOpen ? "arrow-back-outline" : "arrow-forward-outline"}
+          className="arrow-icon"
+        ></ion-icon>
+      </div>
     </div>
   );
 }
