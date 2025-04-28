@@ -1,6 +1,8 @@
 // imported animation components
 import PageAnimation from "../components/PageAnimation";
 import ComponentAnimation from "../components/ComponentAnimation";
+import LeftComponentAnimation from "../components/LeftComponentAnimation";
+import RightComponentAnimation from "../components/RightComponentAnimation";
 
 //imported reusable component
 import CircleButton from "../components/Circlebtn";
@@ -65,46 +67,52 @@ function HeadingSection() {
   return (
     <section className="heading-section">
       <div className="heading-first-section">
-        <div>
-          <CircleButton
-            fontSize={30}
-            className="heading-circle"
-            width={100}
-            height={100}
-          >
-            <ion-icon name="arrow-down-outline"></ion-icon>
-          </CircleButton>
-          <img src={serviceImage1} alt="Header section hero" />
-        </div>
-
-        <div>
-          <p>See Our Expertise in Digital Solution</p>
-
-          <p>
-            Explore our range of services designed to elevate your brand ,
-            enhance user experience and drive business growth.
-          </p>
-        </div>
-      </div>
-
-      <div className="heading-second-section">
-        <img src={serviceImage2} alt="" />
-
-        <div>
+        <LeftComponentAnimation>
           <div>
-            <p>Featured Work</p>
-
-            <p>Branding Design</p>
+            <CircleButton
+              fontSize={30}
+              className="heading-circle"
+              width={100}
+              height={100}
+            >
+              <ion-icon name="arrow-down-outline"></ion-icon>
+            </CircleButton>
+            <img src={serviceImage1} alt="Header section hero" />
           </div>
+        </LeftComponentAnimation>
 
-          <p>
-            We worked with the founder of SHAMA to bring her brand idea to life.
-            Bloom created the logo, explored concepts for collateral and
-            packaging materials, and finally, built a modern ecommerce website
-            for the brand.
-          </p>
-        </div>
+        <RightComponentAnimation>
+          <div>
+            <p>See Our Expertise in Digital Solution</p>
+
+            <p>
+              Explore our range of services designed to elevate your brand ,
+              enhance user experience and drive business growth.
+            </p>
+          </div>
+        </RightComponentAnimation>
       </div>
+
+      <ComponentAnimation>
+        <div className="heading-second-section">
+          <img src={serviceImage2} alt="" />
+
+          <div>
+            <div>
+              <p>Featured Work</p>
+
+              <p>Branding Design</p>
+            </div>
+
+            <p>
+              We worked with the founder of SHAMA to bring her brand idea to
+              life. Bloom created the logo, explored concepts for collateral and
+              packaging materials, and finally, built a modern ecommerce website
+              for the brand.
+            </p>
+          </div>
+        </div>
+      </ComponentAnimation>
     </section>
   );
 }
@@ -113,93 +121,103 @@ function OurServiceSection() {
   return (
     <section className="our-services-section-container">
       <div className="our-services-section">
-        <div>
+        <LeftComponentAnimation>
           <div>
-            <img src={serviceImage3} alt="" />
+            <div>
+              <img src={serviceImage3} alt="" />
 
-            <p>Branding Design</p>
+              <p>Branding Design</p>
+            </div>
+
+            <p>
+              Branding Design Your website will be designed to render
+              beautifully across all devices – desktops, tablets, and mobile.
+            </p>
           </div>
+        </LeftComponentAnimation>
 
-          <p>
-            Branding Design Your website will be designed to render beautifully
-            across all devices – desktops, tablets, and mobile.
-          </p>
-        </div>
-
-        <div>
+        <LeftComponentAnimation>
           <div>
-            <img src={serviceImage4} alt="" />
+            <div>
+              <img src={serviceImage4} alt="" />
 
-            <p>Web Development</p>
+              <p>Web Development</p>
+            </div>
+
+            <p>
+              We offers tailored solution that create visually stunning, highly
+              functional website optimize for seamless user experience across
+              all device
+            </p>
           </div>
+        </LeftComponentAnimation>
 
-          <p>
-            We offers tailored solution that create visually stunning, highly
-            functional website optimize for seamless user experience across all
-            device
-          </p>
-        </div>
-
-        <div>
+        <RightComponentAnimation>
           <div>
-            <img src={serviceImage5} alt="" />
+            <div>
+              <img src={serviceImage5} alt="" />
 
-            <p>UI/UX Design</p>
+              <p>UI/UX Design</p>
+            </div>
+
+            <p>
+              Designing intuitive and engaging user interface that enhance the
+              overall user experience.
+            </p>
           </div>
+        </RightComponentAnimation>
 
-          <p>
-            Designing intuitive and engaging user interface that enhance the
-            overall user experience.
-          </p>
-        </div>
-
-        <div>
+        <RightComponentAnimation>
           <div>
-            <img src={serviceImage6} alt="" />
+            <div>
+              <img src={serviceImage6} alt="" />
 
-            <p>Ecommerce Solutions</p>
+              <p>Ecommerce Solutions</p>
+            </div>
+
+            <p>
+              Building and optimizing online stores that drive sales and provide
+              a seamless shopping experience.
+            </p>
           </div>
-
-          <p>
-            Building and optimizing online stores that drive sales and provide a
-            seamless shopping experience.
-          </p>
-        </div>
+        </RightComponentAnimation>
       </div>
 
-      <div className="contact-us-section">
-        <div>
-          <CircleButton
-            fontSize={30}
-            background="#FF6016"
-            width={100}
-            height={100}
-            className="odd-icon"
-          >
-            <ion-icon name="arrow-forward-outline"></ion-icon>
-          </CircleButton>
-        </div>
-
-        <div>
+      <ComponentAnimation>
+        <div className="contact-us-section">
           <div>
-            <p>Ready to elevaate your brand with our expert services?</p>
-
-            <p>Contact us today to discuss your project and get started</p>
+            <CircleButton
+              fontSize={30}
+              background="#FF6016"
+              width={100}
+              height={100}
+              className="odd-icon"
+            >
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </CircleButton>
           </div>
 
-          {/* remember to include onClick event to this button when you have a page path */}
-          <Button
-            width={333}
-            height={72.91}
-            fontSize={21}
-            fontWeight={300}
-            borderRadius={37}
-            background="#FF6016"
-          >
-            Contact Us
-          </Button>
+          <div>
+            <div>
+              <p>Ready to elevaate your brand with our expert services?</p>
+
+              <p>Contact us today to discuss your project and get started</p>
+            </div>
+
+            {/* remember to include onClick event to this button when you have a page path */}
+            <Button
+              width={333}
+              height={72.91}
+              fontSize={21}
+              fontWeight={300}
+              borderRadius={37}
+              background="#FF6016"
+            >
+              Contact Us
+            </Button>
+          </div>
         </div>
-      </div>
+      </ComponentAnimation>
     </section>
   );
 }
@@ -209,14 +227,14 @@ function FaqSection({ data }) {
 
   return (
     <section className="faq-section-container">
-      <div className="faq-heading">
+      <ComponentAnimation className="faq-heading">
         <p>Frequently Asked Questions</p>
 
         <p>
           Have questions ? We’ve got answers to help you understand our services
           better.
         </p>
-      </div>
+      </ComponentAnimation>
 
       <div className="faq-container">
         {data.map((question, i) => (
@@ -243,21 +261,23 @@ function Faq({ children, questionNumber, question, onOpen, curOpen }) {
   }
 
   return (
-    <div className="faq-content">
-      <div className="question-content">
-        <p className="faq-question">
-          {questionNumber}. {question}
-        </p>
+    <ComponentAnimation>
+      <div className="faq-content">
+        <div className="question-content">
+          <p className="faq-question">
+            {questionNumber}. {question}
+          </p>
 
-        <p className="faq-answer"> {isOpen ? children : ""}</p>
-      </div>
+          <p className="faq-answer"> {isOpen ? children : ""}</p>
+        </div>
 
-      <div onClick={handleToggle}>
-        <ion-icon
-          name={isOpen ? "arrow-back-outline" : "arrow-forward-outline"}
-          className="arrow-icon"
-        ></ion-icon>
+        <div onClick={handleToggle}>
+          <ion-icon
+            name={isOpen ? "arrow-back-outline" : "arrow-forward-outline"}
+            className="arrow-icon"
+          ></ion-icon>
+        </div>
       </div>
-    </div>
+    </ComponentAnimation>
   );
 }

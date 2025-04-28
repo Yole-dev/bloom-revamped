@@ -1,9 +1,13 @@
+// Imported animation component
+import ComponentAnimation from "../components/ComponentAnimation";
+
+// imported reusable component
 import CircleButton from "./Circlebtn";
 import Button from "./Button";
 
 export default function RequestForCallSection() {
   return (
-    <section className="request-for-call-section">
+    <ComponentAnimation className="request-for-call-section">
       <div className="request-for-call-container">
         <p>Offering The Best Experience Of Digital Branding Services</p>
 
@@ -28,6 +32,6 @@ export default function RequestForCallSection() {
           </CircleButton>
         </Button>
       </div>
-    </section>
+    </ComponentAnimation>
   );
 }
