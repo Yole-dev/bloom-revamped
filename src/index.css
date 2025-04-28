@@ -906,6 +906,46 @@ button:focus {
   padding: 0 2rem;
 }
 
+.portfolio-page-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.portfolio-page-header-text {
+  width: 379px;
+  height: 219px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portfolio-page-header-text p:first-of-type {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 127%;
+}
+
+.portfolio-page-header-text p:last-of-type {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 143%;
+}
+
+.portfolio-page-hero {
+  width: 828px;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-hero-circle {
+  position: relative;
+  bottom: 6rem;
+  margin-bottom: -6rem;
+}
+
 /* mobile view */
 @media (max-width: 768px) {
   .embla__slide {
