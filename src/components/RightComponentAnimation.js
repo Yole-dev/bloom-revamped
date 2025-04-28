@@ -2,7 +2,7 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-export default function RightComponentAnimation({ children }) {
+export default function RightComponentAnimation({ children, className = "" }) {
   const ref = useRef(null);
   const controls = useAnimation();
   const inView = useInView(ref, { once: true });
@@ -17,6 +17,7 @@ export default function RightComponentAnimation({ children }) {
       initial={{ opacity: 0, x: 100 }} // Starts 100px to the right
       animate={controls}
       transition={{ duration: 0.7, ease: "easeOut" }}
+      className={className}
     >
       {children}
     </motion.div>

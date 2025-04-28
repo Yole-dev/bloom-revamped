@@ -2,7 +2,7 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
-export default function LeftComponentAnimation({ children }) {
+export default function LeftComponentAnimation({ children, className = "" }) {
   const ref = useRef(null);
   const controls = useAnimation();
   const inView = useInView(ref, { once: true });
@@ -17,6 +17,7 @@ export default function LeftComponentAnimation({ children }) {
       initial={{ opacity: 0, x: -100 }}
       animate={controls}
       transition={{ duration: 0.7, ease: "easeOut" }}
+      className={className}
     >
       {children}
     </motion.div>

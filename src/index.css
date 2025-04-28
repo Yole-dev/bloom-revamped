@@ -896,6 +896,16 @@ button:focus {
   line-height: 42px;
 }
 
+/* PORTFOLIO PAGE STYLES */
+.portfolio-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 4rem 0;
+  padding: 0 2rem;
+}
+
 /* mobile view */
 @media (max-width: 768px) {
   .embla__slide {
