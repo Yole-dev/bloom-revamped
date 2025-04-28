@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import headerLogo from "../assets/header_logo.png";
-// import footerLogo from "../assets/footer_logo.png";
+import footerLogo from "../assets/footer_logo.png";
 
 // imported animation component
 import PageAnimation from "../components/PageAnimation";
@@ -156,7 +156,7 @@ function FooterIcons() {
 function FooterNav() {
   return (
     <div className="footer-nav">
-      <Logo />
+      <img src={footerLogo} alt="" />
       <FooterNavList />
     </div>
   );
