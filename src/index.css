@@ -975,6 +975,54 @@ button:focus {
   text-transform: uppercase;
 }
 
+/* ABOUT US STYLES */
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 4rem 0;
+  padding: 0 2rem;
+}
+
+.about-us-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-us-header > p {
+  width: 579px;
+  align-self: end;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 143%;
+  color: var(--faq-answer);
+}
+
+.about-us-hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-hero p {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 127%;
+  position: relative;
+  top: 4rem;
+  left: 2rem;
+  margin-top: -4rem;
+}
+
+.about-us-hero-circle {
+  align-self: end;
+  position: relative;
+  bottom: 7rem;
+  right: 1rem;
+  margin-bottom: -7rem;
+}
+
 /* mobile view */
 @media (max-width: 768px) {
   .embla__slide {
