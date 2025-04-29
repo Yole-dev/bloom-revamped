@@ -17,6 +17,7 @@ import image4 from "../assets/about_us/aboutImage4.png";
 import image5 from "../assets/about_us/aboutImage5.png";
 import image6 from "../assets/about_us/aboutImage6.png";
 import image7 from "../assets/about_us/aboutImage7.png";
+import { section } from "motion/react-client";
 
 export default function AboutUs() {
   return (
@@ -54,6 +55,17 @@ function HeaderSection() {
 }
 
 function MainSection() {
+  return (
+    <section className="about-us-main">
+      <CompanyBio />
+      <ProjectsBoard />
+      <WhyBloom />
+      <MessageFromCeo />
+    </section>
+  );
+}
+
+function CompanyBio() {
   return (
     <section className="company-bio">
       <LeftComponentAnimation className="team">
@@ -108,5 +120,123 @@ function MainSection() {
         </Box>
       </RightComponentAnimation>
     </section>
+  );
+}
+
+function ProjectsBoard() {
+  return (
+    <ComponentAnimation>
+      <Box
+        border="solid 1px #141414"
+        borderRadius={3.3}
+        width={1236}
+        height={154}
+      >
+        <div className="board">
+          <div>
+            <p>200+</p>
+            <p>
+              Project <br /> Completed
+            </p>
+          </div>
+
+          <div>
+            <p>150+</p>
+            <p>
+              Project <br /> Completed
+            </p>
+          </div>
+
+          <div>
+            <p>50+</p>
+            <p>
+              Project <br /> Review
+            </p>
+          </div>
+        </div>
+      </Box>
+    </ComponentAnimation>
+  );
+}
+
+function WhyBloom() {
+  return (
+    <ComponentAnimation className="why-bloom">
+      <div>
+        <p>Why Bloom?</p>
+
+        <p>
+          A forward thinking digital agency committed to crafting innovative,
+          user centric solutions that drive success.
+        </p>
+      </div>
+
+      <div>
+        <LeftComponentAnimation className="why-bloom-text">
+          At Bloom, we create strategic solutions that help brands grow and stay
+          ahead of the competition. From web design, branding, UIUX, and mobile
+          app development to Flutter development, we craft experiences that
+          drive engagement and maximize ROI. <br /> <br /> We don’t just help
+          businesses rise to the top—we ensure they stay there. From strategy to
+          execution, Bloom takes care of your entire marketing and digital
+          presence, setting you apart from competitors by a large margin. Our
+          mission is to connect businesses with their target audience through
+          innovative digital solutions. With our full-service marketing and
+          development expertise, we help brands make a lasting impact in their
+          industry.
+        </LeftComponentAnimation>
+
+        <RightComponentAnimation className="why-bloom-img">
+          <img src={image2} alt="" />
+        </RightComponentAnimation>
+      </div>
+    </ComponentAnimation>
+  );
+}
+
+function MessageFromCeo() {
+  return (
+    <ComponentAnimation>
+      <Box
+        background="#5B94FF"
+        color="#ffffff"
+        width={1240}
+        height={799}
+        gap={3}
+        borderRadius={3}
+        className="ceo-message"
+      >
+        <div>
+          <p>Dear Entreprener, we've been waiting for you</p>
+
+          <p>
+            <span>“</span>
+            <span>A Word from Our Founder and CEO</span> <br /> I’m Your Name,
+            the <span>Founder and CEO</span> at Bloom. Bloom started as a simple
+            idea—a passion for creating exceptional digital experiences. At
+            first, it was just me, designing and strategizing, working on small
+            projects with a big vision in mind. But as demand grew, so did the
+            team, and today, we are a dedicated group of FRFF creatives driven
+            by innovation, strategy, and results.
+            <br /> <br />
+            At Bloom, we believe design is more than just aesthetics; it’s about
+            impact. Every project we take on is crafted to not only look
+            stunning but to enhance user experience, drive engagement, and
+            ultimately help businesses grow. We are here to turn ideas into
+            reality, to push creative boundaries, and to build solutions that
+            matter. Welcome to Bloom—let’s create something remarkable together.
+          </p>
+        </div>
+
+        <div>
+          <img src={image3} alt="CEO's portriate" />
+
+          <p>
+            JAMES FELIX <br />
+            <span>Founder and CEO</span>
+          </p>
+        </div>
+      </Box>
+    </ComponentAnimation>
   );
 }

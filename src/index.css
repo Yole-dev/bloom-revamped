@@ -1023,6 +1023,14 @@ button:focus {
   margin-bottom: -7rem;
 }
 
+.about-us-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+}
+
 .company-bio {
   width: 100%;
   display: flex;
@@ -1072,6 +1080,141 @@ button:focus {
   font-weight: 300;
   line-height: 27px;
 }
+
+.board {
+  width: 1057px;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.board div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.board div:nth-child(2) {
+  border-right: solid 1.5px var(--primary-black);
+  border-left: solid 1.5px var(--primary-black);
+  padding: 0 5rem;
+  height: 90px;
+}
+
+.board div p:first-of-type {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 99%;
+  color: var(--primary-blue);
+}
+
+.board div p:last-of-type {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 99%;
+}
+
+.why-bloom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.why-bloom > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.why-bloom div:first-of-type p:first-of-type {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 99%;
+}
+
+.why-bloom div:first-of-type p:last-of-type {
+  width: 375px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1%;
+}
+
+.why-bloom > div:last-of-type {
+  gap: 6rem;
+}
+
+.why-bloom-text {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 34px;
+  color: var(--faq-answer);
+}
+
+.why-bloom-img {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.ceo-message {
+  padding: 0 3rem;
+}
+
+.ceo-message div:first-of-type {
+  width: 661px;
+  height: 707px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ceo-message div:first-of-type p:first-of-type {
+  width: 477px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47px;
+}
+
+.ceo-message div:first-of-type p:last-of-type {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 34px;
+}
+
+.ceo-message div:first-of-type p:last-of-type span {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.ceo-message div:first-of-type p:last-of-type span:first-of-type {
+  font-size: 48px;
+}
+
+.ceo-message div:last-of-type {
+  width: 494px;
+  height: 653px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ceo-message div:last-of-type p {
+  align-self: end;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 101%;
+}
+
+.ceo-message div:last-of-type p span {
+  font-size: 22px;
+  font-weight: 300;
+}
+
 /* mobile view */
 @media (max-width: 768px) {
   .embla__slide {
