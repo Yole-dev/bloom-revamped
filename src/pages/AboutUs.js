@@ -17,7 +17,6 @@ import image4 from "../assets/about_us/aboutImage4.png";
 import image5 from "../assets/about_us/aboutImage5.png";
 import image6 from "../assets/about_us/aboutImage6.png";
 import image7 from "../assets/about_us/aboutImage7.png";
-import { section } from "motion/react-client";
 
 export default function AboutUs() {
   return (
@@ -61,6 +60,7 @@ function MainSection() {
       <ProjectsBoard />
       <WhyBloom />
       <MessageFromCeo />
+      <MeetTheTeam />
     </section>
   );
 }
@@ -238,5 +238,94 @@ function MessageFromCeo() {
         </div>
       </Box>
     </ComponentAnimation>
+  );
+}
+
+function MeetTheTeam() {
+  return (
+    <ComponentAnimation className="meet-the-team">
+      <div>
+        <p>Let's Meet Our Team</p>
+
+        <p>
+          Meet the awesome team making things happen at Bloom—creative,
+          passionate, and ready to bring your ideas to life!
+        </p>
+      </div>
+
+      <TheTeam />
+    </ComponentAnimation>
+  );
+}
+
+function TheTeam() {
+  const pastCompany = "Used to work at IBM but quit because of bloom";
+
+  const socialIcons = [
+    <ion-icon name="logo-twitter"></ion-icon>,
+    <ion-icon name="logo-facebook"></ion-icon>,
+    <ion-icon name="logo-linkedin"></ion-icon>,
+  ];
+
+  const teamMember = [
+    {
+      img: image4,
+      name: "James Felix",
+      position: "Founder and CEO",
+      pastCompany: `${pastCompany}`,
+    },
+    {
+      img: image5,
+      name: "Rabid Zainab",
+      position: "Team Lead",
+      pastCompany: `${pastCompany}`,
+    },
+    {
+      img: image6,
+      name: "Christiana Dave",
+      position: "Product Designer",
+      pastCompany: `${pastCompany}`,
+    },
+    {
+      img: image7,
+      name: "Lawrence Luke",
+      position: "Flutter Developer",
+      pastCompany: `${pastCompany}`,
+    },
+    {
+      img: image5,
+      name: "Julius Ozima",
+      position: "Brand Designer",
+      pastCompany: `${pastCompany}`,
+    },
+    {
+      img: image6,
+      name: "Rachel Richards",
+      position: "Frontend Developer",
+      pastCompany: `${pastCompany}`,
+    },
+  ];
+  return (
+    <section className="team-grid">
+      {teamMember.map((member) => (
+        <ComponentAnimation className="member-details" key={member.name}>
+          <div>
+            <img src={member.img} alt={member.name} />
+            <p className="member-name">{member.name}</p>
+            <p className="member-role">{member.position}</p>
+          </div>
+
+          <div className="member-socials-container">
+            <p>{member.pastCompany}</p>
+
+            <div className="member-socials">
+              {socialIcons.map((icon, i) => (
+                <span key={i}>{icon}</span>
+              ))}
+            </div>
+          </div>
+        </ComponentAnimation>
+      ))}
+    </section>
   );
 }

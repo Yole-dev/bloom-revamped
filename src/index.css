@@ -1206,13 +1206,104 @@ button:focus {
 .ceo-message div:last-of-type p {
   align-self: end;
   font-size: 28px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 101%;
 }
 
 .ceo-message div:last-of-type p span {
   font-size: 22px;
   font-weight: 300;
+}
+
+.meet-the-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.meet-the-team > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.meet-the-team > div p:first-of-type {
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 99%;
+}
+
+.meet-the-team > div p:last-of-type {
+  width: 417px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1%;
+}
+
+.team-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 3rem;
+}
+
+.member-details {
+  width: 280px;
+  height: 319px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 0 1rem var(--faint-border);
+}
+
+.member-details > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.member-name {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 35px;
+  color: var(--primary-black);
+}
+
+.member-role {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 35px;
+  color: var(--primary-orange);
+}
+
+.member-socials-container {
+  font-size: 14.56px;
+  font-weight: 300;
+  line-height: 18.72px;
+  letter-spacing: 1%;
+  text-align: center;
+  color: #707070;
+}
+
+.member-socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.member-socials ion-icon {
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* mobile view */
