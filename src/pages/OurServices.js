@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 // imported animation components
 import PageAnimation from "../components/PageAnimation";
 import ComponentAnimation from "../components/ComponentAnimation";
@@ -16,7 +19,6 @@ import serviceImage3 from "../assets/our_services/service_image3.png";
 import serviceImage4 from "../assets/our_services/service_image4.png";
 import serviceImage5 from "../assets/our_services/service_image5.png";
 import serviceImage6 from "../assets/our_services/service_image6.png";
-import { useState } from "react";
 
 const faqs = [
   {
@@ -213,7 +215,7 @@ function OurServiceSection() {
               borderRadius={37}
               background="#FF6016"
             >
-              Contact Us
+              <Link to="/contactus">Contact Us</Link>
             </Button>
           </div>
         </div>

@@ -1,3 +1,6 @@
+//Import react router functionality
+import { Link } from "react-router-dom";
+
 // Imported animation component
 import ComponentAnimation from "../components/ComponentAnimation";
 
@@ -21,7 +24,7 @@ export default function RequestForCallSection() {
           background="#ffffff"
           color="#141414"
         >
-          Request A Free Call
+          <Link to="/requestacall">Request A Free Call</Link>
           <CircleButton
             background="#ff6016"
             width={46.07}

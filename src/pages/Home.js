@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // imported carousel library
 import useEmblaCarousel from "embla-carousel-react";
@@ -75,7 +76,7 @@ function HeroSection() {
                 fontWeight={400}
                 background="#ff6016"
               >
-                Know more
+                <Link to="/ourservices">Know more</Link>
                 <ion-icon name="arrow-forward-outline"></ion-icon>
               </Button>
             </div>
@@ -166,7 +167,7 @@ function ServicesPortfolio() {
               className="service-portfolio-footer-btn"
               cursor="pointer"
             >
-              All Work
+              <Link to="/portfolio">All Work</Link>
             </CircleButton>
 
             <p>

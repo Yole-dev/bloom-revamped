@@ -11,6 +11,7 @@ import Branding from "./pages/Branding";
 import WebDevelopment from "./pages/WebDevelopment";
 import UiUx from "./pages/UiUx";
 import Ecommerce from "./pages/Ecommerce";
+import RequestACall from "./pages/RequestACall";
 
 export default function App() {
   return (
@@ -99,6 +100,15 @@ export default function App() {
             element={
               <Layout>
                 <Ecommerce />
+              </Layout>
+            }
+          />
+
+          <Route
+            path="/requestacall"
+            element={
+              <Layout>
+                <RequestACall />
               </Layout>
             }
           />
