@@ -40,7 +40,9 @@ function Header() {
           <NavList />
         </ul>
 
-        <Button />
+        <Button>
+          <Link to="/contactus">Let's talk</Link>
+        </Button>
       </div>
     </div>
   );
@@ -115,7 +117,8 @@ function FooterHeroTexts() {
         height={37.66}
         borderRadius={62.77}
       >
-        Let's talk
+        <Link to="/contactus">Let's talk</Link>
+
         <CircleButton
           height={27.62}
           width={27.62}

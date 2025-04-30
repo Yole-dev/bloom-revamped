@@ -1,3 +1,7 @@
+function handleClick(e) {
+  e.preventDefault();
+}
+
 export default function Button({
   children,
   width = 174,
@@ -10,7 +14,6 @@ export default function Button({
   alignItems = "center",
   justifyContent = "center",
   gap = 0.5,
-  onClick = {},
   className = "",
 }) {
   const btnStyle = {
@@ -30,7 +33,7 @@ export default function Button({
   };
 
   return (
-    <button style={btnStyle} onClick={onClick} className={className}>
+    <button style={btnStyle} onClick={handleClick} className={className}>
       {children ? children : "Let's talk"}
     </button>
   );
