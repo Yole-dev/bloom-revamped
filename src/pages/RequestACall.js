@@ -13,9 +13,13 @@ import image1 from "../assets/request_for_a_call/image1.png";
 
 export default function RequestACall() {
   return (
-    <PageAnimation className="request-us-container">
-      <HeaderSection />
-      <MainSection />
+    <PageAnimation className="request-us-main-container">
+      <div className="request-us-container">
+        <HeaderSection />
+        <MainSection />
+      </div>
+
+      <ClaimFreeCallSection />
     </PageAnimation>
   );
 }
@@ -93,5 +97,11 @@ function CallBookingSection() {
 
       <RightComponentAnimation></RightComponentAnimation>
     </>
+  );
+}
+
+function ClaimFreeCallSection() {
+  return (
+    <ComponentAnimation className="claim-free-call-section"></ComponentAnimation>
   );
 }

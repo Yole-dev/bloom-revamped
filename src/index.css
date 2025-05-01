@@ -1518,6 +1518,14 @@ textarea:focus {
 
 /* STYLES FOR REQUEST FOR A CALL PAGE */
 
+.request-us-main-container {
+  width: 100svw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+}
+
 .request-us-container {
   display: flex;
   flex-direction: column;
@@ -1622,6 +1630,13 @@ textarea:focus {
   font-weight: 300;
   line-height: 33.4px;
   padding: 0 1.2rem;
+}
+
+.claim-free-call-section {
+  width: 100svw;
+  height: 810px;
+  background: var(--primary-black);
+  margin-bottom: 3rem;
 }
 
 /* mobile view */
