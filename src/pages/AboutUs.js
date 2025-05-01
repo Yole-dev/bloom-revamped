@@ -3,6 +3,7 @@ import ComponentAnimation from "../components/ComponentAnimation";
 import PageAnimation from "../components/PageAnimation";
 import LeftComponentAnimation from "../components/LeftComponentAnimation";
 import RightComponentAnimation from "../components/RightComponentAnimation";
+import TextAnimation from "../components/TextAnimation";
 
 // imported reusable component
 import CircleButton from "../components/Circlebtn";
@@ -134,21 +135,45 @@ function ProjectsBoard() {
       >
         <div className="board">
           <div>
-            <p>200+</p>
+            <p>
+              <TextAnimation
+                text={200}
+                duration={4}
+                color="#0755e9"
+                animationType="count"
+              />
+              +
+            </p>
             <p>
               Project <br /> Completed
             </p>
           </div>
 
           <div>
-            <p>150+</p>
+            <p>
+              <TextAnimation
+                text={150}
+                duration={5}
+                color="#0755e9"
+                animationType="count"
+              />
+              +
+            </p>
             <p>
               Project <br /> Completed
             </p>
           </div>
 
           <div>
-            <p>50+</p>
+            <p>
+              <TextAnimation
+                text={50}
+                duration={6}
+                color="#0755e9"
+                animationType="count"
+              />
+              +
+            </p>
             <p>
               Project <br /> Review
             </p>

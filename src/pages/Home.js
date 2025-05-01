@@ -9,6 +9,7 @@ import PageAnimation from "../components/PageAnimation";
 import ComponentAnimation from "../components/ComponentAnimation";
 import RightComponentAnimation from "../components/RightComponentAnimation";
 import LeftComponentAnimation from "../components/LeftComponentAnimation";
+import TextAnimation from "../components/TextAnimation";
 
 // imported reusable button component
 import CircleButton from "../components/Circlebtn";
@@ -39,7 +40,14 @@ function HeroSection() {
   return (
     <ComponentAnimation>
       <section className="hero-section">
-        <p className="hero-heading">Choose Bloom as your web design agency</p>
+        <p className="hero-heading">
+          <TextAnimation
+            text="Choose Bloom as your web design agency"
+            duration={4}
+            color="#141414"
+            animationType="typing"
+          />
+        </p>
         <p className="hero-text">
           Provide top quality service with unlimited revisions, dedicated to
           helping businesses thrive through captivating and effective visuals.
