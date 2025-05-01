@@ -7,12 +7,10 @@ import LeftComponentAnimation from "../components/LeftComponentAnimation";
 // imported page components
 import CircleButton from "../components/Circlebtn";
 import Button from "../components/Button";
-import RequestForCallSection from "../components/RequestForCallSection";
 
 // imported page image
 import image1 from "../assets/contact_us/contactImage1.png";
 import { useState } from "react";
-import { number } from "motion";
 
 export default function ContactUs() {
   return (

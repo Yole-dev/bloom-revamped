@@ -1516,6 +1516,114 @@ textarea:focus {
   font-size: 24px;
 }
 
+/* STYLES FOR REQUEST FOR A CALL PAGE */
+
+.request-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  margin: 4rem 0;
+  padding: 0 2rem;
+}
+
+.request-us-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.request-us-header > p {
+  width: 505px;
+  align-self: end;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 143%;
+  color: var(--faq-answer);
+}
+
+.request-us-hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.request-us-hero p {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 127%;
+  position: relative;
+  top: 4rem;
+  left: 1.5rem;
+  margin-top: -4rem;
+}
+
+.request-us-hero-circle {
+  align-self: end;
+  position: relative;
+  bottom: 7rem;
+  right: 1rem;
+  margin-bottom: -7rem;
+}
+
+.request-our-team {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.request-our-team > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.request-our-team > div p:first-of-type {
+  width: 585px;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 99%;
+}
+
+.request-our-team > div p:first-of-type span:first-of-type {
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 127%;
+}
+
+.request-our-team > div p:first-of-type span:last-of-type {
+  color: var(--primary-orange);
+}
+
+.request-our-team > div p:last-of-type {
+  width: 589px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 1%;
+}
+
+.call-booking-box p {
+  width: 561px !important;
+  font-size: 45px !important;
+  font-weight: 400;
+  line-height: 48px !important;
+}
+
+.call-booking-box ul {
+  width: 561px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  list-style-type: decimal;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 33.4px;
+  padding: 0 1.2rem;
+}
+
 /* mobile view */
 @media (max-width: 768px) {
   .embla__slide {
