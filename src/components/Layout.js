@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import headerLogo from "../assets/header_logo.png";
 import footerLogo from "../assets/footer_logo.png";
 
@@ -10,11 +11,12 @@ import CircleButton from "./Circlebtn";
 import Button from "./Button";
 
 export default function Layout({ children }) {
-  // const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
-  // function handleNavToggle() {
-  //   setIsOpen(!isOpen);
-  // }
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <PageAnimation>
@@ -164,14 +166,6 @@ function FooterNav() {
     </div>
   );
 }
-
-// use the FooterLogo component after the image issue is fixed from rendering a blank image
-
-// function FooterLogo() {
-//   return (
-//     <img src={footerLogo} alt="white company logo" className="footer-logo" />
-//   );
-// }
 
 function FooterNavList() {
   const navItems = [
