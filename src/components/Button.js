@@ -2,6 +2,10 @@ function handleClick(e) {
   e.preventDefault();
 }
 
+function handleSubmit(e) {
+  e.preventDefault();
+}
+
 export default function Button({
   children,
   width = 174,
@@ -16,6 +20,7 @@ export default function Button({
   gap = 0.5,
   className = "",
   onClick = handleClick,
+  onSubmit = handleSubmit,
 }) {
   const btnStyle = {
     width: `${width}px`,
@@ -34,7 +39,12 @@ export default function Button({
   };
 
   return (
-    <button style={btnStyle} onClick={onClick} className={className}>
+    <button
+      style={btnStyle}
+      onClick={onClick}
+      onSubmit={onSubmit}
+      className={className}
+    >
       {children ? children : "Let's talk"}
     </button>
   );
