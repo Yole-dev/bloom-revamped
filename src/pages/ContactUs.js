@@ -77,32 +77,6 @@ function ContactForm() {
   const [contact, setContact] = useState(0);
   const [message, setMessage] = useState("");
 
-  // checkbox states
-  const [checkedServices, setCheckedServices] = useState({
-    "Web Design": false,
-    "Branding Design": false,
-    "UI/UX": false,
-    "Web Development": false,
-    Ecommerce: false,
-    Others: false,
-  });
-
-  const servicesCheck = [
-    { service: "Web Design" },
-    { service: "Branding Design" },
-    { service: "UI/UX" },
-    { service: "Web Development" },
-    { service: "Ecommerce" },
-    { service: "Others" },
-  ];
-
-  function handleCheckboxChange(service) {
-    setCheckedServices((prev) => ({
-      ...prev,
-      [service]: !prev[service],
-    }));
-  }
-
   return (
     <LeftComponentAnimation>
       <form action="#" className="contact-us-form">
@@ -160,18 +134,7 @@ function ContactForm() {
           <label>Services</label>
 
           <div className="services-grid-form">
-            {servicesCheck.map((service) => (
-              <div key={service.service} className="check-service-container">
-                <input
-                  type="checkbox"
-                  name={service.service}
-                  id={service.service}
-                  checked={checkedServices[service.service]}
-                  onChange={() => handleCheckboxChange(service.service)}
-                />
-                <label htmlFor={service.service}>{service.service}</label>
-              </div>
-            ))}
+            <CheckBoxs />
           </div>
         </div>
 
@@ -187,5 +150,50 @@ function ContactForm() {
         </Button>
       </form>
     </LeftComponentAnimation>
+  );
+}
+
+function CheckBoxs() {
+  // checkbox states
+  const [checkedServices, setCheckedServices] = useState({
+    "Web Design": false,
+    "Branding Design": false,
+    "UI/UX": false,
+    "Web Development": false,
+    Ecommerce: false,
+    Others: false,
+  });
+
+  const servicesCheck = [
+    { service: "Web Design" },
+    { service: "Branding Design" },
+    { service: "UI/UX" },
+    { service: "Web Development" },
+    { service: "Ecommerce" },
+    { service: "Others" },
+  ];
+
+  function handleCheckboxChange(service) {
+    setCheckedServices((prev) => ({
+      ...prev,
+      [service]: !prev[service],
+    }));
+  }
+
+  return (
+    <>
+      {servicesCheck.map((service) => (
+        <div key={service.service} className="check-service-container">
+          <input
+            type="checkbox"
+            name={service.service}
+            id={service.service}
+            checked={checkedServices[service.service]}
+            onChange={() => handleCheckboxChange(service.service)}
+          />
+          <label htmlFor={service.service}>{service.service}</label>
+        </div>
+      ))}
+    </>
   );
 }
