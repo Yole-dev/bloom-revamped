@@ -7,19 +7,21 @@ import RightComponentAnimation from "../components/RightComponentAnimation";
 // imported element components
 import CircleButton from "../components/Circlebtn";
 import Box from "../components/Box";
+import Button from "../components/Button";
 
 // imported image
 import image1 from "../assets/request_for_a_call/image1.png";
 
 export default function RequestACall() {
+  const month = new Date().toLocaleString("default", { month: "long" });
   return (
     <PageAnimation className="request-us-main-container">
       <div className="request-us-container">
         <HeaderSection />
-        <MainSection />
+        <MainSection month={month} />
       </div>
 
-      <ClaimFreeCallSection />
+      <ClaimFreeCallSection month={month} />
     </PageAnimation>
   );
 }
@@ -45,13 +47,13 @@ function HeaderSection() {
   );
 }
 
-function MainSection() {
+function MainSection({ month }) {
   return (
     <ComponentAnimation className="request-our-team">
       <div>
         <p>
-          <span>Limited spots left for March - act fast</span> <br />
-          30 - Minute <span>Free</span> Straegy Session
+          <span>Limited spots left for {month} - act fast</span> <br />
+          30 - Minute <span>Free</span> Strategy Session
         </p>
 
         <p>
@@ -100,8 +102,56 @@ function CallBookingSection() {
   );
 }
 
-function ClaimFreeCallSection() {
+function ClaimFreeCallSection({ month }) {
   return (
-    <ComponentAnimation className="claim-free-call-section"></ComponentAnimation>
+    <ComponentAnimation className="claim-free-call-section">
+      <div className="claim-heading">
+        <p>Book your FREE strategy session today</p>
+        <p>Limited spotss left for {month}-act fast</p>
+      </div>
+
+      <div className="claim-text-body">
+        <p className="claim-text-heading">
+          IMPORTANT: Before You Claim Your Free Strategy Session…
+        </p>
+
+        <p className="claim-text">
+          This session isn’t for everyone—it’s for those serious about building
+          a strong brand and business, ready to invest in long term success. Our
+          CEO have limited free slots each month, and they fill up fast. While
+          these sessions are free for now, that won’t last forever.
+        </p>
+
+        <div className="next-steps">
+          <p className="claim-text-heading">What's next ?</p>
+
+          <ul className="claim-text">
+            <li>Click the button below and fill out a simple form.</li>
+            <li>
+              We’ll discuss your business goals and craft a tailored strategy.
+            </li>
+          </ul>
+        </div>
+
+        <p className="claim-text">
+          I’m confident we can transform your results—our track record speaks
+          for itself. That’s why I’m offering N50,000 worth of my time and
+          expertise at no cost to you.
+          <br /> Book your session now before spots run out
+        </p>
+
+        <Button
+          width={306}
+          height={67}
+          background="#FF6016"
+          fontSize={20}
+          fontWeight={400}
+          borderRadius={35}
+          className="claim-button"
+        >
+          Claim now
+        </Button>
+      </div>
+    </ComponentAnimation>
   );
 }

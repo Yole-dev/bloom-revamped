@@ -1519,7 +1519,7 @@ textarea:focus {
 /* STYLES FOR REQUEST FOR A CALL PAGE */
 
 .request-us-main-container {
-  width: 100svw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1635,8 +1635,78 @@ textarea:focus {
 .claim-free-call-section {
   width: 100svw;
   height: 810px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 2rem;
   background: var(--primary-black);
   margin-bottom: 3rem;
+  color: var(--primary-white);
+}
+
+.claim-free-call-section div {
+  width: 100%;
+}
+
+.claim-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.claim-heading p {
+  width: 477px;
+  text-align: center;
+}
+
+.claim-heading p:first-of-type {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 47px;
+}
+
+.claim-heading p:last-of-type {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 143%;
+}
+
+.claim-text-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.claim-text-heading {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 59px;
+}
+
+.claim-text {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+  list-style-type: decimal;
+}
+
+.next-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.claim-text li {
+  margin-left: 2rem;
+}
+
+.claim-button {
+  align-self: center;
 }
 
 /* mobile view */
