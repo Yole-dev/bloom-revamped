@@ -15,6 +15,7 @@ export default function Button({
   justifyContent = "center",
   gap = 0.5,
   className = "",
+  onClick = handleClick,
 }) {
   const btnStyle = {
     width: `${width}px`,
@@ -33,7 +34,7 @@ export default function Button({
   };
 
   return (
-    <button style={btnStyle} onClick={handleClick} className={className}>
+    <button style={btnStyle} onClick={onClick} className={className}>
       {children ? children : "Let's talk"}
     </button>
   );
