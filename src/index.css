@@ -1394,7 +1394,7 @@ textarea:focus {
 .contact-form-section {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
 }
 
@@ -1471,6 +1471,49 @@ textarea:focus {
 .check-service-container label {
   cursor: pointer;
   user-select: none;
+}
+
+.chat-with-us {
+  width: 380px;
+  height: 386px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.chat-with-us div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.chat-with-us div p:first-of-type {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.chat-with-us div p:last-of-type {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--faq-answer);
+  line-height: 32px;
+  letter-spacing: 1%;
+}
+
+.chat-with-us div a {
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+}
+
+.chat-with-us div span {
+  margin-right: 0.6rem;
+  color: var(--primary-black);
+  font-size: 24px;
 }
 
 /* mobile view */

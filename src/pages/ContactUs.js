@@ -65,6 +65,54 @@ function ContactFormSection() {
   return (
     <section className="contact-form-section">
       <ContactForm />
+
+      <div className="chat-with-us">
+        <div>
+          <p>Chat with us</p>
+          <p>Speak to our friendly team via live chat</p>
+        </div>
+
+        <div>
+          <a href="mailto:">
+            <span>
+              <ion-icon name="paper-plane-outline"></ion-icon>
+            </span>
+            Shoot us an email
+          </a>
+
+          <a href="#">
+            <span>
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </span>
+            Message us on WhatsApp
+          </a>
+        </div>
+
+        <div>
+          <p>Call Us</p>
+          <p>Call our team Mon - Fri from 8am to 5pm</p>
+
+          <a href="tel:+2348100000000">
+            <span>
+              <ion-icon name="call-outline"></ion-icon>
+            </span>
+            +234 000-000-0000
+          </a>
+        </div>
+
+        <div>
+          <p>Visit Us</p>
+          <p>Chat with us in person at our Bloom HQ</p>
+
+          <a href="#">
+            <span>
+              <ion-icon name="location-outline"></ion-icon>
+            </span>
+
+            <address>10 Bloom HQ, Lagos, Nigeria</address>
+          </a>
+        </div>
+      </div>
     </section>
   );
 }
@@ -131,7 +179,7 @@ function ContactForm() {
         </div>
 
         <div>
-          <label>Services</label>
+          <label htmlFor="services">Services</label>
 
           <div className="services-grid-form">
             <CheckBoxs />
