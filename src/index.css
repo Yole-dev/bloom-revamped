@@ -1632,6 +1632,17 @@ textarea:focus {
   padding: 0 1.2rem;
 }
 
+/* Booking Form component styles  */
+.booking-form-container {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* continuation of previous style */
+
 .claim-free-call-section {
   width: 100svw;
   height: 810px;

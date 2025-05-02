@@ -4,10 +4,11 @@ import ComponentAnimation from "../components/ComponentAnimation";
 import LeftComponentAnimation from "../components/LeftComponentAnimation";
 import RightComponentAnimation from "../components/RightComponentAnimation";
 
-// imported element components
+// imported components
 import CircleButton from "../components/Circlebtn";
 import Box from "../components/Box";
 import Button from "../components/Button";
+import BookFreeCallForm from "../components/BookingForm";
 
 // imported image
 import image1 from "../assets/request_for_a_call/image1.png";
@@ -57,9 +58,9 @@ function MainSection({ month }) {
         </p>
 
         <p>
-          Book your FREE 30 minute strategy session valued at N50,000 with no
-          obligation Let’s discuss your goals, create a solid plan, and answer
-          all your questions.
+          Book your FREE 30 minute strategy session valued at &#8358;50,000 with
+          no obligation Let’s discuss your goals, create a solid plan, and
+          answer all your questions.
         </p>
       </div>
 
@@ -97,7 +98,9 @@ function CallBookingSection() {
         </Box>
       </LeftComponentAnimation>
 
-      <RightComponentAnimation></RightComponentAnimation>
+      <RightComponentAnimation className="booking-form-container">
+        <BookFreeCallForm />
+      </RightComponentAnimation>
     </>
   );
 }
@@ -135,7 +138,7 @@ function ClaimFreeCallSection({ month }) {
 
         <p className="claim-text">
           I’m confident we can transform your results—our track record speaks
-          for itself. That’s why I’m offering N50,000 worth of my time and
+          for itself. That’s why I’m offering &#8358;50,000 worth of my time and
           expertise at no cost to you.
           <br /> Book your session now before spots run out
         </p>
