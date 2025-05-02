@@ -1,18 +1,29 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import Button from "./Button";
 
 export default function BookFreeCallForm() {
+  const [startDate, setStartDate] = useState(new Date());
+
+  function handleNextStep(e) {
+    e.preventDefault();
+    return;
+  }
+
   return (
     <form action="">
-      <CustomCalendarContainer>
-        <CustomDatePicker />
+      <CustomCalendarContainer
+        className="disappear"
+        onNextStep={handleNextStep}
+      >
+        <CustomDatePicker startDate={startDate} setStartDate={setStartDate} />
       </CustomCalendarContainer>
     </form>
   );
 }
 
-function CustomCalendarContainer({ className, children }) {
+function CustomCalendarContainer({ className, children, onNextStep }) {
   return (
     <div className="calendar-wrapper">
       <div className="custom-calendar-container">
@@ -34,13 +45,24 @@ function CustomCalendarContainer({ className, children }) {
 
         <div className="calendar-body">{children}</div>
       </div>
+
+      <Button
+        className="booking-first-button"
+        width={333}
+        height={73}
+        background="#FF6016"
+        fontSize={22}
+        fontWeight={400}
+        borderRadius={38}
+        onClick={onNextStep}
+      >
+        Next
+      </Button>
     </div>
   );
 }
 
-function CustomDatePicker({ className }) {
-  const [startDate, setStartDate] = useState(new Date());
-
+function CustomDatePicker({ className, startDate, setStartDate }) {
   const maxDate = new Date();
   maxDate.setMonth(maxDate.getMonth() + 6);
 
