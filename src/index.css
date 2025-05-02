@@ -1664,6 +1664,10 @@ textarea:focus {
 
 .calendar-header-text p {
   width: 470px !important;
+  font-size: 23px !important;
+  font-weight: 400 !important;
+  line-height: 100%;
+  text-align: center;
 }
 
 .calendar-header {
@@ -1700,6 +1704,18 @@ textarea:focus {
 .react-datepicker {
   width: 100% !important;
   max-width: 470px;
+}
+
+.react-datepicker__header {
+  padding: 1.5rem 0 !important;
+}
+
+.react-datepicker__current-month {
+  color: var(--primary-blue) !important;
+  font-size: 24px !important;
+  font-weight: 400 !important;
+  line-height: 100% !important;
+  padding: 0.7rem 0 !important;
 }
 
 .react-datepicker__month-container {
