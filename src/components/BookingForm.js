@@ -143,13 +143,20 @@ function TimeStep({
   return (
     <div className="clock-wrapper">
       <div className="custom-clock-container">
-        <div className="selected-date">
-          <p>{selectedDate?.toLocaleString()}</p>
-        </div>
+        <p className="selected-date">
+          {selectedDate?.toLocaleString("en-US", {
+            weekday: "long",
+            month: "long",
+            day: "numeric",
+            year: "numeric",
+          })}
+        </p>
 
-        <div className="clock-header">
-          <p>Select Time</p>
-          <p></p>
+        <div className="clock-header-text">
+          <p>Select a Time</p>
+          <p>Duration: 35mins</p>
+
+          <p>Available time: 11:00AM - 16:00PM</p>
         </div>
 
         <div className="clock-body">{children}</div>
@@ -202,7 +209,7 @@ function CustomTimePicker({ control }) {
           showTimeSelect
           showTimeSelectOnly
           timeFormat="HH : mm"
-          timeIntervals={5}
+          timeIntervals={15}
           dateFormat="h:mm aa"
           minTime={new Date().setHours(11, 0)}
           maxTime={new Date().setHours(16, 0)}
@@ -210,6 +217,7 @@ function CustomTimePicker({ control }) {
             new Date().setHours(12, 0), // Noon
             new Date().setHours(13, 0), // 1PM
           ]}
+          inline
         />
       )}
     />
