@@ -8,6 +8,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 // imported button component
 import Button from "./Button";
+import { minutesInHour } from "date-fns/constants";
 
 export default function BookFreeCallForm() {
   const [step, setStep] = useState(1);
@@ -62,6 +63,8 @@ export default function BookFreeCallForm() {
           control={control}
           onBack={prevStep}
           formValid={!!formValues.name && !!formValues.email}
+          selectedDate={formValues.date}
+          selectedTime={formValues.time}
         ></UserDetailsStep>
       )}
     </form>
@@ -154,7 +157,7 @@ function TimeStep({
 
         <div className="clock-header-text">
           <p>Select a Time</p>
-          <p>Duration: 35mins</p>
+          <p>Duration: 30mins</p>
 
           <p>Available time: 11:00AM - 16:00PM</p>
         </div>
@@ -225,6 +228,102 @@ function CustomTimePicker({ control }) {
   );
 }
 
-function UserDetailsStep({ control, onBack, formValid }) {
+function UserDetailsStep({
+  control,
+  onBack,
+  selectedTime,
+  selectedDate,
+  formValid,
+}) {
+  return (
+    <div className="user-details-wrapper">
+      <div className="user-details-container">
+        <div className="user-details-header-texts">
+          <p>
+            <span>
+              <ion-icon name="time-outline"></ion-icon>
+            </span>
+            30 mins
+          </p>
+
+          <p>
+            <span>
+              <ion-icon name="videocam-outline"></ion-icon>
+            </span>
+            Web conferencing details provided upon confirmation.
+          </p>
+
+          <p>
+            <span>
+              <ion-icon name="calendar-clear-outline"></ion-icon>
+            </span>
+            {selectedTime.toLocaleTimeString("en-US", {
+              hour: "numeric",
+              minute: "2-digit",
+              hour12: true,
+            })}{" "}
+            -{" "}
+            {new Date(selectedTime.getTime() + 30 * 60000).toLocaleTimeString(
+              "en-US",
+              {
+                hour: "numeric",
+                minute: "2-digit",
+                hour12: true,
+              }
+            )}
+            , {"  "}
+            {selectedDate?.toLocaleString("en-US", {
+              weekday: "long",
+              month: "long",
+              day: "numeric",
+              year: "numeric",
+            })}{" "}
+            .
+          </p>
+
+          <p>
+            <span>
+              <ion-icon name="earth-outline"></ion-icon>
+            </span>
+            West Africa Time
+          </p>
+        </div>
+      </div>
+
+      <div className="user-details-buttons">
+        <Button
+          className="booking-back-button"
+          width={160}
+          height={73}
+          background="#FFF"
+          color="#FF6016"
+          fontSize={22}
+          fontWeight={400}
+          borderRadius={38}
+          border="1px solid #FF6016"
+          onClick={onBack}
+        >
+          Back
+        </Button>
+
+        <Button
+          className="booking-submit-button"
+          width={220}
+          height={73}
+          background="#FF6016"
+          fontSize={22}
+          fontWeight={400}
+          borderRadius={38}
+          type="submit"
+          disabled={!formValid}
+        >
+          Schedule Call
+        </Button>
+      </div>
+    </div>
+  );
+}
+
+function UserFormDetails() {
   return;
 }

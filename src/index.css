@@ -1840,6 +1840,45 @@ textarea:focus {
   align-items: center;
 }
 
+.user-details-wrapper {
+  width: 550px;
+  height: 1373px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.user-details-header-texts {
+  width: 418px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.user-details-header-texts p {
+  display: flex;
+  align-items: center;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  line-height: 120% !important;
+}
+
+.user-details-header-texts span {
+  padding-right: 1rem;
+  color: var(--primary-blue) !important;
+}
+
+.user-details-header-texts span ion-icon {
+  font-size: 25px !important;
+}
+
+.user-details-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /* continuation of previous style */
 
 .claim-free-call-section {
