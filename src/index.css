@@ -1780,7 +1780,7 @@ textarea:focus {
 }
 
 .clock-header-text p:first-of-type,
-p:nth-child(2) {
+.clock-header-text p:nth-child(2) {
   color: var(--faq-answer);
   font-size: 19px !important;
   font-weight: 300 !important;
@@ -1794,12 +1794,43 @@ p:nth-child(2) {
   margin-top: 0.5rem;
 }
 
-.react-datepicker__time-container {
-  width: 100%;
+.custom-time-picker {
+  width: 300px !important;
 }
 
-.custom-time-picker {
-  width: 100%;
+.react-datepicker__time-container {
+  width: 544px !important;
+}
+
+.react-datepicker__header--time {
+  display: none;
+}
+
+.react-datepicker__time-list {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+  padding: 0;
+}
+
+.react-datepicker__time-list-item {
+  color: var(--primary-blue);
+  font-size: 23px;
+  line-height: 35px;
+  letter-spacing: 0.3%;
+  text-align: center;
+}
+
+.react-datepicker__time-box {
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
+.react-datepicker__time-list-item--selected {
+  background-color: #e4eff0 !important;
+  color: var(--primary-blue) !important;
+  font-weight: 300 !important;
 }
 
 .time-step-buttons {

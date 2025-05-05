@@ -208,9 +208,9 @@ function CustomTimePicker({ control }) {
           onChange={field.onChange}
           showTimeSelect
           showTimeSelectOnly
-          timeFormat="HH : mm"
+          timeFormat="HH  :  mm"
           timeIntervals={15}
-          dateFormat="h:mm aa"
+          dateFormat="h  :  mm aa"
           minTime={new Date().setHours(11, 0)}
           maxTime={new Date().setHours(16, 0)}
           excludeTimes={[
@@ -218,6 +218,7 @@ function CustomTimePicker({ control }) {
             new Date().setHours(13, 0), // 1PM
           ]}
           inline
+          className="custom-time-picker"
         />
       )}
     />
