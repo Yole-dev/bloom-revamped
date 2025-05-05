@@ -31,6 +31,8 @@ export default function Branding() {
         </MainSection>
       </div>
 
+      <ShamaBrandSection />
+
       <div className="branding-sub-container">
         <RequestForCallSection />
       </div>
@@ -74,7 +76,7 @@ function MainSection({ children }) {
 
 function BrandingGoals() {
   return (
-    <section className="branding-goals">
+    <ComponentAnimation className="branding-goals">
       <p>Whatever your branding goals are, Bloom will help you succeed.</p>
 
       <LeftComponentAnimation className="branding-goals-content">
@@ -131,6 +133,40 @@ function BrandingGoals() {
           <ion-icon name="arrow-forward-outline"></ion-icon>
         </span>
       </Button>
-    </section>
+    </ComponentAnimation>
+  );
+}
+
+function ShamaBrandSection() {
+  return (
+    <ComponentAnimation className="shama-brand-section">
+      <div className="shama-brand-heading">
+        <p>SHAMA</p>
+        <p>Branding eCommerce Website Design for a Luxury Selfcare Brand.</p>
+      </div>
+
+      <img src={image2} alt="shama brand website preview" />
+
+      <div className="shama-brand-text">
+        <p>
+          We worked with the founder of SHAMA to bring her brand idea to life.
+          Bloom created the logo, explored concepts for collateral and packaging
+          materials, and finally, built a modern ecommerce website for the
+          brand.
+        </p>
+
+        <Button
+          width={163}
+          height={49}
+          background="#EE4200"
+          borderRadius={31}
+          fontSize={15}
+          fontWeight={400}
+          className="shama-brand-btn"
+        >
+          View Case Study
+        </Button>
+      </div>
+    </ComponentAnimation>
   );
 }

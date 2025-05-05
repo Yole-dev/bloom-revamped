@@ -2200,6 +2200,55 @@ textarea:focus {
   border-radius: 100%;
 }
 
+.shama-brand-section {
+  width: 100svw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.shama-brand-heading {
+  width: 1214px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.shama-brand-heading p:first-of-type {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 127%;
+}
+
+.shama-brand-heading p:last-of-type {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 99%;
+}
+
+.shama-brand-section img {
+  width: inherit;
+}
+
+.shama-brand-text {
+  width: 1236px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.shama-brand-text p {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 42px;
+}
+
+.shama-brand-btn {
+  align-self: start;
+}
+
 /* mobile view */
 @media (max-width: 768px) {
   .embla__slide {
