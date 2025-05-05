@@ -9,6 +9,7 @@ import "react-datepicker/dist/react-datepicker.css";
 // imported button component
 import Button from "./Button";
 import { minutesInHour } from "date-fns/constants";
+import { div } from "motion/react-client";
 
 export default function BookFreeCallForm() {
   const [step, setStep] = useState(1);
@@ -34,11 +35,7 @@ export default function BookFreeCallForm() {
     // step 1 (Date Selection)
     <form onSubmit={handleSubmit(onSubmit)}>
       {step === 1 && (
-        <CalendarStep
-          control={control}
-          onNext={nextStep}
-          dateSelected={!!formValues.date}
-        >
+        <CalendarStep onNext={nextStep} dateSelected={!!formValues.date}>
           <CustomDatePicker control={control} />
         </CalendarStep>
       )}
@@ -47,7 +44,6 @@ export default function BookFreeCallForm() {
 
       {step === 2 && (
         <TimeStep
-          control={control}
           onNext={nextStep}
           onBack={prevStep}
           timeSelected={!!formValues.time}
@@ -60,18 +56,19 @@ export default function BookFreeCallForm() {
       {/* step 3 (User Details) */}
       {step === 3 && (
         <UserDetailsStep
-          control={control}
           onBack={prevStep}
           formValid={!!formValues.name && !!formValues.email}
           selectedDate={formValues.date}
           selectedTime={formValues.time}
-        ></UserDetailsStep>
+        >
+          <UserFormDetails control={control} />
+        </UserDetailsStep>
       )}
     </form>
   );
 }
 
-function CalendarStep({ className, children, onNext, control, dateSelected }) {
+function CalendarStep({ className, children, onNext, dateSelected }) {
   return (
     <div className="calendar-wrapper">
       <div className="custom-calendar-container">
@@ -135,14 +132,7 @@ function CustomDatePicker({ className, control }) {
   );
 }
 
-function TimeStep({
-  children,
-  control,
-  onNext,
-  onBack,
-  timeSelected,
-  selectedDate,
-}) {
+function TimeStep({ children, onNext, onBack, timeSelected, selectedDate }) {
   return (
     <div className="clock-wrapper">
       <div className="custom-clock-container">
@@ -229,6 +219,7 @@ function CustomTimePicker({ control }) {
 }
 
 function UserDetailsStep({
+  children,
   control,
   onBack,
   selectedTime,
@@ -288,6 +279,22 @@ function UserDetailsStep({
             West Africa Time
           </p>
         </div>
+
+        <div className="user-details-form-container">
+          <p>Description</p>
+          <p>
+            In this Virtual Meeting, we’ll be discussing your business, goals,
+            and how we can help. We’ll also answer any questions you have.
+          </p>
+
+          {children}
+
+          <p>
+            By proceeding, you confirm that you have read and agree to 
+            <a href="#">Calendly's Terms of Use</a> and 
+            <a href="#">Privacy Notice</a>.
+          </p>
+        </div>
       </div>
 
       <div className="user-details-buttons">
@@ -324,6 +331,147 @@ function UserDetailsStep({
   );
 }
 
-function UserFormDetails() {
-  return;
+function UserFormDetails({ control }) {
+  const servicesOptions = [
+    "Web Design",
+    "Branding Design",
+    "UI/UX",
+    "Web Development",
+    "Ecommerce",
+    "Others",
+  ];
+
+  return (
+    <div className="user-details-form">
+      <div className="user-grid-form">
+        <div>
+          <label htmlFor="firstName">First name</label>
+          <Controller
+            name="firstName"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="text"
+                placeholder="First name"
+                className="form-input"
+              />
+            )}
+          />
+        </div>
+
+        <div>
+          <label htmlFor="lastName">Last name</label>
+          <Controller
+            name="lastName"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <input
+                {...field}
+                type="text"
+                placeholder="Last name"
+                className="form-input"
+              />
+            )}
+          />
+        </div>
+      </div>
+
+      <div>
+        <label htmlFor="email">Email address</label>
+        <Controller
+          name="email"
+          control={control}
+          defaultValue=""
+          render={({ field }) => (
+            <input
+              {...field}
+              type="email"
+              placeholder="Email address"
+              className="form-input"
+            />
+          )}
+        />
+      </div>
+
+      <div>
+        <label htmlFor="phone">Phone number</label>
+        <Controller
+          name="phone"
+          control={control}
+          defaultValue=""
+          render={({ field }) => (
+            <input
+              {...field}
+              type="tel"
+              placeholder="012 3456 7890"
+              maxLength={11}
+              className="form-input"
+            />
+          )}
+        />
+      </div>
+
+      <div>
+        <label htmlFor="message">Message</label>
+        <Controller
+          name="message"
+          control={control}
+          defaultValue=""
+          render={({ field }) => (
+            <textarea
+              {...field}
+              placeholder="send us a message"
+              maxLength={1500}
+              className="form-textarea"
+            />
+          )}
+        />
+      </div>
+
+      <div>
+        <label htmlFor="services">Services</label>
+        <div className="user-services-grid-form">
+          {servicesOptions.map((service) => (
+            <div key={service} className="user-check-service-container">
+              <Controller
+                name={`services.${service}`}
+                control={control}
+                defaultValue={false}
+                render={({ field }) => (
+                  <input
+                    type="checkbox"
+                    id={service}
+                    checked={field.value}
+                    onChange={(e) => field.onChange(e.target.checked)}
+                  />
+                )}
+              />
+              <label htmlFor={service}> {service} </label>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <label htmlFor="budget">What's your budget for this project?</label>
+        <Controller
+          name="budget"
+          control={control}
+          defaultValue=""
+          render={({ field }) => (
+            <input
+              {...field}
+              type="number"
+              placeholder=""
+              maxLength={11}
+              className="form-input"
+            />
+          )}
+        />
+      </div>
+    </div>
+  );
 }
