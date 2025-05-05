@@ -2072,6 +2072,7 @@ textarea:focus {
   flex-direction: column;
   align-items: center;
   padding: 0 2rem;
+  gap: 3rem;
 }
 
 .branding-header {
@@ -2080,13 +2081,23 @@ textarea:focus {
   gap: 1rem;
 }
 
-.branding-header > p {
+.branding-header > p:first-of-type {
   width: 583px;
   align-self: end;
   font-size: 18px;
   font-weight: 300;
   line-height: 143%;
   color: var(--faq-answer);
+}
+
+.branding-header > p:last-of-type {
+  width: 100%;
+  align-self: center;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 42.25px;
+  margin-top: 1.5rem;
 }
 
 .branding-hero {
@@ -2110,6 +2121,83 @@ textarea:focus {
   bottom: 7rem;
   right: 1rem;
   margin-bottom: -7rem;
+}
+
+.main-section-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.branding-goals {
+  width: 712px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.branding-goals > p {
+  width: 640px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 116%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.branding-goals-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.branding-goals-content > p {
+  width: 672px;
+}
+
+.branding-goals-content > p:first-of-type {
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 99%;
+  color: var(--primary-black);
+}
+
+.branding-goals-content > p:last-of-type {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 34px;
+  color: var(--faq-answer);
+}
+
+.branding-goals-content:hover {
+  padding-left: 1rem;
+  border-left: solid 2px var(--primary-blue);
+}
+
+.branding-goals-content:hover > p:first-of-type {
+  color: var(--primary-blue);
+}
+
+.branding-goals-content:hover > p:last-of-type {
+  color: var(--primary-black);
+}
+
+.lets-talk-btn {
+  margin-top: 2rem;
+}
+
+.lets-talk-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-white);
+  color: var(--primary-orange);
+  border-radius: 100%;
 }
 
 /* mobile view */
