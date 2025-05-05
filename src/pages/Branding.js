@@ -26,6 +26,7 @@ export default function Branding() {
     <PageAnimation className="branding-main-container">
       <div className="branding-sub-container">
         <HeaderSection />
+
         <MainSection>
           <BrandingGoals />
         </MainSection>
@@ -34,6 +35,10 @@ export default function Branding() {
       <ShamaBrandSection />
 
       <div className="branding-sub-container">
+        <MainSection>
+          <BrandingApproachSection />
+        </MainSection>
+
         <RequestForCallSection />
       </div>
     </PageAnimation>
@@ -167,6 +172,88 @@ function ShamaBrandSection() {
           View Case Study
         </Button>
       </div>
+    </ComponentAnimation>
+  );
+}
+
+function BrandingApproachSection() {
+  return (
+    <ComponentAnimation className="branding-approach-container">
+      <div className="branding-approach-header">
+        <p>The strategic approach to branding design</p>
+        <p>
+          Let’s take a closer look at how companies come up with their unique
+          logos, colors, and messages that help people recognize and remember
+          them.
+        </p>
+      </div>
+
+      <LeftComponentAnimation className="branding-approach-content">
+        <img src={image3} alt="" />
+        <div className="branding-approach-text-content">
+          <p>Step 1 – Creation of Your Brand Strategy</p>
+          <p>
+            Firstly we kick things off by diving into your business, goals, what
+            makes you special, and who you're trying to reach. Once we've got
+            that down, we'll polish up your brand message to make sure it
+            shines.
+          </p>
+        </div>
+      </LeftComponentAnimation>
+
+      <RightComponentAnimation className="branding-approach-content branding-approach-content-reverse">
+        <img src={image4} alt="" />
+        <div className="branding-approach-text-content">
+          <p>Step 2 – Design of your Brand Identity</p>
+          <p>
+            In this step, we start crafting your logo. Using insights from
+            earlier, we explore concepts, colors, and fonts to offer brand
+            identity options. Once finalized, the logo is delivered in various
+            formats for both print and digital use.
+          </p>
+        </div>
+      </RightComponentAnimation>
+
+      <LeftComponentAnimation className="branding-approach-content">
+        <img src={image5} alt="" />
+        <div className="branding-approach-text-content">
+          <p>Step 3 – Collateral Design</p>
+          <p>
+            After finalizing your logo, we proceed to create all necessary
+            stationery and collateral. This encompasses business cards,
+            letterhead, banners, flyers, invoices, icons, social media covers,
+            email signatures, and more – everything aligned with your brand
+            identity.
+          </p>
+        </div>
+      </LeftComponentAnimation>
+
+      <RightComponentAnimation className="branding-approach-content branding-approach-content-reverse">
+        <img src={image6} alt="" />
+        <div className="branding-approach-text-content">
+          <p>Step 4 – Brand Guideline Development</p>
+          <p>
+            Lastly, we compile your brand guidelines, a vital document outlining
+            your brand identity elements, including fonts and color codes. It
+            also provides clear instructions on proper logo usage.
+          </p>
+        </div>
+      </RightComponentAnimation>
+
+      <Button
+        width={300}
+        height={103}
+        borderRadius={54}
+        background="#FF6016"
+        fontSize={31}
+        fontWeight={400}
+        className="lets-talk-btn"
+      >
+        Let's Talk
+        <span className="lets-talk-icon">
+          <ion-icon name="arrow-forward-outline"></ion-icon>
+        </span>
+      </Button>
     </ComponentAnimation>
   );
 }
