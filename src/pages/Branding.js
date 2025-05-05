@@ -23,8 +23,8 @@ import image8 from "../assets/branding/image8.png";
 
 export default function Branding() {
   return (
-    <PageAnimation className="branding-main-container">
-      <div className="branding-sub-container">
+    <PageAnimation className="sub-service-main-container">
+      <div className="sub-service-sub-container">
         <HeaderSection />
 
         <MainSection>
@@ -34,7 +34,7 @@ export default function Branding() {
 
       <ShamaBrandSection />
 
-      <div className="branding-sub-container">
+      <div className="sub-service-sub-container">
         <MainSection>
           <BrandingApproachSection />
         </MainSection>
@@ -47,13 +47,13 @@ export default function Branding() {
 
 function HeaderSection() {
   return (
-    <ComponentAnimation className="branding-header">
+    <ComponentAnimation className="sub-service-header">
       <p>
         Find your harbor, where we nurture brands, forge identities, and create
         waves of lasting influence
       </p>
 
-      <div className="branding-hero">
+      <div className="sub-service-hero">
         <p>Branding And Design Agency</p>
         <img src={image1} alt="" />
         <CircleButton
@@ -81,10 +81,10 @@ function MainSection({ children }) {
 
 function BrandingGoals() {
   return (
-    <ComponentAnimation className="branding-goals">
+    <ComponentAnimation className="sub-service-goals">
       <p>Whatever your branding goals are, Bloom will help you succeed.</p>
 
-      <LeftComponentAnimation className="branding-goals-content">
+      <LeftComponentAnimation className="sub-service-goals-content">
         <p>Brand identity design for a new business</p>
         <p>
           First impressions last longer. If you are going to work on your
@@ -94,7 +94,7 @@ function BrandingGoals() {
         </p>
       </LeftComponentAnimation>
 
-      <RightComponentAnimation className="branding-goals-content">
+      <RightComponentAnimation className="sub-service-goals-content">
         <p>Rebranding an existing business</p>
         <p>
           Is there a new direction for your company? Or is your brand identity
@@ -104,7 +104,7 @@ function BrandingGoals() {
         </p>
       </RightComponentAnimation>
 
-      <LeftComponentAnimation className="branding-goals-content">
+      <LeftComponentAnimation className="sub-service-goals-content">
         <p>Design of additional brand stationary and assets.</p>
         <p>
           Every element of your brand should work together to create the right
@@ -114,7 +114,7 @@ function BrandingGoals() {
         </p>
       </LeftComponentAnimation>
 
-      <RightComponentAnimation className="branding-goals-content">
+      <RightComponentAnimation className="sub-service-goals-content">
         <p>Brand strategy and guideline development</p>
         <p>
           Your brand goes beyond logo and colours. It involves your messaging,
@@ -178,8 +178,8 @@ function ShamaBrandSection() {
 
 function BrandingApproachSection() {
   return (
-    <ComponentAnimation className="branding-approach-container">
-      <div className="branding-approach-header">
+    <ComponentAnimation className="sub-service-approach-container">
+      <div className="sub-service-approach-header">
         <p>The strategic approach to branding design</p>
         <p>
           Let’s take a closer look at how companies come up with their unique
@@ -188,9 +188,9 @@ function BrandingApproachSection() {
         </p>
       </div>
 
-      <LeftComponentAnimation className="branding-approach-content">
+      <LeftComponentAnimation className="sub-service-approach-content">
         <img src={image3} alt="" />
-        <div className="branding-approach-text-content">
+        <div className="sub-service-approach-text-content">
           <p>Step 1 – Creation of Your Brand Strategy</p>
           <p>
             Firstly we kick things off by diving into your business, goals, what
@@ -201,9 +201,9 @@ function BrandingApproachSection() {
         </div>
       </LeftComponentAnimation>
 
-      <RightComponentAnimation className="branding-approach-content branding-approach-content-reverse">
+      <RightComponentAnimation className="sub-service-approach-content sub-service-approach-content-reverse">
         <img src={image4} alt="" />
-        <div className="branding-approach-text-content">
+        <div className="sub-service-approach-text-content">
           <p>Step 2 – Design of your Brand Identity</p>
           <p>
             In this step, we start crafting your logo. Using insights from
@@ -214,9 +214,9 @@ function BrandingApproachSection() {
         </div>
       </RightComponentAnimation>
 
-      <LeftComponentAnimation className="branding-approach-content">
+      <LeftComponentAnimation className="sub-service-approach-content">
         <img src={image5} alt="" />
-        <div className="branding-approach-text-content">
+        <div className="sub-service-approach-text-content">
           <p>Step 3 – Collateral Design</p>
           <p>
             After finalizing your logo, we proceed to create all necessary
@@ -228,9 +228,9 @@ function BrandingApproachSection() {
         </div>
       </LeftComponentAnimation>
 
-      <RightComponentAnimation className="branding-approach-content branding-approach-content-reverse">
+      <RightComponentAnimation className="sub-service-approach-content sub-service-approach-content-reverse">
         <img src={image6} alt="" />
-        <div className="branding-approach-text-content">
+        <div className="sub-service-approach-text-content">
           <p>Step 4 – Brand Guideline Development</p>
           <p>
             Lastly, we compile your brand guidelines, a vital document outlining
