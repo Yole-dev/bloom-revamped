@@ -8,8 +8,8 @@ import RequestForCallSection from "../components/RequestForCallSection";
 
 // imported components
 import CircleButton from "../components/Circlebtn";
-import Box from "../components/Box";
 import Button from "../components/Button";
+import LetUsTalkBtn from "../components/LetUsTalkBtn";
 
 // imported images
 import image1 from "../assets/branding/image1.png";
@@ -124,20 +124,7 @@ function BrandingGoals() {
         </p>
       </RightComponentAnimation>
 
-      <Button
-        width={300}
-        height={103}
-        borderRadius={54}
-        background="#FF6016"
-        fontSize={31}
-        fontWeight={400}
-        className="lets-talk-btn"
-      >
-        Let's Talk
-        <span className="lets-talk-icon">
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-        </span>
-      </Button>
+      <LetUsTalkBtn />
     </ComponentAnimation>
   );
 }
@@ -240,20 +227,7 @@ function BrandingApproachSection() {
         </div>
       </RightComponentAnimation>
 
-      <Button
-        width={300}
-        height={103}
-        borderRadius={54}
-        background="#FF6016"
-        fontSize={31}
-        fontWeight={400}
-        className="lets-talk-btn"
-      >
-        Let's Talk
-        <span className="lets-talk-icon">
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-        </span>
-      </Button>
+      <LetUsTalkBtn />
     </ComponentAnimation>
   );
 }
