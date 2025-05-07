@@ -18,8 +18,6 @@ import image3 from "../assets/branding/image3.png";
 import image4 from "../assets/branding/image4.png";
 import image5 from "../assets/branding/image5.png";
 import image6 from "../assets/branding/image6.png";
-import image7 from "../assets/branding/image7.png";
-import image8 from "../assets/branding/image8.png";
 
 export default function Branding() {
   return (

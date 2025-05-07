@@ -2128,6 +2128,7 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 3rem;
 }
 
 .sub-service-goals {
@@ -2317,6 +2318,89 @@ textarea:focus {
   font-weight: 300;
   line-height: 136%;
   letter-spacing: 6%;
+}
+
+/* Web-development page*/
+
+.web-dev-heading {
+  width: 566px !important;
+  margin-top: 0rem !important;
+}
+
+.web-dev-heading-text {
+  width: 484px !important;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  line-height: 143% !important;
+  align-self: end;
+  position: relative;
+  bottom: 7rem;
+  right: 1rem;
+  margin-bottom: 7rem;
+}
+
+.web-dev-heading-description {
+  width: 1181px !important;
+  font-size: 28px !important;
+  font-weight: 400 !important;
+  line-height: 42.25px !important;
+  color: var(--primary-black) !important;
+}
+
+/* .web-dev-approach-heading {
+  width: 626px !important;
+  font-size: 41px !important;
+  text-align: center;
+} */
+
+.expectation-container {
+  width: 100svw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.expectation-container > p {
+  width: 868px;
+  font-size: 41px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2.5%;
+  text-align: center;
+}
+
+.expectation-section {
+  width: 100svw;
+  height: 709px;
+  display: grid;
+  grid-template-columns: repeat(3, 385px);
+  grid-template-rows: auto;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.expectation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.expectation p {
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 28px;
+  color: var(--primary-white);
+}
+
+.expectation p:first-of-type {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+.web-dev-expectations {
+  background: var(--secondary-blue);
 }
 
 /* mobile view */
