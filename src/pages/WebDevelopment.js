@@ -7,8 +7,6 @@ import RightComponentAnimation from "../components/RightComponentAnimation";
 import RequestForCallSection from "../components/RequestForCallSection";
 
 // imported components
-import CircleButton from "../components/Circlebtn";
-import Button from "../components/Button";
 import LetUsTalkBtn from "../components/LetUsTalkBtn";
 
 // imported images
@@ -167,9 +165,10 @@ function WebDevApproachSection() {
 function WhatToExpectSection() {
   return (
     <ComponentAnimation className="expectation-container">
+      <p>What You Should Expect</p>
       <p>
-        What You Should Expect A stunning, data driven website that’s fast,
-        responsive, and built to attract leads.
+        A stunning, data driven website that’s fast, responsive, and built to
+        attract leads.
       </p>
 
       <section className="expectation-section web-dev-expectations">

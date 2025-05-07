@@ -2403,6 +2403,40 @@ textarea:focus {
   background: var(--secondary-blue);
 }
 
+/* UI/UX page styles */
+.sub-services-new-heading {
+  width: 100svw;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.sub-services-new-heading div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-services-new-heading div p:first-of-type {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 127%;
+}
+
+.sub-services-new-heading div p:last-of-type {
+  width: 484px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 143%;
+  color: var(--faq-answer);
+}
+
+.design-expectations {
+  background: var(--primary-black);
+}
+
 /* mobile view */
 @media (max-width: 768px) {
   .embla__slide {
