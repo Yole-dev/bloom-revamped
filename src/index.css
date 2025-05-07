@@ -2437,6 +2437,10 @@ textarea:focus {
   background: var(--primary-black);
 }
 
+.ecommerce-expectations {
+  background: var(--primary-orange);
+}
+
 /* mobile view */
 @media (max-width: 768px) {
   .embla__slide {

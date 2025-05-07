@@ -8,8 +8,6 @@ import RightComponentAnimation from "../components/RightComponentAnimation";
 import RequestForCallSection from "../components/RequestForCallSection";
 
 // imported components
-import CircleButton from "../components/Circlebtn";
-import Button from "../components/Button";
 import LetUsTalkBtn from "../components/LetUsTalkBtn";
 
 // imported images
@@ -27,7 +25,7 @@ export default function UiUx() {
         <MainSection>
           <DevelopmentGoals />
 
-          <WebDevApproachSection />
+          <UiUxApproachSection />
         </MainSection>
       </div>
 
@@ -108,12 +106,13 @@ function DevelopmentGoals() {
   );
 }
 
-function WebDevApproachSection() {
+function UiUxApproachSection() {
   return (
     <ComponentAnimation className="sub-service-approach-container">
       <div className="sub-service-approach-header">
         <p className="web-dev-approach-heading">
-          Our Process A strategic, research driven approach to UIUX design.
+          Our Process <br /> A strategic, research driven approach to UIUX
+          design.
         </p>
         <p>
           We combine strategy, creativity, and user insights to create
@@ -170,10 +169,10 @@ function WebDevApproachSection() {
 function WhatToExpectSection() {
   return (
     <ComponentAnimation className="expectation-container">
-      <p>What You Should Expect</p>
       <p>
-        A visually compelling, research backed UIUX design that enhances
-        usability, improves engagement, and drives conversions.
+        What You Should Expect <br />A visually compelling, research backed UIUX
+        design that enhances usability, improves engagement, and drives
+        conversions.
       </p>
 
       <section className="expectation-section design-expectations">

@@ -109,7 +109,8 @@ function WebDevApproachSection() {
     <ComponentAnimation className="sub-service-approach-container">
       <div className="sub-service-approach-header">
         <p className="web-dev-approach-heading">
-          Our Process A strategic, growth focused approach to website design.
+          Our Process <br /> A strategic, growth focused approach to website
+          design.
         </p>
         <p>
           Let’s take a closer look at how companies create stunning, high
@@ -165,10 +166,9 @@ function WebDevApproachSection() {
 function WhatToExpectSection() {
   return (
     <ComponentAnimation className="expectation-container">
-      <p>What You Should Expect</p>
       <p>
-        A stunning, data driven website that’s fast, responsive, and built to
-        attract leads.
+        What You Should Expect <br />A stunning, data driven website that’s
+        fast, responsive, and built to attract leads.
       </p>
 
       <section className="expectation-section web-dev-expectations">
