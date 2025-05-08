@@ -58,6 +58,7 @@ function HeroSection() {
             <CircleButton fontSize={26} className="hero-img-circle">
               <ion-icon name="arrow-down-outline"></ion-icon>
             </CircleButton>
+
             <img src={heroImage} alt="Hero" className="hero-image" />
           </div>
         </ComponentAnimation>
@@ -83,6 +84,7 @@ function HeroSection() {
                 fontSize={31}
                 fontWeight={400}
                 background="#ff6016"
+                className="know-more-btn"
               >
                 <Link to="/ourservices">Know more</Link>
                 <ion-icon name="arrow-forward-outline"></ion-icon>

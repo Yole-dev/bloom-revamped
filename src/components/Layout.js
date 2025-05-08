@@ -34,19 +34,31 @@ export default function Layout({ children }) {
 
 function Header() {
   return (
-    <div className="header">
-      <Logo />
+    <>
+      {/* toggling visibility on screen width change */}
 
-      <div className="nav-container">
-        <ul className="navbar">
-          <NavList />
-        </ul>
+      <div className="header">
+        <Logo />
 
-        <Button>
-          <Link to="/contactus">Let's talk</Link>
-        </Button>
+        <div className="nav-container">
+          <ul className="navbar">
+            <NavList />
+          </ul>
+
+          <Button>
+            <Link to="/contactus">Let's talk</Link>
+          </Button>
+        </div>
       </div>
-    </div>
+
+      <div className="mobile-header">
+        <Logo />
+
+        <ion-icon name="menu-outline"></ion-icon>
+
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+    </>
   );
 }
 

@@ -91,6 +91,10 @@ textarea:focus {
   height: 55.22px;
 }
 
+.mobile-header {
+  display: none;
+}
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -2444,6 +2448,91 @@ textarea:focus {
 
 /* mobile view */
 @media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100svw;
+    padding: 2rem;
+  }
+
+  .mobile-header ion-icon {
+    font-size: 25px;
+  }
+
+  .hero-section {
+    width: 100svw;
+    gap: 2rem;
+  }
+
+  .hero-heading {
+    width: 90%;
+    font-size: 35px;
+  }
+
+  .hero-text {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .hero-image-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .hero-img-circle {
+    width: 50px !important;
+    height: 50px !important;
+    border: solid 2px !important;
+    top: 1.3rem;
+    right: 2.5rem;
+    font-size: 18px !important;
+  }
+
+  .hero-image {
+    width: 95%;
+    height: 200px;
+  }
+
+  .know-more-section {
+    width: 95svw;
+    height: auto;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+  }
+
+  .know-more-heading {
+    width: 100%;
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .know-more-content {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .know-more-text {
+    width: 100%;
+    height: auto;
+    line-height: 120%;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .know-more-btn {
+    width: 60% !important;
+    font-size: 20px !important;
+    height: 50px !important;
+  }
+
   .embla__slide {
     flex: 0 0 calc(100% - 2rem); /* 1 slide on mobile */
   }
