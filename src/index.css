@@ -2447,6 +2447,10 @@ textarea:focus {
 
 /* mobile view */
 @media (max-width: 768px) {
+  .app-container {
+    gap: 1rem;
+  }
+
   .header {
     display: none;
   }
@@ -2461,6 +2465,10 @@ textarea:focus {
 
   .mobile-header ion-icon {
     font-size: 25px;
+  }
+
+  .main {
+    margin-top: 1rem;
   }
 
   .hero-section {
