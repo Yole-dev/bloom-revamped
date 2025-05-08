@@ -328,7 +328,6 @@ textarea:focus {
 .service-descriptions {
   width: 100%;
   display: flex;
-  /* margin: 0 2rem; */
   justify-content: space-between;
   align-items: center;
   font-weight: 300;
@@ -2508,8 +2507,10 @@ textarea:focus {
 
   .know-more-heading {
     width: 100%;
+    height: auto;
     font-size: 35px;
     line-height: 40px;
+    text-align: center;
   }
 
   .know-more-content {
@@ -2531,6 +2532,46 @@ textarea:focus {
     width: 60% !important;
     font-size: 20px !important;
     height: 50px !important;
+  }
+
+  .service-container {
+    padding: 0 1rem;
+  }
+
+  .service-section {
+    gap: 2rem;
+  }
+
+  .service-descriptions {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .service-heading {
+    width: 100%;
+    height: auto;
+    font-size: 35px;
+    line-height: 80%;
+  }
+
+  .service-text {
+    width: 100%;
+    height: auto;
+    line-height: 120%;
+  }
+
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+
+  .service {
+    font-size: 14px;
+    padding: 1rem;
+    text-align: center;
   }
 
   .embla__slide {
