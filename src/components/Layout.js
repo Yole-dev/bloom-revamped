@@ -173,7 +173,7 @@ function FooterIcons() {
 function FooterNav() {
   return (
     <div className="footer-nav">
-      <img src={footerLogo} alt="" />
+      <img src={footerLogo} alt="" className="footer-logo" />
       <FooterNavList />
     </div>
   );

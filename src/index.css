@@ -129,7 +129,7 @@ textarea:focus {
 }
 
 .footer {
-  width: 100%;
+  width: 100svw;
   height: 677px;
   background: var(--primary-black);
   justify-self: end;
@@ -2469,6 +2469,32 @@ textarea:focus {
 
   .main {
     margin-top: 1rem;
+  }
+
+  .footer-content-container {
+    border-radius: 25px;
+  }
+
+  .footer-hero {
+    align-items: start;
+  }
+
+  .footer-hero-texts p {
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  .social-icons li {
+    font-size: 18px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .footer-logo {
+    align-self: start;
   }
 
   .hero-section {
