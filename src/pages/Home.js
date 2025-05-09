@@ -333,7 +333,10 @@ function TestimonialsSection() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
     containScroll: "trimSnaps",
-    slidesToScroll: 3,
+    breakpoints: {
+      "(min-width: 768px)": { slidesToScroll: 3 },
+      "(max-width: 767px)": { slidesToScroll: 1 },
+    },
   });
 
   const scrollPrev = React.useCallback(

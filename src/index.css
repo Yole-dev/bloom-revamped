@@ -2662,6 +2662,55 @@ textarea:focus {
     padding: 1rem 2rem;
   }
 
+  .service-portfolio-footer {
+    gap: 4rem;
+  }
+
+  .service-portfolio-footer p {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .service-portfolio-footer-btn {
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 13px !important;
+    top: 4.5rem;
+  }
+
+  .service-portfolio-footer hr {
+    display: none;
+  }
+
+  .testimonial-section {
+    width: 100svw;
+  }
+
+  .testimonial-heading {
+    width: 95%;
+    height: auto;
+    font-size: 35px;
+  }
+
+  .testimony {
+    width: 90%;
+    border-radius: 20px;
+    padding: 1.5rem;
+  }
+
+  .testimony-text {
+    font-size: 17px;
+  }
+
+  .embla {
+    width: 100svw;
+    padding: 0 1rem;
+  }
+
+  .embla__container {
+    gap: 1rem;
+  }
+
   .embla__slide {
     flex: 0 0 calc(100% - 2rem); /* 1 slide on mobile */
   }
