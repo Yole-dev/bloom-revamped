@@ -52,11 +52,11 @@ function Header() {
       </div>
 
       <div className="mobile-header">
-        <Logo />
+        <div className="mobile-nav">
+          <Logo />
 
-        <ion-icon name="menu-outline"></ion-icon>
-
-        <ion-icon name="close-outline"></ion-icon>
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
       </div>
     </>
   );
