@@ -1,7 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import React from "react";
 import headerLogo from "../assets/header_logo.png";
 import footerLogo from "../assets/footer_logo.png";
+
+// imported animation library
+import { motion, AnimatePresence } from "framer-motion";
 
 // imported animation component
 import PageAnimation from "../components/PageAnimation";
@@ -38,6 +42,40 @@ function Header() {
   function handleNavToggle() {
     setIsOpen(!isOpen);
   }
+
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.3,
+        ease: "easeOut",
+      },
+    },
+    exit: {
+      opacity: 0,
+      y: -20,
+      transition: {
+        duration: 0.2,
+        ease: "easeIn",
+      },
+    },
+  };
+
+  const listItemVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: i * 0.1,
+        duration: 0.3,
+      },
+    }),
+  };
+
   return (
     <>
       {/* toggling visibility on screen width change */}
@@ -61,30 +99,49 @@ function Header() {
           <div className="mobile-nav">
             <Logo />
 
-            <ion-icon name="menu-outline" onClick={handleNavToggle}></ion-icon>
+            <motion.div whileTap={{ scale: 0.9 }} onClick={handleNavToggle}>
+              <ion-icon name="menu-outline"></ion-icon>
+            </motion.div>
           </div>
         )}
 
-        {isOpen && (
-          <div className="mobile-nav-container">
-            <div className="mobile-nav">
-              <Logo />
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              className="mobile-nav-container"
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              variants={containerVariants}
+            >
+              <div className="mobile-nav">
+                <Logo />
 
-              <ion-icon
-                name="close-outline"
-                onClick={handleNavToggle}
-              ></ion-icon>
-            </div>
+                <motion.div
+                  whileTap={{ scale: 0.95 }}
+                  onClick={handleNavToggle}
+                >
+                  <ion-icon name="close-outline"></ion-icon>
+                </motion.div>
+              </div>
 
-            <ul className="navbar">
-              <NavList />
-            </ul>
+              <ul className="navbar">
+                <NavList />
+              </ul>
 
-            <Button>
-              <Link to="/contactus">Let's talk</Link>
-            </Button>
-          </div>
-        )}
+              <motion.div
+                variants={listItemVariants}
+                custom={5} // Higher delay for button
+                initial="hidden"
+                animate="visible"
+              >
+                <Button>
+                  <Link to="/contactus">Let's talk</Link>
+                </Button>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </>
   );
