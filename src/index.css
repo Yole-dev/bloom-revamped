@@ -2478,6 +2478,14 @@ textarea:focus {
     padding: 0 1rem;
   }
 
+  .mobile-nav-container {
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .main {
     margin-top: 3.5rem;
   }

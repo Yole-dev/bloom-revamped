@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import headerLogo from "../assets/header_logo.png";
 import footerLogo from "../assets/footer_logo.png";
 
@@ -33,6 +33,11 @@ export default function Layout({ children }) {
 }
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function handleNavToggle() {
+    setIsOpen(!isOpen);
+  }
   return (
     <>
       {/* toggling visibility on screen width change */}
@@ -52,11 +57,26 @@ function Header() {
       </div>
 
       <div className="mobile-header">
-        <div className="mobile-nav">
-          <Logo />
+        {!isOpen && (
+          <div className="mobile-nav">
+            <Logo />
 
-          <ion-icon name="menu-outline"></ion-icon>
-        </div>
+            <ion-icon name="menu-outline" onClick={handleNavToggle}></ion-icon>
+          </div>
+        )}
+
+        {isOpen && (
+          <div className="mobile-nav-container">
+            <div className="mobile-nav">
+              <Logo />
+
+              <ion-icon
+                name="close-outline"
+                onClick={handleNavToggle}
+              ></ion-icon>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
