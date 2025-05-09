@@ -306,7 +306,7 @@ function Detail({
   };
 
   return (
-    <div style={detailStyle}>
+    <div style={detailStyle} className="detail-container">
       <div className="service-image-container">
         <img
           src={src}
