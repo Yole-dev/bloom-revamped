@@ -70,28 +70,28 @@ function HeadingSection() {
     <section className="heading-section">
       <div className="heading-first-section">
         <LeftComponentAnimation>
-          <div>
-            <CircleButton
-              fontSize={30}
-              className="heading-circle"
-              width={100}
-              height={100}
-            >
-              <ion-icon name="arrow-down-outline"></ion-icon>
-            </CircleButton>
-            <img src={serviceImage1} alt="Header section hero" />
-          </div>
+          <CircleButton
+            fontSize={30}
+            className="heading-circle"
+            width={100}
+            height={100}
+          >
+            <ion-icon name="arrow-down-outline"></ion-icon>
+          </CircleButton>
+          <img
+            src={serviceImage1}
+            alt="Header section hero"
+            className="service-image1"
+          />
         </LeftComponentAnimation>
 
         <RightComponentAnimation>
-          <div>
-            <p>See Our Expertise in Digital Solution</p>
+          <p>See Our Expertise in Digital Solution</p>
 
-            <p>
-              Explore our range of services designed to elevate your brand ,
-              enhance user experience and drive business growth.
-            </p>
-          </div>
+          <p>
+            Explore our range of services designed to elevate your brand ,
+            enhance user experience and drive business growth.
+          </p>
         </RightComponentAnimation>
       </div>
 
