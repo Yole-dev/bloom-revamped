@@ -75,6 +75,14 @@ function Header() {
                 onClick={handleNavToggle}
               ></ion-icon>
             </div>
+
+            <ul className="navbar">
+              <NavList />
+            </ul>
+
+            <Button>
+              <Link to="/contactus">Let's talk</Link>
+            </Button>
           </div>
         )}
       </div>
