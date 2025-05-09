@@ -205,7 +205,7 @@ textarea:focus {
 
 .footer-nav-list {
   display: flex;
-  align-items: centerr;
+  align-items: center;
   gap: 1rem;
   list-style-type: none;
   color: var(--primary-white);
@@ -2471,7 +2471,12 @@ textarea:focus {
     margin-top: 1rem;
   }
 
+  .footer {
+    height: 700px;
+  }
+
   .footer-content-container {
+    height: 650px;
     border-radius: 25px;
   }
 
@@ -2495,6 +2500,20 @@ textarea:focus {
 
   .footer-logo {
     align-self: start;
+  }
+
+  .footer-nav-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer-content-container hr {
+    height: 0.3px;
+  }
+
+  .copyright-text {
+    text-align: center;
   }
 
   .hero-section {
