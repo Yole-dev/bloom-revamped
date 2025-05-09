@@ -2838,4 +2838,35 @@ textarea:focus {
     width: 95%;
     align-self: center;
   }
+
+  .heading-second-section {
+    width: 95svw;
+    border-radius: 20px;
+  }
+
+  .heading-second-section img {
+    width: 95%;
+    height: 200px;
+  }
+
+  .heading-second-section > div {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .heading-second-section > div > p {
+    width: 95%;
+    font-size: 15px;
+  }
+
+  .heading-second-section > div > div > p:first-of-type {
+    font-size: 25px;
+  }
+
+  .heading-second-section > div > div > p:last-of-type {
+    font-size: 30px;
+  }
 }
