@@ -3104,4 +3104,41 @@ textarea:focus {
     width: 95%;
     height: 170px;
   }
+
+  /* ABOUT US STYLES */
+  .about-us-container {
+    width: 100svw;
+  }
+
+  .about-us-header {
+    width: 100svw;
+    flex-direction: column-reverse;
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+
+  .about-us-header > p {
+    width: 95%;
+    align-self: center;
+    text-align: center;
+  }
+
+  .about-us-hero p {
+    font-size: 20px;
+    width: 50px;
+    top: 1rem;
+    left: 0;
+    margin-top: -1rem;
+  }
+
+  .about-us-hero-circle {
+    width: 50px !important;
+    height: 50px !important;
+    border: solid 2px !important;
+    font-size: 20px !important;
+    bottom: 2rem;
+    right: 0;
+    left: 1rem;
+    margin-bottom: -3rem;
+  }
 }
