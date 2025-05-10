@@ -1269,6 +1269,7 @@ textarea:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   padding: 2rem;
   border-radius: 1rem;
@@ -3228,5 +3229,122 @@ textarea:focus {
   .board div p:last-of-type {
     font-size: 18px;
     font-weight: 500;
+  }
+
+  .why-bloom {
+    width: 100svw;
+    padding: 0 1rem;
+  }
+
+  .why-bloom > div {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .why-bloom div:first-of-type p:first-of-type {
+    font-size: 25px;
+  }
+
+  .why-bloom div:first-of-type p:last-of-type {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .why-bloom > div:last-of-type {
+    gap: 4rem;
+  }
+
+  .why-bloom-text {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .why-bloom-img {
+    width: 95%;
+    justify-content: center;
+  }
+
+  .why-bloom-img img {
+    width: 100%;
+  }
+
+  .message-main-container {
+    width: 100svw;
+    padding: 0 1rem;
+  }
+
+  .ceo-message {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 1rem !important;
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .ceo-message div:first-of-type {
+    width: 100%;
+    height: auto;
+  }
+
+  .ceo-message div:first-of-type p:first-of-type {
+    width: 100%;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+  }
+
+  .ceo-message div:first-of-type p:last-of-type {
+    font-size: 16px;
+  }
+
+  .ceo-message div:first-of-type p:last-of-type span {
+    font-size: 18px;
+  }
+
+  .ceo-message div:first-of-type p:last-of-type span:first-of-type {
+    font-size: 30px;
+  }
+
+  .ceo-message div:last-of-type {
+    width: 100%;
+    height: 450px;
+  }
+
+  .ceo-message div:last-of-type p {
+    font-size: 25px;
+    text-align: right;
+  }
+
+  .ceo-message div:last-of-type p span {
+    font-size: 18px;
+  }
+
+  .meet-the-team {
+    width: 100svw;
+    padding: 0 1rem;
+  }
+
+  .meet-the-team > div {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .meet-the-team > div p:first-of-type {
+    font-size: 25px;
+  }
+
+  .meet-the-team > div p:last-of-type {
+    width: 100%;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  .member-details {
+    width: 100%;
   }
 }

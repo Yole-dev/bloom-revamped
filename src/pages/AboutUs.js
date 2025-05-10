@@ -223,7 +223,7 @@ function WhyBloom() {
 
 function MessageFromCeo() {
   return (
-    <ComponentAnimation>
+    <ComponentAnimation className="message-main-container">
       <Box
         background="#5B94FF"
         color="#ffffff"
