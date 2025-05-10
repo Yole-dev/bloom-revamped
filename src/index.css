@@ -3141,4 +3141,92 @@ textarea:focus {
     left: 1rem;
     margin-bottom: -3rem;
   }
+
+  .about-us-main {
+    width: 100svw;
+  }
+
+  .company-bio {
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 3rem;
+  }
+
+  .team {
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .team div p {
+    font-size: 17px;
+  }
+
+  .code-icon {
+    font-size: 20px;
+  }
+
+  .bio-box {
+    width: 100% !important;
+  }
+
+  .about {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 0.7rem !important;
+    padding: 1.5rem 1rem;
+  }
+
+  .about p {
+    width: 100%;
+  }
+
+  .about p:first-of-type {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .about p:last-of-type {
+    text-align: center;
+  }
+
+  .board-box-container {
+    width: 100svw;
+    padding: 0 1rem;
+  }
+
+  .board-box {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 1rem !important;
+  }
+
+  .board {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .board div {
+    width: 50%;
+    justify-content: center;
+  }
+
+  .board div:nth-child(2) {
+    border-top: solid 1.5px var(--primary-black);
+    border-bottom: solid 1.5px var(--primary-black);
+    border-right: none;
+    border-left: none;
+    padding: 3rem 0;
+    height: auto;
+  }
+
+  .board div p:first-of-type {
+    font-size: 30px;
+  }
+
+  .board div p:last-of-type {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }

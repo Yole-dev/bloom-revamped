@@ -88,6 +88,7 @@ function CompanyBio() {
           height={147}
           width={561}
           borderRadius={2}
+          className="bio-box"
         ></Box>
       </LeftComponentAnimation>
 
@@ -126,12 +127,13 @@ function CompanyBio() {
 
 function ProjectsBoard() {
   return (
-    <ComponentAnimation>
+    <ComponentAnimation className="board-box-container">
       <Box
         border="solid 1px #141414"
         borderRadius={3.3}
         width={1236}
         height={154}
+        className="board-box"
       >
         <div className="board">
           <div>
