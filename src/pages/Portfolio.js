@@ -64,7 +64,7 @@ function PortfolioSection() {
         <LeftComponentAnimation className="work-box">
           <p>good school branding</p>
 
-          <Box background="#94C8CB">
+          <Box background="#94C8CB" className="portfolio-box">
             <img src={image2} alt="" />
           </Box>
         </LeftComponentAnimation>
@@ -72,7 +72,7 @@ function PortfolioSection() {
         <RightComponentAnimation className="work-box">
           <p>skincare ecommerce website</p>
 
-          <Box background="#667B5B">
+          <Box background="#667B5B" className="portfolio-box">
             <img src={image3} alt="" />
           </Box>
         </RightComponentAnimation>
@@ -80,7 +80,7 @@ function PortfolioSection() {
         <LeftComponentAnimation className="work-box">
           <p>fintech mobile app</p>
 
-          <Box background="#E7E7E7">
+          <Box background="#E7E7E7" className="portfolio-box">
             <img src={image4} alt="" />
           </Box>
         </LeftComponentAnimation>
@@ -88,14 +88,19 @@ function PortfolioSection() {
         <RightComponentAnimation className="work-box">
           <p>artisan</p>
 
-          <Box background="#343862">
+          <Box background="#343862" className="portfolio-box">
             <img src={image5} alt="" />
           </Box>
         </RightComponentAnimation>
       </div>
 
       <ComponentAnimation className="work-box">
-        <Box width={1237} height={659.33} background="#BED2FF">
+        <Box
+          width={1237}
+          height={659.33}
+          background="#BED2FF"
+          className="portfolio-box"
+        >
           <img src={image6} alt="" />
         </Box>
       </ComponentAnimation>
@@ -104,7 +109,7 @@ function PortfolioSection() {
         <LeftComponentAnimation className="work-box">
           <p>evalua</p>
 
-          <Box background="#E7E7E7">
+          <Box background="#E7E7E7" className="portfolio-box">
             <img src={image7} alt="" />
           </Box>
         </LeftComponentAnimation>
@@ -112,7 +117,7 @@ function PortfolioSection() {
         <RightComponentAnimation className="work-box">
           <p>shipment</p>
 
-          <Box background="#43BD60">
+          <Box background="#43BD60" className="portfolio-box">
             <img src={image8} alt="" />
           </Box>
         </RightComponentAnimation>
