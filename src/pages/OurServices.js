@@ -192,12 +192,11 @@ function OurServiceSection() {
 
         <div>
           <div>
-            <p>Ready to elevaate your brand with our expert services?</p>
+            <p>Ready to elevate your brand with our expert services?</p>
 
-            <p>Contact us today to discuss your project and get started</p>
+            <p>Contact us today to discuss your project and get started.</p>
           </div>
 
-          {/* remember to include onClick event to this button when you have a page path */}
           <Button
             width={333}
             height={72.91}
@@ -205,6 +204,7 @@ function OurServiceSection() {
             fontWeight={300}
             borderRadius={37}
             background="#FF6016"
+            className="contact-btn"
           >
             <Link to="/contactus">Contact Us</Link>
           </Button>
@@ -253,22 +253,20 @@ function Faq({ children, questionNumber, question, onOpen, curOpen }) {
   }
 
   return (
-    <ComponentAnimation>
-      <div className="faq-content">
-        <div className="question-content">
-          <p className="faq-question">
-            {questionNumber}. {question}
-          </p>
+    <ComponentAnimation className="faq-content">
+      <div className="question-content">
+        <p className="faq-question">
+          {questionNumber}. {question}
+        </p>
 
-          <p className="faq-answer"> {isOpen ? children : ""}</p>
-        </div>
+        <p className="faq-answer"> {isOpen ? children : ""}</p>
+      </div>
 
-        <div onClick={handleToggle}>
-          <ion-icon
-            name={isOpen ? "arrow-back-outline" : "arrow-forward-outline"}
-            className="arrow-icon"
-          ></ion-icon>
-        </div>
+      <div onClick={handleToggle}>
+        <ion-icon
+          name={isOpen ? "arrow-back-outline" : "arrow-forward-outline"}
+          className="arrow-icon"
+        ></ion-icon>
       </div>
     </ComponentAnimation>
   );

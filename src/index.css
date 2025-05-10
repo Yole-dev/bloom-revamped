@@ -2906,4 +2906,133 @@ textarea:focus {
     font-size: 20px;
     font-weight: 400;
   }
+
+  .contact-us-section {
+    width: 100svw;
+  }
+
+  .contact-us-section > div:first-of-type {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    top: 4rem;
+    right: 0.5rem;
+  }
+
+  .odd-icon {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 20px !important;
+  }
+
+  .contact-us-section > div:last-of-type {
+    width: 95%;
+    border-radius: 15px;
+    gap: 4rem;
+  }
+
+  .contact-us-section > div:last-of-type div {
+    width: 95%;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .contact-us-section > div:last-of-type div p:first-of-type {
+    font-size: 25px;
+  }
+
+  .contact-us-section > div:last-of-type div p:last-of-type {
+    font-size: 16px;
+  }
+
+  .contact-btn {
+    width: 200px !important;
+    height: 50px !important;
+    font-size: 17px !important;
+    border-radius: 25px !important;
+  }
+
+  .faq-section-container {
+    width: 100svw;
+  }
+
+  .faq-heading {
+    width: 95%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .faq-heading p:first-of-type {
+    width: 95%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .faq-heading p:last-of-type {
+    width: 95%;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+  }
+
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .faq-content {
+    width: 90%;
+    border-radius: 25px;
+    padding: 1rem;
+  }
+
+  .question-content {
+    width: 90%;
+  }
+
+  .faq-question {
+    font-size: 17px;
+  }
+
+  .faq-answer {
+    font-size: 15px;
+  }
+
+  .arrow-icon {
+    font-size: 20px;
+  }
+
+  /* STYLES FOR REQUEST SECTION REUSABLE COMPONENT */
+  .request-for-call-section {
+    width: 100svw;
+    padding: 0 1rem;
+  }
+
+  .request-for-call-container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .request-for-call-container p {
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .request-a-free-call-btn {
+    width: 95% !important;
+    font-size: 18px !important;
+  }
+
+  .request-a-free-call-icon {
+    font-size: 16px !important;
+    width: 35px !important;
+    height: 35px !important;
+  }
 }

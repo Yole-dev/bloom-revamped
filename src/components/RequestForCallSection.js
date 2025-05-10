@@ -23,6 +23,7 @@ export default function RequestForCallSection() {
           fontWeight={400}
           background="#ffffff"
           color="#141414"
+          className="request-a-free-call-btn"
         >
           <Link to="/requestacall">Request A Free Call</Link>
           <CircleButton
@@ -30,6 +31,7 @@ export default function RequestForCallSection() {
             width={46.07}
             height={46.07}
             fontSize={24}
+            className="request-a-free-call-icon"
           >
             <ion-icon name="call"></ion-icon>
           </CircleButton>
