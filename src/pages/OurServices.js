@@ -125,99 +125,89 @@ function OurServiceSection() {
       <div className="our-services-section">
         <LeftComponentAnimation>
           <div>
-            <div>
-              <img src={serviceImage3} alt="" />
+            <img src={serviceImage3} alt="" />
 
-              <p>Branding Design</p>
-            </div>
-
-            <p>
-              Branding Design Your website will be designed to render
-              beautifully across all devices – desktops, tablets, and mobile.
-            </p>
+            <p>Branding Design</p>
           </div>
+
+          <p>
+            Branding Design Your website will be designed to render beautifully
+            across all devices – desktops, tablets, and mobile.
+          </p>
         </LeftComponentAnimation>
 
         <LeftComponentAnimation>
           <div>
-            <div>
-              <img src={serviceImage4} alt="" />
+            <img src={serviceImage4} alt="" />
 
-              <p>Web Development</p>
-            </div>
-
-            <p>
-              We offers tailored solution that create visually stunning, highly
-              functional website optimize for seamless user experience across
-              all device
-            </p>
+            <p>Web Development</p>
           </div>
+
+          <p>
+            We offers tailored solution that create visually stunning, highly
+            functional website optimize for seamless user experience across all
+            device
+          </p>
         </LeftComponentAnimation>
 
         <RightComponentAnimation>
           <div>
-            <div>
-              <img src={serviceImage5} alt="" />
+            <img src={serviceImage5} alt="" />
 
-              <p>UI/UX Design</p>
-            </div>
-
-            <p>
-              Designing intuitive and engaging user interface that enhance the
-              overall user experience.
-            </p>
+            <p>UI/UX Design</p>
           </div>
+
+          <p>
+            Designing intuitive and engaging user interface that enhance the
+            overall user experience.
+          </p>
         </RightComponentAnimation>
 
         <RightComponentAnimation>
           <div>
-            <div>
-              <img src={serviceImage6} alt="" />
+            <img src={serviceImage6} alt="" />
 
-              <p>Ecommerce Solutions</p>
-            </div>
-
-            <p>
-              Building and optimizing online stores that drive sales and provide
-              a seamless shopping experience.
-            </p>
+            <p>Ecommerce Solutions</p>
           </div>
+
+          <p>
+            Building and optimizing online stores that drive sales and provide a
+            seamless shopping experience.
+          </p>
         </RightComponentAnimation>
       </div>
 
-      <ComponentAnimation>
-        <div className="contact-us-section">
+      <ComponentAnimation className="contact-us-section">
+        <div>
+          <CircleButton
+            fontSize={30}
+            background="#FF6016"
+            width={100}
+            height={100}
+            className="odd-icon"
+          >
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </CircleButton>
+        </div>
+
+        <div>
           <div>
-            <CircleButton
-              fontSize={30}
-              background="#FF6016"
-              width={100}
-              height={100}
-              className="odd-icon"
-            >
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </CircleButton>
+            <p>Ready to elevaate your brand with our expert services?</p>
+
+            <p>Contact us today to discuss your project and get started</p>
           </div>
 
-          <div>
-            <div>
-              <p>Ready to elevaate your brand with our expert services?</p>
-
-              <p>Contact us today to discuss your project and get started</p>
-            </div>
-
-            {/* remember to include onClick event to this button when you have a page path */}
-            <Button
-              width={333}
-              height={72.91}
-              fontSize={21}
-              fontWeight={300}
-              borderRadius={37}
-              background="#FF6016"
-            >
-              <Link to="/contactus">Contact Us</Link>
-            </Button>
-          </div>
+          {/* remember to include onClick event to this button when you have a page path */}
+          <Button
+            width={333}
+            height={72.91}
+            fontSize={21}
+            fontWeight={300}
+            borderRadius={37}
+            background="#FF6016"
+          >
+            <Link to="/contactus">Contact Us</Link>
+          </Button>
         </div>
       </ComponentAnimation>
     </section>

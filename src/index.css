@@ -2841,7 +2841,9 @@ textarea:focus {
 
   .heading-second-section {
     width: 95svw;
+    height: auto;
     border-radius: 20px;
+    gap: 1rem;
   }
 
   .heading-second-section img {
@@ -2860,13 +2862,48 @@ textarea:focus {
   .heading-second-section > div > p {
     width: 95%;
     font-size: 15px;
+    padding-bottom: 1.5rem;
   }
 
   .heading-second-section > div > div > p:first-of-type {
     font-size: 25px;
+    padding: 0;
   }
 
   .heading-second-section > div > div > p:last-of-type {
     font-size: 30px;
+    padding: 0;
+  }
+
+  .our-services-section-container {
+    width: 100svw;
+  }
+
+  .our-services-section {
+    width: 95%;
+    height: auto;
+    grid-template-columns: repeat(1, 85%);
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .our-services-section div img {
+    height: 300px;
+  }
+
+  .our-services-section div {
+    gap: 1rem;
+  }
+
+  .our-services-section div > p {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 26px;
+  }
+
+  .our-services-section div > div > p {
+    font-size: 20px;
+    font-weight: 400;
   }
 }
