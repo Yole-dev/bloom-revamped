@@ -3096,10 +3096,12 @@ textarea:focus {
 
   .portfolio-box {
     width: 100% !important;
-    height: 200px !important;
+    height: 210px !important;
+    border-radius: 0.7rem !important;
   }
 
   .portfolio-box img {
     width: 95%;
+    height: 170px;
   }
 }
