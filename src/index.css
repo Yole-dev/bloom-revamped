@@ -158,6 +158,7 @@ textarea:focus {
 .main {
   justify-self: center;
   margin-top: 7rem;
+  overflow-x: hidden;
 }
 
 .footer {
@@ -3429,4 +3430,72 @@ textarea:focus {
     left: 1rem;
     margin-bottom: -3rem;
   }
+
+  .contact-our-team {
+    width: 100svw;
+    padding: 0 1rem;
+  }
+
+  .contact-our-team > div {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .contact-our-team > div p:first-of-type {
+    font-size: 25px;
+  }
+
+  .contact-our-team > div p:last-of-type {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .contact-form-section {
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  .contact-us-form {
+    width: 90svw;
+  }
+
+  .contact-us-form label {
+    font-size: 15px;
+  }
+
+  .contact-us-form input {
+    height: 40px;
+    font-size: 14px;
+    border-radius: 0.6rem;
+  }
+
+  .contact-us-form textarea {
+    font-size: 14px;
+  }
+
+  .grid-form {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem !important;
+  }
+
+  .services-grid-form {
+    width: 100svw !important;
+    height: auto;
+  }
+
+  .send-message-btn {
+    width: 90% !important;
+    height: 50px !important;
+    font-size: 16px !important;
+    align-self: center;
+  }
+
+  .chat-with-us {
+    width: 95%;
+    height: auto;
+    gap: 2rem;
+  }
+
+  /* STYLES FOR REQUEST FOR A CALL PAGE */
 }

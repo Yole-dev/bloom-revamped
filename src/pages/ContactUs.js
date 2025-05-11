@@ -243,6 +243,7 @@ function ContactForm() {
           fontSize={21.82}
           fontWeight={400}
           onClick={handleSubmit}
+          className="send-message-btn"
         >
           Send Message
         </Button>
