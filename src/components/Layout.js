@@ -271,7 +271,6 @@ function FooterNavList() {
     { path: "/ourservices", name: "Our Services" },
     { path: "/portfolio", name: "Portfolio" },
     { path: "/aboutus", name: "About us" },
-    { path: "/blog", name: "Blog" },
     { path: "/branding", name: "Branding" },
     { path: "/webdevelopment", name: "Web Development" },
     { path: "/ui_ux", name: "UI/UX Design" },
