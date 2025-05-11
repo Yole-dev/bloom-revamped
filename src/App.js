@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import OurServices from "./pages/OurServices";
 import Portfolio from "./pages/Portfolio";
 import AboutUs from "./pages/AboutUs";
-import Blog from "./pages/Blog";
 import ContactUs from "./pages/ContactUs";
 import Branding from "./pages/Branding";
 import WebDevelopment from "./pages/WebDevelopment";
@@ -47,14 +46,6 @@ export default function App() {
             element={
               <Layout>
                 <AboutUs />
-              </Layout>
-            }
-          />
-          <Route
-            path="/blog"
-            element={
-              <Layout>
-                <Blog />
               </Layout>
             }
           />

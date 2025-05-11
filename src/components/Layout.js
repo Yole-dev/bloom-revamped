@@ -159,7 +159,7 @@ function NavList({ onNavToggle }) {
     { path: "/ourservices", name: "Our Services" },
     { path: "/portfolio", name: "Portfolio" },
     { path: "/aboutus", name: "About us" },
-    { path: "/blog", name: "Blog" },
+    { path: "", name: "Others" },
   ];
 
   return (
