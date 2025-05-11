@@ -135,7 +135,7 @@ function Header() {
                 initial="hidden"
                 animate="visible"
               >
-                <Button>
+                <Button onClick={handleNavToggle}>
                   <Link to="/contactus">Let's talk</Link>
                 </Button>
               </motion.div>
