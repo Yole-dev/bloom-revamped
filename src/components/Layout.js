@@ -126,7 +126,7 @@ function Header() {
               </div>
 
               <ul className="navbar">
-                <NavList />
+                <NavList onNavToggle={handleNavToggle} />
               </ul>
 
               <motion.div
@@ -151,7 +151,7 @@ function Logo() {
   return <img src={headerLogo} alt="company logo" className="header-logo" />;
 }
 
-function NavList() {
+function NavList({ onNavToggle }) {
   const location = useLocation();
 
   const navItems = [
@@ -168,6 +168,7 @@ function NavList() {
         <li
           key={item.path}
           className={location.pathname === item.path ? "active" : ""}
+          onClick={onNavToggle}
         >
           <Link to={item.path}>{item.name}</Link>
         </li>
