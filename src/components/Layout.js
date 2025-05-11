@@ -152,6 +152,12 @@ function Logo() {
 }
 
 function NavList({ onNavToggle }) {
+  const [isDropDown, setIsDropDown] = useState(false);
+
+  function handleDropDownToggle() {
+    setIsDropDown(!isDropDown);
+  }
+
   const location = useLocation();
 
   const navItems = [
@@ -159,21 +165,48 @@ function NavList({ onNavToggle }) {
     { path: "/ourservices", name: "Our Services" },
     { path: "/portfolio", name: "Portfolio" },
     { path: "/aboutus", name: "About us" },
-    { path: "", name: "Others" },
+    { name: "Others" },
   ];
 
   return (
     <>
       {navItems.map((item) => (
         <li
-          key={item.path}
+          key={item?.path}
           className={location.pathname === item.path ? "active" : ""}
-          onClick={onNavToggle}
+          onClick={item.name !== "Others" ? onNavToggle : handleDropDownToggle}
         >
-          <Link to={item.path}>{item.name}</Link>
+          <Link to={item?.path}>{item.name}</Link>
+
+          {item.name === "Others" && isDropDown && (
+            <DropDownNav onNavToggle={onNavToggle} location={location} />
+          )}
         </li>
       ))}
     </>
+  );
+}
+
+function DropDownNav({ onNavToggle, location }) {
+  const navItems = [
+    { path: "/branding", name: "Branding" },
+    { path: "/webdevelopment", name: "Web Development" },
+    { path: "/ui_ux", name: "UI/UX Design" },
+    { path: "/ecommerce", name: "Ecommerce" },
+  ];
+
+  return (
+    <ul className="drop-down-nav">
+      {navItems.map((item) => (
+        <li
+          key={item?.path}
+          className={location.pathname === item.path ? "active" : ""}
+          onClick={onNavToggle}
+        >
+          <Link to={item?.path}>{item.name}</Link>
+        </li>
+      ))}
+    </ul>
   );
 }
 

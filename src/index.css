@@ -2491,9 +2491,23 @@ textarea:focus {
 
   .navbar {
     flex-direction: column;
+    align-items: center;
     gap: 2.2rem;
     font-size: 18px;
     font-weight: 400;
+  }
+
+  .drop-down-nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .drop-down-nav li {
+    font-size: 16px;
   }
 
   .main {
