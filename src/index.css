@@ -123,6 +123,38 @@ textarea:focus {
   background: var(--primary-blue);
 }
 
+.more-drop-down {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.more-drop-down ion-icon {
+  font-size: 14px;
+  padding-left: 0.5rem;
+}
+
+.drop-down-nav {
+  position: absolute;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  top: 3rem;
+  text-align: center;
+  padding: 1rem;
+  background: var(--off-white);
+  border-radius: 0.5rem;
+}
+
+.drop-down-nav li {
+  font-size: 16px;
+}
+
 .main {
   justify-self: center;
   margin-top: 7rem;
@@ -2498,28 +2530,17 @@ textarea:focus {
   }
 
   .more-drop-down {
-    width: inherit;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: static;
   }
 
   .more-drop-down ion-icon {
     font-size: 14px;
-    padding-left: 0.5rem;
   }
 
   .drop-down-nav {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  .drop-down-nav li {
-    font-size: 16px;
+    position: static;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
   }
 
   .main {
