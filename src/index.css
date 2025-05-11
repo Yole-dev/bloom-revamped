@@ -3394,4 +3394,39 @@ textarea:focus {
   .member-details {
     width: 100%;
   }
+
+  /* CONTACT US PAGE STYLES */
+  .contact-us-container {
+    width: 100svw;
+  }
+
+  .contact-us-header {
+    width: 100svw;
+    padding: 0 1rem;
+    flex-direction: column-reverse;
+  }
+
+  .contact-us-header > p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-us-hero p {
+    font-size: 20px;
+    width: 50px;
+    top: 1rem;
+    left: 0;
+    margin-top: -1rem;
+  }
+
+  .contact-us-hero-circle {
+    width: 50px !important;
+    height: 50px !important;
+    border: solid 2px !important;
+    font-size: 20px !important;
+    bottom: 2rem;
+    right: 0;
+    left: 1rem;
+    margin-bottom: -3rem;
+  }
 }
