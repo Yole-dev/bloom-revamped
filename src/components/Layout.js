@@ -165,20 +165,35 @@ function NavList({ onNavToggle }) {
     { path: "/ourservices", name: "Our Services" },
     { path: "/portfolio", name: "Portfolio" },
     { path: "/aboutus", name: "About us" },
-    { name: "Others" },
+    { name: "More" },
   ];
 
   return (
     <>
       {navItems.map((item) => (
         <li
-          key={item?.path}
-          className={location.pathname === item.path ? "active" : ""}
-          onClick={item.name !== "Others" ? onNavToggle : handleDropDownToggle}
+          key={item.name}
+          className={
+            location.pathname === item.path
+              ? "active"
+              : item.name === "More"
+              ? "more-drop-down"
+              : ""
+          }
+          onClick={item.name !== "More" ? onNavToggle : handleDropDownToggle}
         >
-          <Link to={item?.path}>{item.name}</Link>
+          <Link to={item?.path}>
+            {item.name}
+            {item.name === "More" && (
+              <ion-icon
+                name={`${
+                  isDropDown ? "chevron-up-outline" : "chevron-down-outline"
+                }`}
+              ></ion-icon>
+            )}
+          </Link>
 
-          {item.name === "Others" && isDropDown && (
+          {item.name === "More" && isDropDown && (
             <DropDownNav onNavToggle={onNavToggle} location={location} />
           )}
         </li>
