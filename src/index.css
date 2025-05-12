@@ -3667,6 +3667,55 @@ textarea:focus {
     border-radius: 25px !important;
   }
 
+  .user-details-wrapper {
+    width: 90svw;
+    margin-top: 3rem;
+  }
+
+  .user-details-container {
+    width: 95%;
+  }
+
+  .user-details-header-texts {
+    width: 90%;
+  }
+
+  .user-details-header-texts p {
+    font-size: 17px !important;
+  }
+
+  .user-details-form-container {
+    width: 100%;
+  }
+
+  .user-details-form-container p {
+    width: 100% !important;
+  }
+
+  .user-details-form {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .user-details-form label {
+    font-size: 17px;
+  }
+
+  .user-details-form input {
+    height: 40px;
+    font-size: 15px;
+    border-radius: 0.5rem;
+  }
+
+  .user-grid-form {
+    grid-template-columns: repeat(1, 100%);
+    gap: 2rem !important;
+  }
+
+  .user-services-grid-form {
+    width: 100% !important;
+  }
+
   /* continuation of previous style */
 
   .claim-free-call-section {
