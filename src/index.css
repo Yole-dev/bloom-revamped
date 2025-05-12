@@ -3572,4 +3572,35 @@ textarea:focus {
     font-size: 15px;
     line-height: 20px;
   }
+
+  /* Booking Form component styles  */
+  .booking-form-container {
+    width: 100%;
+  }
+
+  .calendar-wrapper {
+    width: 90svw;
+  }
+
+  .custom-calendar-container {
+    width: 100%;
+  }
+
+  .calendar-header-text p {
+    width: 100% !important;
+    font-size: 20px !important;
+  }
+
+  .calendar-header p:first-of-type {
+    width: 100% !important;
+    font-size: 20px !important;
+  }
+
+  .calendar-header p:last-of-type {
+    font-size: 18px !important;
+  }
+
+  .calendar-header p:last-of-type span {
+    font-size: 15px;
+  }
 }
