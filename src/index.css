@@ -3787,4 +3787,60 @@ textarea:focus {
     left: 0;
     margin-top: -1rem;
   }
+
+  .sub-service-goals {
+    width: 100svw;
+    padding: 0 1rem;
+  }
+
+  .sub-service-goals > p {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .sub-service-goals-content > p {
+    width: 100%;
+  }
+
+  .sub-service-goals-content > p:first-of-type {
+    font-size: 23px;
+  }
+
+  .sub-service-goals-content > p:last-of-type {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .lets-talk-btn {
+    width: 80% !important;
+    height: 50px !important;
+    font-size: 18px !important;
+  }
+
+  .lets-talk-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .shama-brand-heading {
+    width: 100%;
+  }
+
+  .shama-brand-heading p:first-of-type {
+    font-size: 20px;
+  }
+
+  .shama-brand-heading p:last-of-type {
+    font-size: 25px;
+  }
+
+  .shama-brand-text {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .shama-brand-text p {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
