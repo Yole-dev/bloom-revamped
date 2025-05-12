@@ -3669,6 +3669,7 @@ textarea:focus {
 
   .user-details-wrapper {
     width: 90svw;
+    height: auto;
     margin-top: 3rem;
   }
 
@@ -3714,6 +3715,14 @@ textarea:focus {
 
   .user-services-grid-form {
     width: 100% !important;
+    height: auto;
+  }
+
+  .booking-submit-button {
+    width: 50% !important;
+    height: 50px !important;
+    font-size: 16px !important;
+    border-radius: 25px !important;
   }
 
   /* continuation of previous style */
