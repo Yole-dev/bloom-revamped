@@ -3622,6 +3622,51 @@ textarea:focus {
     border-radius: 25px !important;
   }
 
+  .clock-wrapper {
+    width: 100svw;
+    margin-top: 5rem;
+    padding: 0 1rem;
+  }
+
+  .custom-clock-container {
+    width: 100%;
+  }
+
+  .clock-header-text p:first-of-type,
+  .clock-header-text p:nth-child(2) {
+    font-size: 15px !important;
+  }
+
+  .clock-header-text p:last-of-type {
+    font-size: 18px;
+  }
+
+  .custom-time-picker {
+    width: 95% !important;
+  }
+
+  .react-datepicker__time-container {
+    width: 95svw !important;
+  }
+
+  .react-datepicker__time-list-item {
+    font-size: 20px;
+  }
+
+  .booking-back-button {
+    width: 40% !important;
+    height: 50px !important;
+    font-size: 16px !important;
+    border-radius: 25px !important;
+  }
+
+  .booking-next-button {
+    width: 40% !important;
+    height: 50px !important;
+    font-size: 16px !important;
+    border-radius: 25px !important;
+  }
+
   /* continuation of previous style */
 
   .claim-free-call-section {
