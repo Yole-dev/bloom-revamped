@@ -3843,4 +3843,50 @@ textarea:focus {
     font-size: 20px;
     line-height: 30px;
   }
+
+  .sub-service-approach-container {
+    width: 100svw;
+  }
+
+  .sub-service-approach-header {
+    width: 100%;
+  }
+
+  .sub-service-approach-header p:first-of-type {
+    font-size: 25px;
+  }
+
+  .sub-service-approach-header p:last-of-type {
+    font-size: 16px;
+  }
+
+  .sub-service-approach-content {
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 1rem;
+  }
+
+  .sub-service-approach-content img {
+    width: 100%;
+  }
+
+  .sub-service-approach-text-content {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+  }
+
+  .sub-service-approach-text-content p {
+    width: 100%;
+  }
+
+  .sub-service-approach-text-content p:first-of-type {
+    font-size: 20px;
+  }
+
+  .sub-service-approach-text-content p:last-of-type {
+    font-size: 18px;
+  }
 }
