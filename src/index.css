@@ -3538,4 +3538,19 @@ textarea:focus {
     left: 1rem;
     margin-bottom: -3rem;
   }
+
+  .request-our-team > div {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .request-our-team > div p:first-of-type {
+    width: 100%;
+    font-size: 25px;
+  }
+
+  .request-our-team > div p:last-of-type {
+    width: 100%;
+    font-size: 18px;
+  }
 }
