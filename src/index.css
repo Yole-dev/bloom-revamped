@@ -3603,4 +3603,22 @@ textarea:focus {
   .calendar-header p:last-of-type span {
     font-size: 15px;
   }
+
+  /* calendar body */
+
+  .react-datepicker__header {
+    padding: 1rem 0 !important;
+  }
+
+  .react-datepicker__current-month {
+    font-size: 20px !important;
+    padding: 0.4rem 0 !important;
+  }
+
+  .booking-first-button {
+    width: 80% !important;
+    height: 50px !important;
+    font-size: 18px !important;
+    border-radius: 25px !important;
+  }
 }
