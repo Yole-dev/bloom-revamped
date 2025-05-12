@@ -3924,4 +3924,25 @@ textarea:focus {
   .expectation p:first-of-type {
     font-size: 25px;
   }
+
+  /* UI/UX page styles */
+  .sub-services-new-heading {
+    width: 100%;
+    padding: 0;
+  }
+
+  .sub-services-new-heading div {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .sub-services-new-heading div p:first-of-type {
+    font-size: 25px;
+  }
+
+  .sub-services-new-heading div p:last-of-type {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
 }
