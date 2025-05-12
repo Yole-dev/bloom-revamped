@@ -3498,4 +3498,44 @@ textarea:focus {
   }
 
   /* STYLES FOR REQUEST FOR A CALL PAGE */
+
+  .request-us-main-container {
+    width: 100svw;
+  }
+
+  .request-us-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .request-us-header {
+    width: 100%;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .request-us-header > p {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+  }
+
+  .request-us-hero p {
+    font-size: 20px;
+    width: 150px;
+    top: 1rem;
+    left: 0;
+    margin-top: -1rem;
+  }
+
+  .request-us-hero-circle {
+    width: 50px !important;
+    height: 50px !important;
+    border: solid 2px !important;
+    font-size: 20px !important;
+    bottom: 2rem;
+    right: 0;
+    left: 1rem;
+    margin-bottom: -3rem;
+  }
 }
