@@ -3553,4 +3553,23 @@ textarea:focus {
     width: 100%;
     font-size: 18px;
   }
+
+  .call-booking-box {
+    width: 100% !important;
+    height: auto !important;
+    padding: 2rem 1rem !important;
+    border-radius: 1rem !important;
+  }
+
+  .call-booking-box p {
+    width: 100% !important;
+    font-size: 25px !important;
+    line-height: 28px !important;
+  }
+
+  .call-booking-box ul {
+    width: 100%;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
