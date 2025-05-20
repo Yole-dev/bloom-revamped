@@ -13,12 +13,14 @@ import UiUx from "./pages/UiUx";
 import Ecommerce from "./pages/Ecommerce";
 import RequestACall from "./pages/RequestACall";
 
+import logo_marker from "./assets/logos/logo_mark_white.png";
+
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(function () {
     // timing the page loader
-    const timer = setTimeout(() => setIsLoading(false), 3000);
+    const timer = setTimeout(() => setIsLoading(false), 3500);
 
     //cleaning up the effect
     return () => clearTimeout(timer);
@@ -125,5 +127,9 @@ export default function App() {
 }
 
 function Loading() {
-  return <p>Loading...</p>;
+  return (
+    <div className="loader-container">
+      <img src={logo_marker} alt="company logo" className="loading-logo" />
+    </div>
+  );
 }
