@@ -87,7 +87,7 @@ textarea:focus {
 }
 
 .header-logo {
-  max-width: 134px;
+  width: 134px;
   height: 55.22px;
 }
 
@@ -2481,6 +2481,10 @@ textarea:focus {
 
   .header {
     display: none;
+  }
+
+  .header-logo {
+    image-rendering: crisp-edges;
   }
 
   .mobile-header {
