@@ -42,7 +42,7 @@ function HeroSection() {
       <section className="hero-section">
         <p className="hero-heading">
           <TextAnimation
-            text="Choose Bloom as your web design agency"
+            text="Choose Bloom Digitale as your web design agency"
             duration={4}
             color="#141414"
             animationType="typing"
@@ -71,9 +71,10 @@ function HeroSection() {
 
             <div className="know-more-content">
               <p className="know-more-text">
-                At Boom Agency we’re passionate about customer experience and
-                team culture. When you chose to join Bloom Agency you are
-                joining a team that genuinely loves what they do.
+                At Bloom Digitale Agency we’re passionate about customer
+                experience and team culture. When you chose to join Bloom
+                Digitale Agency you are joining a team that genuinely loves what
+                they do.
               </p>
 
               <Button
@@ -106,9 +107,9 @@ function ServicesSection() {
             <p className="service-heading">We offer several service for you</p>
 
             <p className="service-text">
-              Bloom is your one-stop web design agency, offering a full range of
-              services to elevate your brand, enhance your online presence, and
-              drive business growth.
+              Bloom Digitale is your one-stop web design agency, offering a full
+              range of services to elevate your brand, enhance your online
+              presence, and drive business growth.
             </p>
           </div>
 
@@ -335,7 +336,7 @@ function TestimonialsSection() {
     containScroll: "trimSnaps",
     breakpoints: {
       "(min-width: 768px)": { slidesToScroll: 3 },
-      "(max-width: 767px)": { slidesToScroll: 1 },
+      "(max-width: 767px)": { slidesToScroll: 1, align: "center" },
     },
   });
 
@@ -375,7 +376,7 @@ function Testimonials({ emblaApi }) {
   const testimonialData = [
     {
       name: "Ashley Cooper",
-      content: `Bloom delivered the site with the timeline as they requested. In the
+      content: `Bloom Digitale delivered the site with the timeline as they requested. In the
         end, the client found a 50 increase in traffic with in days since its
         launch. They also had an impressive ability to use technologies that the
         company hasn't used, which have also proved to be easy to use and
@@ -385,21 +386,21 @@ function Testimonials({ emblaApi }) {
     {
       name: "Anton de Swardt",
       content: `While the company wishes they had more time to work out the kinks with
-        the Bloom, they are quite happy with the result of the project. The
+        the Bloom Digitale, they are quite happy with the result of the project. The
         resulting website that the team devoloped is fast and the communication
         with the vender was very good. The company will work with them again.`,
     },
 
     {
       name: "Samuel King",
-      content: `Bloom of work, our brand now has the image we were looking for -
+      content: `Bloom Digitale of work, our brand now has the image we were looking for -
         playful yet professionals. We have received positive from partners,
         the team, and our community to the new look of our Brand`,
     },
 
     {
       name: "Page",
-      content: `Bloom of work, our brand now has the image we were looking for -
+      content: `Bloom Digitale of work, our brand now has the image we were looking for -
         playful yet professionals. `,
     },
 
@@ -411,8 +412,8 @@ function Testimonials({ emblaApi }) {
 
     {
       name: "Ronald",
-      content: `Bloom of work, our brand now has the image we were looking for -
-        playful yet professio nals. We have received positive from partners,
+      content: `Bloom Digitale does great work, our brand now has the image we were looking for -
+        playful yet professionals. We have received positive from partners,
         the team, and our community to the new look of our Brand`,
     },
   ];
