@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import headerLogo from "../assets/logos/header_logo.png";
-import footerLogo from "../assets/logos/footer_logo.png";
+import headerLogo from "../assets/logos/header_logo.PNG";
+import footerLogo from "../assets/logos/footer_logo.PNG";
 
 // imported animation library
 import { motion, AnimatePresence } from "framer-motion";

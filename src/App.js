@@ -13,7 +13,7 @@ import UiUx from "./pages/UiUx";
 import Ecommerce from "./pages/Ecommerce";
 import RequestACall from "./pages/RequestACall";
 
-import logo_marker from "./assets/logos/logo_mark_white.png";
+import logo_marker from "./assets/logos/logo_mark_white.PNG";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
