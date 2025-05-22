@@ -2587,7 +2587,7 @@ textarea:focus {
   }
 
   .footer-hero-texts p {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 100%;
   }
 
@@ -2629,7 +2629,7 @@ textarea:focus {
 
   .hero-heading {
     width: 90%;
-    font-size: 35px;
+    font-size: 27px;
   }
 
   .hero-text {
@@ -2667,8 +2667,8 @@ textarea:focus {
   .know-more-heading {
     width: 100%;
     height: auto;
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 30px;
     text-align: center;
   }
 
@@ -2710,8 +2710,8 @@ textarea:focus {
   .service-heading {
     width: 100%;
     height: auto;
-    font-size: 35px;
-    line-height: 80%;
+    font-size: 25px;
+    line-height: 30px;
   }
 
   .service-text {
@@ -2746,7 +2746,8 @@ textarea:focus {
   .services-portfolio-heading {
     width: 95%;
     height: auto;
-    font-size: 35px;
+    font-size: 25px;
+    line-height: 30px;
   }
 
   .services-portfolio-text {
@@ -2792,7 +2793,7 @@ textarea:focus {
 
   .detail-heading {
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -2818,15 +2819,15 @@ textarea:focus {
   }
 
   .service-portfolio-footer p {
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 30px;
   }
 
   .service-portfolio-footer-btn {
-    width: 70px !important;
-    height: 70px !important;
+    width: 80px !important;
+    height: 80px !important;
     font-size: 13px !important;
-    top: 4.5rem;
+    top: 2.5rem;
   }
 
   .service-portfolio-footer hr {
@@ -2840,7 +2841,7 @@ textarea:focus {
   .testimonial-heading {
     width: 95%;
     height: auto;
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .testimony {
