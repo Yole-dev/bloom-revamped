@@ -3168,7 +3168,7 @@ textarea:focus {
   }
 
   .work-box p {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .portfolio-box {
@@ -3201,7 +3201,8 @@ textarea:focus {
   }
 
   .about-us-hero p {
-    font-size: 20px;
+    font-size: 25px;
+    line-height: 25px;
     width: 50px;
     top: 1rem;
     left: 0;
@@ -3259,7 +3260,7 @@ textarea:focus {
 
   .about p:first-of-type {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .about p:last-of-type {
@@ -3299,11 +3300,11 @@ textarea:focus {
   }
 
   .board div p:first-of-type {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .board div p:last-of-type {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
   }
 
@@ -3332,8 +3333,9 @@ textarea:focus {
   }
 
   .why-bloom-text {
-    font-size: 19px;
+    font-size: 16px;
     text-align: center;
+    padding: 0 0.7rem;
   }
 
   .why-bloom-img {
@@ -3365,7 +3367,7 @@ textarea:focus {
 
   .ceo-message div:first-of-type p:first-of-type {
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
     margin-bottom: 2rem;
   }
@@ -3379,7 +3381,7 @@ textarea:focus {
   }
 
   .ceo-message div:first-of-type p:last-of-type span:first-of-type {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .ceo-message div:last-of-type {
@@ -3393,7 +3395,7 @@ textarea:focus {
   }
 
   .ceo-message div:last-of-type p span {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .meet-the-team {
@@ -3441,7 +3443,8 @@ textarea:focus {
   }
 
   .contact-us-hero p {
-    font-size: 20px;
+    font-size: 25px;
+    line-height: 25px;
     width: 50px;
     top: 1rem;
     left: 0;
@@ -3471,12 +3474,12 @@ textarea:focus {
   }
 
   .contact-our-team > div p:first-of-type {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .contact-our-team > div p:last-of-type {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .contact-form-section {
@@ -3574,12 +3577,16 @@ textarea:focus {
 
   .request-our-team > div p:first-of-type {
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  .request-our-team > div p:first-of-type span:first-of-type {
+    font-size: 23px;
   }
 
   .request-our-team > div p:last-of-type {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .call-booking-box {
@@ -3591,13 +3598,13 @@ textarea:focus {
 
   .call-booking-box p {
     width: 100% !important;
-    font-size: 25px !important;
+    font-size: 20px !important;
     line-height: 28px !important;
   }
 
   .call-booking-box ul {
     width: 100%;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
   }
 
@@ -3646,7 +3653,7 @@ textarea:focus {
   .booking-first-button {
     width: 80% !important;
     height: 50px !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
     border-radius: 25px !important;
   }
 
@@ -3710,7 +3717,7 @@ textarea:focus {
   }
 
   .user-details-header-texts p {
-    font-size: 17px !important;
+    font-size: 16px !important;
   }
 
   .user-details-form-container {
@@ -3727,12 +3734,12 @@ textarea:focus {
   }
 
   .user-details-form label {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .user-details-form input {
     height: 40px;
-    font-size: 15px;
+    font-size: 14px;
     border-radius: 0.5rem;
   }
 
@@ -3765,16 +3772,16 @@ textarea:focus {
   }
 
   .claim-heading p:first-of-type {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .claim-text-heading {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
   }
 
   .claim-text {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .claim-text li {
@@ -3782,9 +3789,9 @@ textarea:focus {
   }
 
   .claim-button {
-    width: 80% !important;
+    width: 70% !important;
     height: 50px !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
 
   /* sub-service page styles */
@@ -3804,7 +3811,7 @@ textarea:focus {
   }
 
   .sub-service-header > p:last-of-type {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
 
@@ -3823,7 +3830,7 @@ textarea:focus {
 
   .sub-service-goals > p {
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .sub-service-goals-content > p {
@@ -3831,35 +3838,37 @@ textarea:focus {
   }
 
   .sub-service-goals-content > p:first-of-type {
-    font-size: 23px;
+    font-size: 18px;
+    line-height: 25px;
   }
 
   .sub-service-goals-content > p:last-of-type {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 25px;
   }
 
   .lets-talk-btn {
-    width: 80% !important;
+    width: 70% !important;
     height: 50px !important;
-    font-size: 18px !important;
+    font-size: 16px !important;
   }
 
   .lets-talk-icon {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
 
   .shama-brand-heading {
     width: 100%;
+    padding-left: 0.5rem;
   }
 
   .shama-brand-heading p:first-of-type {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .shama-brand-heading p:last-of-type {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .shama-brand-text {
@@ -3868,8 +3877,8 @@ textarea:focus {
   }
 
   .shama-brand-text p {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 15px;
+    line-height: 25px;
   }
 
   .sub-service-approach-container {
@@ -3878,14 +3887,17 @@ textarea:focus {
 
   .sub-service-approach-header {
     width: 100%;
+    padding: 0 1rem;
   }
 
   .sub-service-approach-header p:first-of-type {
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .sub-service-approach-header p:last-of-type {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .sub-service-approach-content {
@@ -3911,11 +3923,13 @@ textarea:focus {
   }
 
   .sub-service-approach-text-content p:first-of-type {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 25px;
   }
 
   .sub-service-approach-text-content p:last-of-type {
-    font-size: 18px;
+    font-size: 15px;
+    line-height: 25px;
   }
 
   /* Web-development page*/
@@ -3942,7 +3956,8 @@ textarea:focus {
 
   .expectation-container > p {
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .expectation-section {
@@ -3952,11 +3967,11 @@ textarea:focus {
   }
 
   .expectation p {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .expectation p:first-of-type {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   /* UI/UX page styles */
