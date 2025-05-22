@@ -2943,12 +2943,12 @@ textarea:focus {
   }
 
   .heading-second-section > div > div > p:first-of-type {
-    font-size: 25px;
+    font-size: 20px;
     padding: 0;
   }
 
   .heading-second-section > div > div > p:last-of-type {
-    font-size: 30px;
+    font-size: 25px;
     padding: 0;
   }
 
@@ -2980,7 +2980,7 @@ textarea:focus {
   }
 
   .our-services-section div > div > p {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 400;
   }
 
@@ -3978,5 +3978,10 @@ textarea:focus {
     width: 100%;
     font-size: 14px;
     text-align: center;
+  }
+
+  .request-for-call-container p {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
