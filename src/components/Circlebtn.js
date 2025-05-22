@@ -1,6 +1,6 @@
 export default function CircleButton({
   children,
-  background = "#0755e9",
+  background = "#02ACB9",
   border = "solid 4px #ffffff",
   width = 90.39,
   height = 89.46,

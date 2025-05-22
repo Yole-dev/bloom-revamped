@@ -11,7 +11,7 @@ export default function Button({
   width = 174,
   height = 60,
   color = "#ffffff",
-  background = "#0755e9",
+  background = "#02ACB9",
   borderRadius = 31,
   border = "none",
   fontSize = 18,

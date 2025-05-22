@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import headerLogo from "../assets/logos/header_logo.PNG";
-import footerLogo from "../assets/logos/footer_logo.PNG";
+import footerLogo from "../assets/logos/logo_all_white.PNG";
 
 // imported animation library
 import { motion, AnimatePresence } from "framer-motion";
@@ -340,8 +340,8 @@ function FooterCopyrightText() {
 
   return (
     <p className="copyright-text">
-      {year} Bloom. All rights reserved Privacy policy, Terms of service, Cookie
-      settings.
+      <span>&copy; {year} Bloom Digitale.</span>
+      <span>All rights reserved Privacy policy, Terms of service.</span>
     </p>
   );
 }

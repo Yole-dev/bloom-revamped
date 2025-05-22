@@ -71,10 +71,9 @@ function HeroSection() {
 
             <div className="know-more-content">
               <p className="know-more-text">
-                At Bloom Digitale Agency we’re passionate about customer
-                experience and team culture. When you chose to join Bloom
-                Digitale Agency you are joining a team that genuinely loves what
-                they do.
+                At Bloom Digitale we’re passionate about customer experience and
+                team culture. When you chose to join Bloom Digitale Agency you
+                are joining a team that genuinely loves what they do.
               </p>
 
               <Button
@@ -267,7 +266,7 @@ function PortfolioDetails() {
       <LeftComponentAnimation>
         <Detail
           src={portfolioImage4}
-          background="#0755e9"
+          background="#02ACB9"
           flexDirection="row-reverse"
         >
           <>
