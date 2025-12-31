@@ -19,6 +19,7 @@ import serviceImage3 from "../assets/our_services/service_image3.png";
 import serviceImage4 from "../assets/our_services/service_image4.png";
 import serviceImage5 from "../assets/our_services/service_image5.png";
 import serviceImage6 from "../assets/our_services/service_image6.png";
+import serviceImage7 from "../assets/our_services/service_image7.png";
 
 const faqs = [
   {
@@ -86,11 +87,11 @@ function HeadingSection() {
         </LeftComponentAnimation>
 
         <RightComponentAnimation>
-          <p>See Our Expertise in Digital Solution</p>
+          <p>Expertise in Digital Solutions</p>
 
           <p>
-            Explore our range of services designed to elevate your brand ,
-            enhance user experience and drive business growth.
+            Explore our range of services and solutions that strengthen brands
+            and move businesses forward.
           </p>
         </RightComponentAnimation>
       </div>
@@ -103,14 +104,12 @@ function HeadingSection() {
             <div>
               <p>Featured Work</p>
 
-              <p>Branding Design</p>
+              <p>Branding</p>
             </div>
 
             <p>
-              We worked with the founder of SHAMA to bring her brand idea to
-              life. Bloom created the logo, explored concepts for collateral and
-              packaging materials, and finally, built a modern ecommerce website
-              for the brand.
+              We partnered with SHAMA to craft a refined brand identity, from
+              logo and packaging to a modern ecommerce experience.
             </p>
           </div>
         </div>
@@ -127,16 +126,17 @@ function OurServiceSection() {
           <div>
             <img src={serviceImage3} alt="" />
 
-            <p>Branding Design</p>
+            <div className="services-column-card">
+              <p>Branding</p>
+              <p>
+                We craft distinctive brand identities that communicate trust,
+                clarity, and consistency across every digital touchpoint.
+              </p>
+            </div>
           </div>
-
-          <p>
-            Branding Design Your website will be designed to render beautifully
-            across all devices – desktops, tablets, and mobile.
-          </p>
         </LeftComponentAnimation>
 
-        <LeftComponentAnimation>
+        <RightComponentAnimation>
           <div>
             <img src={serviceImage4} alt="" />
 
@@ -144,13 +144,12 @@ function OurServiceSection() {
           </div>
 
           <p>
-            We offers tailored solution that create visually stunning, highly
-            functional website optimize for seamless user experience across all
-            device
+            We build fast, scalable, and conversion-focused websites tailored to
+            your business goals.
           </p>
-        </LeftComponentAnimation>
+        </RightComponentAnimation>
 
-        <RightComponentAnimation>
+        <LeftComponentAnimation>
           <div>
             <img src={serviceImage5} alt="" />
 
@@ -158,12 +157,25 @@ function OurServiceSection() {
           </div>
 
           <p>
-            Designing intuitive and engaging user interface that enhance the
-            overall user experience.
+            We design intuitive, user-centered interfaces that make products
+            easy to use, engaging, and effective.
+          </p>
+        </LeftComponentAnimation>
+
+        <RightComponentAnimation>
+          <div>
+            <img src={serviceImage7} alt="" />
+
+            <p>Mobile App Development</p>
+          </div>
+
+          <p>
+            We engineer high-performance mobile applications that blend seamless
+            user experience with the scalability your business needs to grow.
           </p>
         </RightComponentAnimation>
 
-        <RightComponentAnimation>
+        <LeftComponentAnimation>
           <div>
             <img src={serviceImage6} alt="" />
 
@@ -171,10 +183,10 @@ function OurServiceSection() {
           </div>
 
           <p>
-            Building and optimizing online stores that drive sales and provide a
-            seamless shopping experience.
+            We build and optimize high-performing online stores designed to
+            convert visitors into loyal customers.
           </p>
-        </RightComponentAnimation>
+        </LeftComponentAnimation>
       </div>
 
       <ComponentAnimation className="contact-us-section">
