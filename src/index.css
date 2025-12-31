@@ -3,7 +3,7 @@
 :root {
   /* page primary colors */
   --primary-blue: #02acb9;
-  --secondary-blue: #5b94ff;
+  --secondary-blue: #0755e9;
   --primary-black: #141414;
   --primary-white: #ffffff;
   --off-white: #f7f7f7;
@@ -972,7 +972,7 @@ textarea:focus {
 .request-for-call-section {
   width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .request-for-call-container {
@@ -981,7 +981,7 @@ textarea:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--primary-blue);
+  background: var(--secondary-blue);
   color: var(--primary-white);
   border-radius: 30px;
   padding: 0 3rem;

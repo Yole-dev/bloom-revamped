@@ -12,11 +12,11 @@ export default function RequestForCallSection() {
   return (
     <ComponentAnimation className="request-for-call-section">
       <div className="request-for-call-container">
-        <p>Offering The Best Experience Of Digital Branding Services</p>
+        <p>Let's Build a Digital Product You Can Be Proud Of</p>
 
         <Button
           gap={0.5}
-          width={305}
+          width={250}
           height={63}
           borderRadius={104.71}
           fontSize={23.04}
@@ -25,7 +25,7 @@ export default function RequestForCallSection() {
           color="#141414"
           className="request-a-free-call-btn"
         >
-          <Link to="/requestacall">Request A Free Call</Link>
+          <Link to="/contactus">Get Started</Link>
           <CircleButton
             background="#ff6016"
             width={46.07}

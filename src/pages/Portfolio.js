@@ -33,11 +33,11 @@ function HeaderSection() {
   return (
     <section className="portfolio-page-header">
       <LeftComponentAnimation className="portfolio-page-header-text">
-        <p>Our Portfolios</p>
+        <p>Our Work</p>
 
         <p>
-          Showcasing Excellence, One Project at a Time – See How We've Helped
-          Businesses Thrive with Stunning Designs and Impactful Solutions.
+          A selection of digital products we have designed and buuilt for
+          ambitious brands.
         </p>
       </LeftComponentAnimation>
 
