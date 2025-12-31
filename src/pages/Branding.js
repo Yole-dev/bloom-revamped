@@ -52,7 +52,7 @@ function HeaderSection() {
       </p>
 
       <div className="sub-service-hero">
-        <p>Branding And Design Agency</p>
+        <p>Brand Design</p>
         <img src={image1} alt="" />
         <CircleButton
           fontSize={30}
@@ -65,9 +65,10 @@ function HeaderSection() {
       </div>
 
       <p>
-        Branding power lies in fostering trust with unacquainted companies.
-        Contemplate its implications for your business. The accuracy of branding
-        is crucial, and our guidance ensures optimal results.
+        Branding is how people recognize you, trust you, and choose you. At
+        Bloom Digitale, we help businesses shape clear, credible brand
+        identities that communicate value instantly and consistently, across
+        every touchpoint.
       </p>
     </ComponentAnimation>
   );
@@ -80,45 +81,48 @@ function MainSection({ children }) {
 function BrandingGoals() {
   return (
     <ComponentAnimation className="sub-service-goals">
-      <p>Whatever your branding goals are, Bloom will help you succeed.</p>
+      <p>
+        No matter where your brand is today, we help you move forward with
+        clarity and confidence.
+      </p>
 
       <LeftComponentAnimation className="sub-service-goals-content">
-        <p>Brand identity design for a new business</p>
+        <p>Brand Identity Design for New Businesses</p>
         <p>
-          First impressions last longer. If you are going to work on your
-          branding, you might as well do it right. As a new business, BLOOM will
-          help with your brand messaging, logo, collateral and guidelines. We
-          can also help with the design of your website.
+          First impressions matter. If you’re building a new business, your
+          brand needs to be clear, credible, and memorable from day one. We
+          design logos, brand visuals, messaging, and guidelines that give your
+          business a strong foundation and a professional presence from the
+          start.
         </p>
       </LeftComponentAnimation>
 
       <RightComponentAnimation className="sub-service-goals-content">
-        <p>Rebranding an existing business</p>
+        <p>Rebranding for evolving Businesses</p>
         <p>
-          Is there a new direction for your company? Or is your brand identity
-          now ancient and uninspiring? If yes, it’s time to refresh your brand.
-          Rebranding is a big (and sometimes complicated) move, but we will help
-          you navigate this seamlessly.
+          If your brand no longer reflects who you are or where you’re headed,
+          it’s time for a refresh. We help businesses reposition, modernize, and
+          realign their brand identity, without losing what already works.
         </p>
       </RightComponentAnimation>
 
       <LeftComponentAnimation className="sub-service-goals-content">
-        <p>Design of additional brand stationary and assets.</p>
+        <p>Brand Assets & Marketing Collateral.</p>
         <p>
-          Every element of your brand should work together to create the right
-          experience. Let’s work together create additional brand assets such as
-          business cards, letterheads, packaging, social media banners, email
-          templates, and much more.
+          Consistency builds trust. We design supporting brand assets such as
+          business cards, letterheads, packaging, social media graphics, email
+          templates, and more, ensuring your brand looks professional everywhere
+          it appears.
         </p>
       </LeftComponentAnimation>
 
       <RightComponentAnimation className="sub-service-goals-content">
-        <p>Brand strategy and guideline development</p>
+        <p>Brand Strategy & Guidelines</p>
         <p>
-          Your brand goes beyond logo and colours. It involves your messaging,
-          your voice, your tone, and your culture. It also needs to be
-          consistent. Through clearly defined brand guidelines, we will help you
-          ensure that your brand is used the right way – every time.
+          A strong brand goes beyond visuals. We define your brand’s voice,
+          positioning, values, and messaging, then document everything in clear
+          brand guidelines, so your brand is used correctly and consistently at
+          all times.
         </p>
       </RightComponentAnimation>
 
@@ -131,31 +135,20 @@ function ShamaBrandSection() {
   return (
     <ComponentAnimation className="shama-brand-section">
       <div className="shama-brand-heading">
-        <p>SHAMA</p>
-        <p>Branding eCommerce Website Design for a Luxury Selfcare Brand.</p>
+        <p>SHAMA SKINCARE</p>
+        <p>A Luxury Skincare Brand, Designed to Sell and Stand Out.</p>
       </div>
 
       <img src={image2} alt="shama brand website preview" />
 
       <div className="shama-brand-text">
         <p>
-          We worked with the founder of SHAMA to bring her brand idea to life.
-          Bloom created the logo, explored concepts for collateral and packaging
-          materials, and finally, built a modern ecommerce website for the
-          brand.
+          We helped SHAMA transform a refined skincare concept into a cohesive
+          luxury brand. From brand identity and packaging to a modern ecommerce
+          experience, every detail was crafted to communicate quality, trust,
+          and elegance, while making it easy for customers to explore and
+          purchase with confidence.
         </p>
-
-        <Button
-          width={163}
-          height={49}
-          background="#EE4200"
-          borderRadius={31}
-          fontSize={15}
-          fontWeight={400}
-          className="shama-brand-btn"
-        >
-          View Case Study
-        </Button>
       </div>
     </ComponentAnimation>
   );
@@ -165,23 +158,25 @@ function BrandingApproachSection() {
   return (
     <ComponentAnimation className="sub-service-approach-container">
       <div className="sub-service-approach-header">
-        <p>The strategic approach to branding design</p>
         <p>
-          Let’s take a closer look at how companies come up with their unique
-          logos, colors, and messages that help people recognize and remember
-          them.
+          Our Process <br />A strategic approach to building strong,
+          recognizable brandsn
+        </p>
+        <p>
+          Discover our systematic approach to crafting unique identities, from
+          visual language to core messaging, designed to command attention and
+          drive long-term recognition.
         </p>
       </div>
 
       <LeftComponentAnimation className="sub-service-approach-content">
         <img src={image3} alt="" />
         <div className="sub-service-approach-text-content">
-          <p>Step 1 – Creation of Your Brand Strategy</p>
+          <p>Step 1 – Brand Strategy</p>
           <p>
-            Firstly we kick things off by diving into your business, goals, what
-            makes you special, and who you're trying to reach. Once we've got
-            that down, we'll polish up your brand message to make sure it
-            shines.
+            We start by understanding your business, goals, audience, and what
+            sets you apart. This foundation guides every decision that follows,
+            from messaging to visual identity.
           </p>
         </div>
       </LeftComponentAnimation>
@@ -189,12 +184,11 @@ function BrandingApproachSection() {
       <RightComponentAnimation className="sub-service-approach-content sub-service-approach-content-reverse">
         <img src={image4} alt="" />
         <div className="sub-service-approach-text-content">
-          <p>Step 2 – Design of your Brand Identity</p>
+          <p>Step 2 – Brand Identity Design</p>
           <p>
-            In this step, we start crafting your logo. Using insights from
-            earlier, we explore concepts, colors, and fonts to offer brand
-            identity options. Once finalized, the logo is delivered in various
-            formats for both print and digital use.
+            Using strategic insights, we design your logo, colors, and
+            typography to create a cohesive identity that works across digital
+            and print.
           </p>
         </div>
       </RightComponentAnimation>
@@ -202,13 +196,11 @@ function BrandingApproachSection() {
       <LeftComponentAnimation className="sub-service-approach-content">
         <img src={image5} alt="" />
         <div className="sub-service-approach-text-content">
-          <p>Step 3 – Collateral Design</p>
+          <p>Step 3 – Brand Collateral</p>
           <p>
-            After finalizing your logo, we proceed to create all necessary
-            stationery and collateral. This encompasses business cards,
-            letterhead, banners, flyers, invoices, icons, social media covers,
-            email signatures, and more – everything aligned with your brand
-            identity.
+            We design essential brand assets that bring your identity to life,
+            from stationery and marketing materials to digital and social media
+            assets.
           </p>
         </div>
       </LeftComponentAnimation>
@@ -216,11 +208,11 @@ function BrandingApproachSection() {
       <RightComponentAnimation className="sub-service-approach-content sub-service-approach-content-reverse">
         <img src={image6} alt="" />
         <div className="sub-service-approach-text-content">
-          <p>Step 4 – Brand Guideline Development</p>
+          <p>Step 4 – Brand Guidelines</p>
           <p>
-            Lastly, we compile your brand guidelines, a vital document outlining
-            your brand identity elements, including fonts and color codes. It
-            also provides clear instructions on proper logo usage.
+            We document your brand identity in a clear, practical guide;
+            covering logo usage, colors, typography, and visual rules to ensure
+            consistency everywhere.
           </p>
         </div>
       </RightComponentAnimation>

@@ -4,7 +4,7 @@ import Button from "./Button";
 export default function LetUsTalkBtn() {
   return (
     <Button
-      width={300}
+      width={360}
       height={103}
       borderRadius={54}
       background="#FF6016"
@@ -12,7 +12,7 @@ export default function LetUsTalkBtn() {
       fontWeight={400}
       className="lets-talk-btn"
     >
-      <Link to="/contactus">Let's Talk</Link>
+      <Link to="/contactus">Let's get started</Link>
       <span className="lets-talk-icon">
         <ion-icon name="arrow-forward-outline"></ion-icon>
       </span>
