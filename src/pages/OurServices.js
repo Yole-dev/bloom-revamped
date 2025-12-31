@@ -10,7 +10,6 @@ import RightComponentAnimation from "../components/RightComponentAnimation";
 //imported reusable component
 import CircleButton from "../components/Circlebtn";
 import Button from "../components/Button";
-import RequestForCallSection from "../components/RequestForCallSection";
 
 // imported images
 import serviceImage1 from "../assets/our_services/service_image1.png";
@@ -23,33 +22,51 @@ import serviceImage7 from "../assets/our_services/service_image7.png";
 
 const faqs = [
   {
-    question: "What services does Bloom offer?",
+    question: "What does your process look like from start to finish?",
     answer:
-      "We offer branding, web development, UIUX design and Ecommerce solutions",
+      "Every project begins with discovery and strategy to fully understand your goals. From there, we move through design, development, testing, and launch, keeping you involved and informed at every stage to ensure the final product delivers real business results.",
   },
 
   {
-    question: "How do you approach new projects?",
+    question: "How much do your services cost?",
     answer:
-      "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
+      "Our pricing depends on the scope and complexity of your project. We don’t believe in one-size-fits-all packages, every quote is tailored to your specific goals and requirements.",
   },
 
   {
-    question: "What industries do you specialize in?",
+    question: "What makes Bloom Digitale different from other agencies?",
     answer:
-      "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
+      "We combine strategy, design, and technology to create digital solutions that don’t just look good, they perform. Our focus is on clarity, quality, and long-term results, not quick fixes.",
+  },
+
+  {
+    question: "Do you offer ongoing support after launch?",
+    answer:
+      "Yes. We offer ongoing support and maintenance options to ensure your website or application continues to perform optimally as your business grows.",
   },
 
   {
     question: "How long does a typical project take?",
     answer:
-      "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
+      "Timelines depend on the scope of work. some branding and website projects take between 5–6 weeks, while more complex web or ecommerce builds may take longer. We’ll provide a clear timeline before any work begins.",
   },
 
   {
-    question: "How can we get started with Bloom?",
+    question: "Do you work with specific industries or business types?",
     answer:
-      "We follow a six step process: Discovery, Strategy, Design , Development, Testing, and Launch.",
+      "We work with startups, growing businesses, and established brands across industries such as ecommerce, technology, lifestyle, health & wellness and finance. Our approach is industry-agnostic but strategy-driven, we adapt our process to your market and audience.",
+  },
+
+  {
+    question: "Will I own my website and assets after completion?",
+    answer:
+      "Yes. Once your project is completed and delivered, you have full ownership of all final assets, designs, and code.",
+  },
+
+  {
+    question: "How do we get started?",
+    answer:
+      "Simply reach out through our contact form. We’ll schedule a quick discovery call to understand your needs, recommend the right solution, and outline next steps.",
   },
 ];
 
@@ -60,7 +77,6 @@ export default function OurServices() {
         <HeadingSection />
         <OurServiceSection />
         <FaqSection data={faqs} />
-        <RequestForCallSection />
       </div>
     </PageAnimation>
   );
@@ -123,69 +139,94 @@ function OurServiceSection() {
     <section className="our-services-section-container">
       <div className="our-services-section">
         <LeftComponentAnimation>
-          <div>
+          <div className="services-card">
             <img src={serviceImage3} alt="" />
 
-            <div className="services-column-card">
+            <div>
               <p>Branding</p>
               <p>
                 We craft distinctive brand identities that communicate trust,
                 clarity, and consistency across every digital touchpoint.
               </p>
+
+              <Button>
+                <Link to="/branding">Learn More</Link>
+              </Button>
             </div>
           </div>
         </LeftComponentAnimation>
 
         <RightComponentAnimation>
-          <div>
+          <div className="services-card">
             <img src={serviceImage4} alt="" />
 
-            <p>Web Development</p>
-          </div>
+            <div>
+              <p>Web Development</p>
+              <p>
+                We build fast, scalable, and conversion-focused websites
+                tailored to your business goals.
+              </p>
 
-          <p>
-            We build fast, scalable, and conversion-focused websites tailored to
-            your business goals.
-          </p>
+              <Button>
+                <Link to="/webdevelopment">Learn More</Link>
+              </Button>
+            </div>
+          </div>
         </RightComponentAnimation>
 
         <LeftComponentAnimation>
-          <div>
+          <div className="services-card">
             <img src={serviceImage5} alt="" />
 
-            <p>UI/UX Design</p>
-          </div>
+            <div>
+              <p>UI/UX Design</p>
+              <p>
+                We design intuitive, user-centered interfaces that make products
+                easy to use, engaging, and effective.
+              </p>
 
-          <p>
-            We design intuitive, user-centered interfaces that make products
-            easy to use, engaging, and effective.
-          </p>
+              <Button>
+                <Link to="/ui_ux">Learn More</Link>
+              </Button>
+            </div>
+          </div>
         </LeftComponentAnimation>
 
         <RightComponentAnimation>
-          <div>
+          <div className="services-card">
             <img src={serviceImage7} alt="" />
 
-            <p>Mobile App Development</p>
-          </div>
+            <div>
+              <p>Mobile App Development</p>
+              <p>
+                We engineer high-performance mobile applications that blend
+                seamless user experience with the scalability your business
+                needs to grow.
+              </p>
 
-          <p>
-            We engineer high-performance mobile applications that blend seamless
-            user experience with the scalability your business needs to grow.
-          </p>
+              <Button>
+                <Link to="/mobileapp_development">Learn More</Link>
+              </Button>
+            </div>
+          </div>
         </RightComponentAnimation>
 
         <LeftComponentAnimation>
-          <div>
+          <div className="services-card">
             <img src={serviceImage6} alt="" />
 
-            <p>Ecommerce Solutions</p>
-          </div>
+            <div>
+              <p>Ecommerce Solutions</p>
+              <p>
+                We build and optimize high-performing online stores designed to
+                convert visitors into loyal customers.
+              </p>
 
-          <p>
-            We build and optimize high-performing online stores designed to
-            convert visitors into loyal customers.
-          </p>
+              <Button>
+                <Link to="/ecommerce">Learn More</Link>
+              </Button>
+            </div>
+          </div>
         </LeftComponentAnimation>
       </div>
 
@@ -204,9 +245,9 @@ function OurServiceSection() {
 
         <div>
           <div>
-            <p>Ready to elevate your brand with our expert services?</p>
+            <p>Ready to elevate your digital presence?</p>
 
-            <p>Contact us today to discuss your project and get started.</p>
+            <p>Design, build, and scale with confidence</p>
           </div>
 
           <Button
@@ -218,7 +259,7 @@ function OurServiceSection() {
             background="#FF6016"
             className="contact-btn"
           >
-            <Link to="/contactus">Contact Us</Link>
+            <Link to="/contactus">Let's Get Started</Link>
           </Button>
         </div>
       </ComponentAnimation>

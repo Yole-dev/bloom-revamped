@@ -113,6 +113,15 @@ export default function App() {
               }
             />
 
+            {/* <Route
+              path="/mobileapp_development"
+              element={
+                <Layout>
+                  <MobileAppDevelopment />
+                </Layout>
+              }
+            /> */}
+
             {/* Temproarily removed this page route because it's currently not needed */}
 
             {/* <Route

@@ -162,7 +162,7 @@ function NavList({ onNavToggle }) {
   const navItems = [
     { path: "/", name: "Home" },
     { path: "/ourservices", name: "Our Services" },
-    { path: "/portfolio", name: "Portfolio" },
+    { path: "/portfolio", name: "Our Work" },
     { path: "/aboutus", name: "About us" },
     { name: "More" },
   ];
@@ -252,7 +252,7 @@ function FooterHeroTexts() {
   return (
     <div className="footer-hero-texts">
       <p>
-        Want to Start <br /> a Project?
+        Need any of <br /> these Services?
       </p>
 
       <Button
@@ -316,8 +316,9 @@ function FooterNavList() {
   const navItems = [
     { path: "/", name: "Home" },
     { path: "/ourservices", name: "Our Services" },
-    { path: "/portfolio", name: "Portfolio" },
+    { path: "/portfolio", name: "Our Work" },
     { path: "/aboutus", name: "About Us" },
+    { path: "/contactus", name: "Contact Us" },
   ];
 
   return (
