@@ -111,19 +111,17 @@ function ContactForm() {
 
   // checkbox states
   const [checkedServices, setCheckedServices] = useState({
-    "Web Design": false,
+    "Web Development": false,
     "Branding Design": false,
     "UI/UX": false,
-    "Web Development": false,
     Ecommerce: false,
-    Others: false,
+    "Mobile App Development": false,
   });
 
   const servicesCheck = [
     { service: "Web Development" },
     { service: "Branding Design" },
     { service: "UI / UX" },
-    { service: "Web Development" },
     { service: "Ecommerce" },
     { service: "Mobile App Development" },
   ];
