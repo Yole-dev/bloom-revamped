@@ -4,9 +4,6 @@ import ComponentAnimation from "../components/ComponentAnimation";
 import LeftComponentAnimation from "../components/LeftComponentAnimation";
 import RightComponentAnimation from "../components/RightComponentAnimation";
 
-// imported component
-import RequestForCallSection from "../components/RequestForCallSection";
-
 // imported components
 import LetUsTalkBtn from "../components/LetUsTalkBtn";
 

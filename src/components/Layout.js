@@ -205,6 +205,7 @@ function DropDownNav({ onNavToggle, location }) {
   const navItems = [
     { path: "/branding", name: "Branding" },
     { path: "/webdevelopment", name: "Web Development" },
+    { path: "/mobileapp_development", name: "Mobile App Development" },
     { path: "/ui_ux", name: "UI/UX Design" },
     { path: "/ecommerce", name: "Ecommerce" },
   ];

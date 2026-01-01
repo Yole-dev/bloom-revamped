@@ -9,6 +9,7 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Branding from "./pages/Branding";
 import WebDevelopment from "./pages/WebDevelopment";
+import MobileAppDevelopment from "./pages/MobileAppDevelopment";
 import UiUx from "./pages/UiUx";
 import Ecommerce from "./pages/Ecommerce";
 
@@ -96,6 +97,15 @@ export default function App() {
             />
 
             <Route
+              path="/mobileapp_development"
+              element={
+                <Layout>
+                  <MobileAppDevelopment />
+                </Layout>
+              }
+            />
+
+            <Route
               path="/ui_ux"
               element={
                 <Layout>
@@ -112,15 +122,6 @@ export default function App() {
                 </Layout>
               }
             />
-
-            {/* <Route
-              path="/mobileapp_development"
-              element={
-                <Layout>
-                  <MobileAppDevelopment />
-                </Layout>
-              }
-            /> */}
 
             {/* Temproarily removed this page route because it's currently not needed */}
 

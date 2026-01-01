@@ -2540,6 +2540,10 @@ textarea:focus {
   background: var(--primary-orange);
 }
 
+.MobileApp-expectations {
+  background: var(--primary-black);
+}
+
 /* mobile view */
 @media (max-width: 768px) {
   .app-container {
