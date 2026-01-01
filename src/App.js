@@ -12,6 +12,7 @@ import WebDevelopment from "./pages/WebDevelopment";
 import MobileAppDevelopment from "./pages/MobileAppDevelopment";
 import UiUx from "./pages/UiUx";
 import Ecommerce from "./pages/Ecommerce";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 // Temproarily removed this page because it's currently not needed
 // import RequestACall from "./pages/RequestACall";
@@ -119,6 +120,15 @@ export default function App() {
               element={
                 <Layout>
                   <Ecommerce />
+                </Layout>
+              }
+            />
+
+            <Route
+              path="/privacy_policy"
+              element={
+                <Layout>
+                  <PrivacyPolicy />
                 </Layout>
               }
             />

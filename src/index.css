@@ -1417,6 +1417,44 @@ textarea:focus {
   cursor: pointer;
 }
 
+/* PRIVACY POLICY PAGE */
+.bloom-policy {
+  width: 1289px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.bloom-policy > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #232323;
+}
+
+.bloom-policy > div > p:first-of-type {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+
+.bloom-policy > div > p:last-of-type {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.bloom-policy > div > p > ul {
+  list-style-type: none;
+  margin-left: 0.7rem;
+}
+
+.bloom-policy > div > p > ul li span {
+  font-weight: 500;
+  font-size: 19px;
+}
+
 /* CONTACT US PAGE STYLES */
 .contact-us-container {
   display: flex;

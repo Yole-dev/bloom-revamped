@@ -342,7 +342,10 @@ function FooterCopyrightText() {
         {" "}
         <span className="copyright-sign">&copy;</span> {year} Bloom Digitale.
       </span>
-      <span>All rights reserved Privacy policy, Terms of service.</span>
+      <span>
+        All rights reserved <Link to="/privacy_policy">Privacy policy</Link>,
+        Terms of service.
+      </span>
     </p>
   );
 }
