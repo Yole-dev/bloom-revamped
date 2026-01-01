@@ -41,7 +41,7 @@ function HeaderSection() {
   return (
     <ComponentAnimation className="sub-service-header">
       <div className="sub-service-hero">
-        <p className="web-dev-heading">Website Design Development Agency</p>
+        <p className="web-dev-heading">Web Development</p>
         <img src={image1} alt="" />
         <p className="web-dev-heading-text">
           Building Stunning, High Performance Websites for Your Success
@@ -49,9 +49,10 @@ function HeaderSection() {
       </div>
 
       <p className="web-dev-heading-description">
-        You need a stunning website that delivers results. From concept and
-        strategy to design and implementation, Bloom’s expert team will bring
-        your website vision to life.
+        We design and develop high-performance websites that help businesses
+        grow, convert, and scale. From strategy and UX to design and
+        development, Bloom Digitale builds websites with clarity, purpose, and
+        measurable results.
       </p>
     </ComponentAnimation>
   );
@@ -65,37 +66,36 @@ function DevelopmentGoals() {
   return (
     <ComponentAnimation className="sub-service-goals">
       <p>
-        Whatever your goal is for your website, Bloom will help you achieve
-        success.
+        No matter your website goals, we design and build solutions tailored to
+        achieve them.
       </p>
 
       <LeftComponentAnimation className="sub-service-goals-content">
+        <p>Corporate websites that build trust and credibility</p>
         <p>
-          A corporate website that enhances your brand’s image and credibility.
-        </p>
-        <p>
-          Your website speaks volumes about your brand—positively or negatively.
-          In today’s digital world, where skepticism runs high, your website
-          plays a crucial role in winning over clients, partners, and investors.
-          Work with a team that values excellence. Work with Bloom.
+          Your website is often the first interaction people have with your
+          brand. We design corporate websites that communicate professionalism,
+          clarity, and trust, helping you make strong first impressions with
+          clients, partners, and investors.
         </p>
       </LeftComponentAnimation>
 
       <RightComponentAnimation className="sub-service-goals-content">
-        <p>A marketing website that draws in, engages, and converts.</p>
+        <p>Marketing websites built to attract, engage, and convert</p>
         <p>
-          A common mistake businesses make: running ads to a site that doesn’t
-          convert. From copy to retargeting, we build websites that deliver
-          results.
+          Many businesses drive traffic to websites that don’t perform. We
+          design marketing websites with clear messaging, strong visuals, and
+          conversion-focused layouts that turn visitors into customers.
         </p>
       </RightComponentAnimation>
 
       <LeftComponentAnimation className="sub-service-goals-content">
-        <p>A custom web app designed for functionality and ease of use.</p>
+        <p>Custom web applications built for performance and usability</p>
         <p>
-          Have an idea and need the right digital partner to bring it to life?
-          Looking for a team that builds stunning, seamless web and mobile
-          applications? Let’s make it happen—get in touch today
+          Have an idea that needs more than a standard website? We design and
+          develop custom web applications that are intuitive, scalable, and
+          built to solve real business problems, across web and mobile
+          platforms.
         </p>
       </LeftComponentAnimation>
 
@@ -109,13 +109,12 @@ function WebDevApproachSection() {
     <ComponentAnimation className="sub-service-approach-container">
       <div className="sub-service-approach-header">
         <p className="web-dev-approach-heading">
-          Our Process <br /> A strategic, growth focused approach to website
-          design.
+          A strategic, results-driven approach to building high-performance
+          websites.
         </p>
         <p>
-          Let’s take a closer look at how companies create stunning, high
-          performing websites that enhance their brand, engage users, and drive
-          results.
+          We follow a proven process to design and build websites that
+          strengthen brands, engage users, and drive measurable results.
         </p>
       </div>
 
@@ -124,10 +123,10 @@ function WebDevApproachSection() {
         <div className="sub-service-approach-text-content">
           <p>Step 1 – Web Strategy</p>
           <p>
-            We start by understanding your brand, goals, and industry. If you
-            have a website, we assess it for improvement. With a focus on your
-            audience’s needs, we craft a strategic plan—defining structure,
-            wireframes, and content for a high-performing site.
+            We begin by understanding your brand, goals, and audience. Through
+            research and analysis, we define a clear strategy that shapes your
+            site structure, messaging, and user experience, laying the
+            foundation for a high-performing website.
           </p>
         </div>
       </LeftComponentAnimation>
@@ -137,10 +136,10 @@ function WebDevApproachSection() {
         <div className="sub-service-approach-text-content">
           <p>Step 2 – Design</p>
           <p>
-            The brain processes images faster than words, so we blend visuals,
-            colors, fonts, and calls to action to captivate your audience. This
-            ensures a seamless flow, builds trust, and guides visitors toward
-            action.
+            We design visually compelling interfaces that communicate clearly
+            and guide users with purpose. Every layout, color, and interaction
+            is crafted to build trust, enhance usability, and move visitors
+            toward action.
           </p>
         </div>
       </RightComponentAnimation>
@@ -150,15 +149,13 @@ function WebDevApproachSection() {
         <div className="sub-service-approach-text-content">
           <p>Step 3 – Development</p>
           <p>
-            Once the design is finalized, we move to development—building the
-            theme, adding content, and ensuring flawless functionality. If
-            needed, we also manage complex integrations like APIs, portals, and
-            CRMs.
+            Once the design is finalized, we bring it to life through clean,
+            scalable development. We ensure fast performance, seamless
+            functionality, and reliable integrations, delivering a website built
+            to perform across devices and platforms.
           </p>
         </div>
       </LeftComponentAnimation>
-
-      <LetUsTalkBtn />
     </ComponentAnimation>
   );
 }
@@ -167,8 +164,8 @@ function WhatToExpectSection() {
   return (
     <ComponentAnimation className="expectation-container">
       <p>
-        What You Should Expect <br />A stunning, data driven website that’s
-        fast, responsive, and built to attract leads.
+        What You Can Expect <br />A high-performing, data-driven website built
+        to attract, engage, and convert.
       </p>
 
       <section className="expectation-section web-dev-expectations">
@@ -231,6 +228,8 @@ function WhatToExpectSection() {
           </p>
         </div>
       </section>
+
+      <LetUsTalkBtn />
     </ComponentAnimation>
   );
 }
