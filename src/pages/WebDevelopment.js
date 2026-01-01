@@ -29,10 +29,6 @@ export default function WebDevelopment() {
       </div>
 
       <WhatToExpectSection />
-
-      <div className="sub-service-sub-container">
-        <RequestForCallSection />
-      </div>
     </PageAnimation>
   );
 }
@@ -174,8 +170,8 @@ function WhatToExpectSection() {
 
           <p>
             Mobile Responsive <br /> <br /> Your website will be designed to
-            render beautifully across all devices – desktops, tablets, and
-            mobile.
+            deliver a seamless experience across desktop, tablet, and mobile,
+            without compromise.
           </p>
         </div>
 
@@ -183,9 +179,9 @@ function WhatToExpectSection() {
           <p>02</p>
 
           <p>
-            Optimized for Search <br /> <br /> Your website will not only look
-            beautiful and function effectively, it will also be found by search
-            engines.
+            Optimized for Search <br /> <br /> Your website is built with SEO
+            best practices in mind, ensuring it’s discoverable, structured, and
+            ready to rank.
           </p>
         </div>
 
@@ -193,8 +189,9 @@ function WhatToExpectSection() {
           <p>03</p>
 
           <p>
-            Speed Tested <br /> <br /> A slow website costs you opportunities,
-            so we ensure fast, optimized performance.
+            Speed Tested <br /> <br /> Your website is built with SEO best
+            practices in mind, ensuring it’s discoverable, structured, and ready
+            to rank.
           </p>
         </div>
 
@@ -202,9 +199,9 @@ function WhatToExpectSection() {
           <p>04</p>
 
           <p>
-            Optimized for Conversions <br /> <br /> Beautiful websites are
-            great, but you know what’s better? Beautiful websites that convert
-            website visitors to leads and customers
+            Optimized for Conversions <br /> <br /> Beyond aesthetics, we design
+            with intent, guiding visitors toward meaningful actions that drive
+            leads and sales.
           </p>
         </div>
 
@@ -212,9 +209,8 @@ function WhatToExpectSection() {
           <p>05</p>
 
           <p>
-            Backed by Data Research <br /> <br /> Your website strategy won’t be
-            based on guesses and maybes. It will be based on facts, industry
-            research, and validated data.
+            Backed by Data Research <br /> <br /> Every decision is informed by
+            insights, industry research, and validated data, not assumptions.
           </p>
         </div>
 
@@ -222,9 +218,9 @@ function WhatToExpectSection() {
           <p>06</p>
 
           <p>
-            Built with World Class Tools <br /> <br /> We leverage the best
-            tools – WordPress, Shopify, Magento, Google Analytics, and many more
-            – to deliver the results you need for your business.
+            Built with World Class Tools <br /> <br /> We build using modern,
+            industry-leading technologies chosen for performance, security, and
+            long-term scalability.
           </p>
         </div>
       </section>
