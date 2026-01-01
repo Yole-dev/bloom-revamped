@@ -30,10 +30,6 @@ export default function UiUx() {
       </div>
 
       <WhatToExpectSection />
-
-      <div className="sub-service-sub-container">
-        <RequestForCallSection />
-      </div>
     </PageAnimation>
   );
 }
@@ -43,7 +39,7 @@ function HeaderSection() {
     <ComponentAnimation className="sub-service-header">
       <div className="sub-services-new-heading">
         <div>
-          <p>UIUX Design Agency</p>
+          <p>UIUX Design</p>
           <p>
             You need an intuitive, user-friendly interface that enhances
             experiences.
@@ -54,8 +50,9 @@ function HeaderSection() {
       </div>
 
       <p className="web-dev-heading-description">
-        From indepth research and strategic planning to design and prototyping,
-        Bloom’s expert UIUX team transforms your vision into reality.
+        From in-depth research and product strategy to interface design and
+        prototyping, our team designs intuitive digital experiences that users
+        love and businesses trust.
       </p>
     </ComponentAnimation>
   );
@@ -69,35 +66,36 @@ function DevelopmentGoals() {
   return (
     <ComponentAnimation className="sub-service-goals">
       <p>
-        Whatever your goal is for your digital product, Bloom will help you
-        achieve success.
+        No matter your digital product goals, we design user experiences that
+        drive clarity, engagement, and long-term growth.
       </p>
 
       <LeftComponentAnimation className="sub-service-goals-content">
-        <p>A user focused UIUX design that enhances your brands credibility.</p>
+        <p>User-focused UI/UX that builds brand credibility.</p>
         <p>
-          Your product's design influences how users perceive your
-          brand—positively or negatively. A seamless experience builds trust and
-          keeps users engaged. Work with a team that understands the power of
-          usability and interaction.
+          Your product’s interface shapes how users perceive your brand,
+          instantly. A seamless, intuitive experience builds trust, strengthens
+          credibility, and keeps users engaged. We design with usability and
+          interaction at the core, ensuring every decision supports both the
+          user and your business.
         </p>
       </LeftComponentAnimation>
 
       <RightComponentAnimation className="sub-service-goals-content">
-        <p>A digital experience that attracts, engages, and retains users.</p>
+        <p>Digital experiences that attract and retain users.</p>
         <p>
-          We craft interfaces that drive engagement, ensuring visitors navigate
-          effortlessly and interact with your product intuitively. From research
-          to wireframing, we design experiences that convert.
+          We craft experiences that guide users naturally, reduce friction, and
+          encourage meaningful interaction. From research to wireframing, every
+          design choice is made to improve engagement and retention.
         </p>
       </RightComponentAnimation>
 
       <LeftComponentAnimation className="sub-service-goals-content">
-        <p>A custom UIUX design tailored for usability and performance.</p>
+        <p>Custom UI/UX designed for usability and performance.</p>
         <p>
-          A functional and visually appealing interface is essential for a great
-          user experience. We design intuitive user flows, interactive
-          prototypes, and high-fidelity designs that bring ideas to life.
+          Through intuitive user flows, interaction design, and high-fidelity
+          visuals, we create products that perform smoothly, scale effectively,
+          and deliver consistent experiences across devices.
         </p>
       </LeftComponentAnimation>
 
@@ -111,13 +109,13 @@ function UiUxApproachSection() {
     <ComponentAnimation className="sub-service-approach-container">
       <div className="sub-service-approach-header">
         <p className="web-dev-approach-heading">
-          Our Process <br /> A strategic, research driven approach to UIUX
+          Our Process <br /> A strategic, research-driven approach to UIUX
           design.
         </p>
         <p>
-          We combine strategy, creativity, and user insights to create
-          compelling digital experiences that elevate your brand, enhance
-          usability, and drive engagement.
+          We blend strategy, creativity, and user insight to design digital
+          experiences that elevate brands, improve usability, and drive
+          meaningful engagement.
         </p>
       </div>
 
@@ -126,11 +124,10 @@ function UiUxApproachSection() {
         <div className="sub-service-approach-text-content">
           <p>Step 1 – UX Strategy</p>
           <p>
-            We begin by understanding your business, brand, goals, and users. If
-            you have an existing product, we conduct UX audits to identify areas
-            for improvement. With user research and competitor analysis, we
-            create a strategic design plan—including wireframes and content
-            structures for an intuitive experience.
+            We start by understanding your business, users, and goals. Through
+            UX audits, user research, and competitor analysis, we identify
+            opportunities and define a clear design direction, laying the
+            foundation for an intuitive, user-centered experience.
           </p>
         </div>
       </LeftComponentAnimation>
@@ -140,10 +137,10 @@ function UiUxApproachSection() {
         <div className="sub-service-approach-text-content">
           <p>Step 2 – Design</p>
           <p>
-            Users process visuals faster than text. That’s why we combine
-            typography, color psychology, and layout principles to create an
-            engaging, visually appealing interface. Our designs ensure smooth
-            user interactions and easy navigation.
+            Design is where strategy comes to life. We combine typography,
+            color, layout, and interaction design to create visually engaging
+            interfaces that feel intuitive, guide users naturally, and make
+            navigation effortless across every touchpoint.
           </p>
         </div>
       </RightComponentAnimation>
@@ -151,17 +148,15 @@ function UiUxApproachSection() {
       <LeftComponentAnimation className="sub-service-approach-content">
         <img src={image4} alt="" />
         <div className="sub-service-approach-text-content">
-          <p>Step 3 – Prototyping Testing</p>
+          <p>Step 3 – Prototyping & Testing</p>
           <p>
-            Once the design is finalized, we create interactive prototypes to
-            validate usability before development. If needed, we refine the
-            experience through usability testing and iterations to ensure a
-            seamless interface that meets user expectations.
+            We create interactive prototypes to validate usability and user flow
+            before development. Through testing and refinement, we fine-tune the
+            experience to ensure a seamless, intuitive interface that meets real
+            user expectations.
           </p>
         </div>
       </LeftComponentAnimation>
-
-      <LetUsTalkBtn />
     </ComponentAnimation>
   );
 }
@@ -170,7 +165,7 @@ function WhatToExpectSection() {
   return (
     <ComponentAnimation className="expectation-container">
       <p>
-        What You Should Expect <br />A visually compelling, research backed UIUX
+        What You Can Expect <br />A visually compelling, research backed UIUX
         design that enhances usability, improves engagement, and drives
         conversions.
       </p>
@@ -180,8 +175,9 @@ function WhatToExpectSection() {
           <p>01</p>
 
           <p>
-            User Centered Design <br /> <br /> We design with your users in
-            mind, ensuring a seamless and intuitive experience.
+            User Centered Design <br /> <br /> We design with real users in
+            mind, creating intuitive experiences that feel natural, seamless,
+            and easy to navigate.
           </p>
         </div>
 
@@ -190,8 +186,8 @@ function WhatToExpectSection() {
 
           <p>
             Optimized for Engagement <br /> <br />
-            Our UI/UX solutions keep users engaged, leading to higher retention
-            and satisfaction.
+            Every interaction is thoughtfully crafted to keep users engaged,
+            increase retention, and improve overall satisfaction.
           </p>
         </div>
 
@@ -200,8 +196,8 @@ function WhatToExpectSection() {
 
           <p>
             Interactive Prototyping <br /> <br />
-            We build prototypes that help visualize interactions before
-            development.
+            We build interactive prototypes to validate user flows, test
+            usability, and refine experiences before development begins.
           </p>
         </div>
 
@@ -210,8 +206,8 @@ function WhatToExpectSection() {
 
           <p>
             Data Driven Insights <br /> <br />
-            We use analytics and user feedback to refine and improve
-            experiences.
+            Our design decisions are guided by user research, testing, and
+            insights, not assumptions, ensuring measurable results.
           </p>
         </div>
 
@@ -220,11 +216,23 @@ function WhatToExpectSection() {
 
           <p>
             Built with Best Practices <br /> <br />
-            Our designs follow the latest UI/UX standards and trends to ensure
-            future-proof solutions.
+            We follow proven UI/UX principles and modern standards to deliver
+            scalable, future-ready digital experiences.
+          </p>
+        </div>
+
+        <div className="expectation">
+          <p>06</p>
+
+          <p>
+            Scalable Design Systems <br /> <br />
+            We create structured UI systems that scale with your product,
+            ensuring consistency as features and teams grow.
           </p>
         </div>
       </section>
+
+      <LetUsTalkBtn />
     </ComponentAnimation>
   );
 }
