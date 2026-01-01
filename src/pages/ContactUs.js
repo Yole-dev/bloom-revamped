@@ -46,12 +46,7 @@ function MainSection() {
   return (
     <ComponentAnimation className="contact-our-team">
       <div>
-        <p>Contact Our Team</p>
-
-        <p>
-          Have a project in mind? Let’s craft intuitive and visually stunning
-          user experiences together.
-        </p>
+        <p>Tell us about your project, we’ll take it from there</p>
       </div>
 
       <ContactFormSection />
@@ -66,19 +61,22 @@ function ContactFormSection() {
 
       <RightComponentAnimation className="chat-with-us">
         <div>
-          <p>Chat with us</p>
-          <p>Speak to our friendly team via live chat</p>
-        </div>
+          <p>Email us</p>
+          <p>We’ll respond shortly</p>
 
-        <div>
-          <a href="mailto:">
+          <a href="mailto:bloomdigitale@gmail.coms">
             <span>
               <ion-icon name="paper-plane-outline"></ion-icon>
             </span>
-            Shoot us an email
+            Send us an email
           </a>
+        </div>
 
-          <a href="#">
+        <div>
+          <p>Chat with us</p>
+          <p>Speak to our friendly team via live chat</p>
+
+          <a href="wa.link/qit8ar">
             <span>
               <ion-icon name="logo-whatsapp"></ion-icon>
             </span>
@@ -90,24 +88,11 @@ function ContactFormSection() {
           <p>Call Us</p>
           <p>Call our team Mon - Fri from 8am to 5pm</p>
 
-          <a href="tel:+2348100000000">
+          <a href="tel:+2347072554714">
             <span>
               <ion-icon name="call-outline"></ion-icon>
             </span>
-            +234 000-000-0000
-          </a>
-        </div>
-
-        <div>
-          <p>Visit Us</p>
-          <p>Chat with us in person at our Bloom HQ</p>
-
-          <a href="#">
-            <span>
-              <ion-icon name="location-outline"></ion-icon>
-            </span>
-
-            <address>10 Bloom HQ, Lagos, Nigeria</address>
+            +234 707-255-4714
           </a>
         </div>
       </RightComponentAnimation>
@@ -121,6 +106,7 @@ function ContactForm() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [contact, setContact] = useState(0);
+  const [businessName, setBusinessName] = useState("");
   const [message, setMessage] = useState("");
 
   // checkbox states
@@ -134,12 +120,12 @@ function ContactForm() {
   });
 
   const servicesCheck = [
-    { service: "Web Design" },
+    { service: "Web Development" },
     { service: "Branding Design" },
-    { service: "UI/UX" },
+    { service: "UI / UX" },
     { service: "Web Development" },
     { service: "Ecommerce" },
-    { service: "Others" },
+    { service: "Mobile App Development" },
   ];
 
   function handleCheckboxChange(service) {
@@ -155,6 +141,7 @@ function ContactForm() {
     setLastName("");
     setEmail("");
     setContact(0);
+    setBusinessName("");
     setMessage("");
   }
 
@@ -206,7 +193,17 @@ function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="message"> Message</label>
+          <label htmlFor="last name">Business or Company Name</label>
+          <input
+            type="text"
+            placeholder="Business or Company Name"
+            value={businessName}
+            onChange={(e) => setBusinessName(e.target.value)}
+          />
+        </div>
+
+        <div>
+          <label htmlFor="message"> Tell us about your project</label>
           <textarea
             id="message"
             placeholder="Send us a message"
