@@ -30,10 +30,6 @@ export default function Ecommerce() {
       </div>
 
       <WhatToExpectSection />
-
-      <div className="sub-service-sub-container">
-        <RequestForCallSection />
-      </div>
     </PageAnimation>
   );
 }
@@ -51,8 +47,8 @@ function HeaderSection() {
       </div>
 
       <p className="web-dev-heading-description">
-        From strategy to design and development, Bloom’s expert team creates
-        eCommerce websites that turn visitors into loyal customers.
+        From design to development, we create eCommerce experiences built to
+        convert visitors into loyal, repeat customers.
       </p>
     </ComponentAnimation>
   );
@@ -66,37 +62,36 @@ function DevelopmentGoals() {
   return (
     <ComponentAnimation className="sub-service-goals">
       <p>
-        Whatever your goal is for your online store, Bloom will help you achieve
-        success.
+        No matter your business model or product, we build online stores
+        designed to sell, scale, and succeed.
       </p>
 
       <LeftComponentAnimation className="sub-service-goals-content">
-        <p>An eCommerce website that enhances your brands credibility.</p>
+        <p>An eCommerce experience that builds trust and drives confidence.</p>
         <p>
-          Your online store is your digital storefront. A seamless shopping
-          experience builds trust and keeps customers coming back. Work with a
-          team that understands conversion driven design.
+          Your online store is your digital storefront. From clean design to
+          secure payments and intuitive navigation, we create shopping
+          experiences that feel reliable, professional, and easy to use, so
+          customers feel confident buying from you.
         </p>
       </LeftComponentAnimation>
 
       <RightComponentAnimation className="sub-service-goals-content">
+        <p>A shopping journey designed to convert visitors into customers.</p>
         <p>
-          A digital shopping experience that attracts, engages, and converts.
-        </p>
-        <p>
-          We craft eCommerce websites that drive engagement, ensuring visitors
-          navigate effortlessly, find products easily, and enjoy a smooth
-          checkout process. From research to optimization, we design experiences
-          that convert.
+          We design eCommerce experiences that guide users effortlessly, from
+          product discovery to checkout. Every interaction is intentional,
+          reducing friction and increasing conversions at every stage of the
+          buyer journey.
         </p>
       </RightComponentAnimation>
 
       <LeftComponentAnimation className="sub-service-goals-content">
-        <p>A custom eCommerce website tailored for sales and growth.</p>
+        <p>A scalable eCommerce platform built for performance and growth.</p>
         <p>
-          A visually appealing, high performing online store is essential for
-          success. We build scalable platforms with intuitive navigation, fast
-          loading pages, and secure payment gateways.
+          We build high-performance online stores with fast load times, smooth
+          checkout flows, secure payment integrations, and flexible
+          architectures that grow with your business.
         </p>
       </LeftComponentAnimation>
 
@@ -110,13 +105,13 @@ function EcommerceApproachSection() {
     <ComponentAnimation className="sub-service-approach-container">
       <div className="sub-service-approach-header">
         <p className="web-dev-approach-heading">
-          Our Process <br />A strategic, sales driven approach to eCommerce
-          design.
+          Our Process <br />A strategic, conversion-focused approach to
+          eCommerce design.
         </p>
         <p>
-          We combine strategy, creativity, and user insights to create
-          compelling eCommerce experiences that elevate your brand, enhance
-          usability, and drive conversions.
+          We combine strategy, creativity, and user insights to build
+          high-performing eCommerce experiences that drive sales, build trust,
+          and support long-term growth.
         </p>
       </div>
 
@@ -126,10 +121,11 @@ function EcommerceApproachSection() {
           <p>Step 1 – eCommerce Strategy</p>
           <p>
             We start by understanding your business, products, and target
-            audience. If you have an existing store, we assess it for
-            improvement. Through user research and competitor analysis, we
-            create a strategic design plan—including wireframes and content
-            structures for an optimized shopping experience.
+            customers. If you already have an online store, we assess its
+            performance and uncover opportunities for improvement. Through
+            customer research and competitor analysis, we define a clear
+            strategy, covering structure, user flows, and content, to support an
+            optimized shopping experience.
           </p>
         </div>
       </LeftComponentAnimation>
@@ -139,10 +135,11 @@ function EcommerceApproachSection() {
         <div className="sub-service-approach-text-content">
           <p>Step 2 – Design</p>
           <p>
-            Shoppers process visuals faster than text. That’s why we combine
-            typography, color psychology, and layout principles to create an
-            engaging, visually appealing storefront. Our designs ensure smooth
-            navigation and easy product discovery.
+            Shoppers make decisions visually and emotionally. That’s why we
+            combine typography, color psychology, and layout principles to
+            design visually compelling storefronts that guide users
+            effortlessly, making it easy to discover products, compare options,
+            and move confidently toward checkout.
           </p>
         </div>
       </RightComponentAnimation>
@@ -153,15 +150,13 @@ function EcommerceApproachSection() {
           <p>Step 3 – Development Optimization</p>
           <p>
             Once the design is finalized, we build a high-performance eCommerce
-            store, integrating payment gateways, optimizing product pages, and
-            ensuring a seamless checkout experience. If needed, we implement
-            advanced features like customer portals, subscriptions, and CRM
-            integrations.
+            store focused on speed, reliability, and conversions. From secure
+            payment integrations and optimized product pages to smooth checkout
+            flows and advanced features like subscriptions and customer portals,
+            every element is engineered to scale with your business.
           </p>
         </div>
       </LeftComponentAnimation>
-
-      <LetUsTalkBtn />
     </ComponentAnimation>
   );
 }
@@ -170,8 +165,8 @@ function WhatToExpectSection() {
   return (
     <ComponentAnimation className="expectation-container">
       <p>
-        What You Should Expect <br />A stunning, conversion focused eCommerce
-        website that is fast, responsive, and built to scale.
+        What You Can Expect <br />A high-converting eCommerce website that is
+        fast, responsive, and built to scale.
       </p>
 
       <section className="expectation-section ecommerce-expectations">
@@ -180,8 +175,8 @@ function WhatToExpectSection() {
 
           <p>
             User Centered Design <br /> <br />
-            We design with your customers in mind, ensuring a seamless shopping
-            experience.
+            We design with your customers in mind, creating intuitive
+            experiences that make browsing and buying effortless.
           </p>
         </div>
 
@@ -190,8 +185,8 @@ function WhatToExpectSection() {
 
           <p>
             Optimized for Sales <br /> <br />
-            Our eCommerce solutions boost engagement, conversions, and customer
-            retention.
+            Every element is designed to increase engagement, boost conversions,
+            and improve customer retention.
           </p>
         </div>
 
@@ -210,8 +205,8 @@ function WhatToExpectSection() {
 
           <p>
             Data Driven Insights <br /> <br />
-            We use analytics and customer feedback to refine and improve
-            performance.
+            We use analytics and customer feedback to continuously refine
+            performance and improve results.
           </p>
         </div>
 
@@ -220,11 +215,24 @@ function WhatToExpectSection() {
 
           <p>
             Built for Growth <br /> <br />
-            From strategy to development, Bloom’s expert eCommerce team will
-            bring your vision to life.
+            From strategy to development, Bloom Digitale’s eCommerce experts
+            bring your vision to life—built to grow with your business.
+          </p>
+        </div>
+
+        <div className="expectation">
+          <p>06</p>
+
+          <p>
+            Performance & Speed <br /> <br />
+            We build lightning-fast eCommerce experiences optimized for speed,
+            reliability, and smooth performance, because faster sites convert
+            better.
           </p>
         </div>
       </section>
+
+      <LetUsTalkBtn />
     </ComponentAnimation>
   );
 }
