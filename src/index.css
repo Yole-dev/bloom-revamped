@@ -247,6 +247,24 @@ textarea:focus {
 .social-icons li {
   color: var(--primary-white);
   font-size: 30px;
+  transition: color 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.social-icons li:hover {
+  transform: scale(1.2);
+}
+
+.social-icons li:first-of-type:hover {
+  color: #e4405f;
+}
+
+.social-icons li:nth-of-type(2):hover {
+  color: #ea4c89;
+}
+
+.social-icons li:last-of-type:hover {
+  color: #0a66c2;
 }
 
 .footer-nav {
@@ -268,6 +286,14 @@ textarea:focus {
   list-style-type: none;
   color: var(--primary-white);
   font-size: 13px;
+}
+
+.footer-nav-list li {
+  transition: transform 0.5s ease;
+}
+
+.footer-nav-list li:hover {
+  transform: scale(1.5);
 }
 
 .footer-content-container hr {
@@ -313,7 +339,7 @@ textarea:focus {
   font-size: 18px;
   font-weight: 300;
   line-height: 143%;
-  width: 731px;
+  width: 750px;
 }
 
 .hero-image-container {

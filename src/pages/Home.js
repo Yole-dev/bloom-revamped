@@ -74,12 +74,6 @@ function HeroSection() {
             </p>
 
             <div className="know-more-content">
-              <p className="know-more-text">
-                We partner with startups to create meaningful digital products,
-                combining strategy, design, and engineering to deliever work
-                that lasts.
-              </p>
-
               <Button
                 width={300}
                 height={103}

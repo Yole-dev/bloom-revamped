@@ -284,21 +284,31 @@ function FooterIcons() {
   return (
     <ul className="social-icons">
       <li>
-        <ion-icon name="logo-instagram"></ion-icon>
+        <a href="https://www.instagram.com/bloom.digitale/">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
       </li>
-      <li>
+
+      {/* <li>
         <ion-icon name="logo-behance"></ion-icon>
-      </li>
+      </li> */}
+
       <li>
-        <ion-icon name="logo-dribbble"></ion-icon>
+        <a href="https://dribbble.com/bloom-digitale">
+          <ion-icon name="logo-dribbble"></ion-icon>
+        </a>
       </li>
 
       <li>
-        <ion-icon name="logo-twitter"></ion-icon>
+        <a href=" https://x.com/BloomDigitale">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
       </li>
 
       <li>
-        <ion-icon name="logo-linkedin"></ion-icon>
+        <a href="linkedin.com/company/bloom-digitale">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
       </li>
     </ul>
   );
