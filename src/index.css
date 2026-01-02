@@ -1447,7 +1447,7 @@ textarea:focus {
 
 .bloom-policy > div > p > ul {
   list-style-type: disc;
-  margin-left: 0.7rem;
+  margin-left: 1.2rem;
 }
 
 .bloom-policy > div > p > ul li span {
@@ -1472,7 +1472,7 @@ textarea:focus {
 }
 
 .contact-us-header > p {
-  width: 266px;
+  width: 505px;
   align-self: end;
   font-size: 18px;
   font-weight: 300;

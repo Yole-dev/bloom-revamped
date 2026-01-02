@@ -13,6 +13,7 @@ import MobileAppDevelopment from "./pages/MobileAppDevelopment";
 import UiUx from "./pages/UiUx";
 import Ecommerce from "./pages/Ecommerce";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 
 // Temproarily removed this page because it's currently not needed
 // import RequestACall from "./pages/RequestACall";
@@ -129,6 +130,15 @@ export default function App() {
               element={
                 <Layout>
                   <PrivacyPolicy />
+                </Layout>
+              }
+            />
+
+            <Route
+              path="/terms_of_service"
+              element={
+                <Layout>
+                  <TermsOfService />
                 </Layout>
               }
             />

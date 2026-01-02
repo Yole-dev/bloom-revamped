@@ -344,7 +344,7 @@ function FooterCopyrightText() {
       </span>
       <span>
         All rights reserved <Link to="/privacy_policy">Privacy policy</Link>,
-        Terms of service.
+        <Link to="/terms_of_service">Terms of service</Link> .
       </span>
     </p>
   );
