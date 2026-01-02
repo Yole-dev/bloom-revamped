@@ -1446,7 +1446,7 @@ textarea:focus {
 }
 
 .bloom-policy > div > p > ul {
-  list-style-type: none;
+  list-style-type: disc;
   margin-left: 0.7rem;
 }
 
@@ -3531,6 +3531,28 @@ textarea:focus {
 
   .member-details {
     width: 100%;
+  }
+
+  /* PRIVACY POLICY PAGE */
+  .bloom-policy {
+    width: 90%;
+    gap: 2rem;
+  }
+
+  .bloom-policy > div {
+    gap: 1rem;
+  }
+
+  .bloom-policy > div > p:first-of-type {
+    font-size: 20px;
+  }
+
+  .bloom-policy > div > p:last-of-type {
+    font-size: 14px;
+  }
+
+  .bloom-policy > div > p > ul li span {
+    font-size: 15px;
   }
 
   /* CONTACT US PAGE STYLES */

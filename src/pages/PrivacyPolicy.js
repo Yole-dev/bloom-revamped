@@ -158,10 +158,6 @@ function MainSection() {
               <span>Legal Requirements:</span> If required by law or to protect
               the legal rights and safety of Bloom Digitale and our clients.
             </li>
-            <li>
-              Restricted Access: Only authorized personnel essential to your
-              project have access to your data.
-            </li>
           </ul>
         </p>
       </div>
