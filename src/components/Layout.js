@@ -1,4 +1,11 @@
 import { Link, useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faXTwitter,
+  faLinkedin,
+  faDribbble,
+} from "@fortawesome/free-brands-svg-icons";
 import { useEffect, useState } from "react";
 import headerLogo from "../assets/logos/header_logo.PNG";
 import footerLogo from "../assets/logos/logo_all_white.PNG";
@@ -285,7 +292,7 @@ function FooterIcons() {
     <ul className="social-icons">
       <li>
         <a href="https://www.instagram.com/bloom.digitale/">
-          <ion-icon name="logo-instagram"></ion-icon>
+          <FontAwesomeIcon icon={faInstagram} />
         </a>
       </li>
 
@@ -295,19 +302,19 @@ function FooterIcons() {
 
       <li>
         <a href="https://dribbble.com/bloom-digitale">
-          <ion-icon name="logo-dribbble"></ion-icon>
+          <FontAwesomeIcon icon={faDribbble} />
         </a>
       </li>
 
       <li>
         <a href=" https://x.com/BloomDigitale">
-          <ion-icon name="logo-twitter"></ion-icon>
+          <FontAwesomeIcon icon={faXTwitter} />
         </a>
       </li>
 
       <li>
         <a href="linkedin.com/company/bloom-digitale">
-          <ion-icon name="logo-linkedin"></ion-icon>
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </li>
     </ul>
@@ -353,7 +360,8 @@ function FooterCopyrightText() {
         <span className="copyright-sign">&copy;</span> {year} Bloom Digitale.
       </span>
       <span>
-        All rights reserved <Link to="/privacy_policy">Privacy policy</Link>,
+        All rights reserved. &nbsp;{" "}
+        <Link to="/privacy_policy">Privacy policy</Link>, &nbsp;
         <Link to="/terms_of_service">Terms of service</Link> .
       </span>
     </p>

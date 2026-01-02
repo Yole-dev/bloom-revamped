@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Button from "./Button";
 
-export default function LetUsTalkBtn() {
+export default function LetUsTalkBtn({ content = "" }) {
   return (
     <Button
       width={360}
@@ -12,7 +12,7 @@ export default function LetUsTalkBtn() {
       fontWeight={400}
       className="lets-talk-btn"
     >
-      <Link to="/contactus">Let's get started</Link>
+      <Link to="/contactus"> {content} </Link>
       <span className="lets-talk-icon">
         <ion-icon name="arrow-forward-outline"></ion-icon>
       </span>

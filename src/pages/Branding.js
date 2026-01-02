@@ -36,8 +36,6 @@ export default function Branding() {
         <MainSection>
           <BrandingApproachSection />
         </MainSection>
-
-        <RequestForCallSection />
       </div>
     </PageAnimation>
   );
@@ -126,7 +124,7 @@ function BrandingGoals() {
         </p>
       </RightComponentAnimation>
 
-      <LetUsTalkBtn />
+      <LetUsTalkBtn content="Let's talk" />
     </ComponentAnimation>
   );
 }
@@ -217,7 +215,7 @@ function BrandingApproachSection() {
         </div>
       </RightComponentAnimation>
 
-      <LetUsTalkBtn />
+      <LetUsTalkBtn content="Let's get started" />
     </ComponentAnimation>
   );
 }

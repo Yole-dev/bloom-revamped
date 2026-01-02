@@ -95,7 +95,7 @@ function DevelopmentGoals() {
         </p>
       </LeftComponentAnimation>
 
-      <LetUsTalkBtn />
+      <LetUsTalkBtn content="Let's talk" />
     </ComponentAnimation>
   );
 }
@@ -225,7 +225,7 @@ function WhatToExpectSection() {
         </div>
       </section>
 
-      <LetUsTalkBtn />
+      <LetUsTalkBtn content="Let's get started" />
     </ComponentAnimation>
   );
 }
