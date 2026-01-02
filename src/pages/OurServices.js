@@ -312,7 +312,7 @@ function Faq({ children, questionNumber, question, onOpen, curOpen }) {
           {questionNumber}. {question}
         </p>
 
-        <p className="faq-answer"> {isOpen ? children : ""}</p>
+        <p className={`faq-answer ${isOpen ? "open" : ""} `}>{children}</p>
       </div>
 
       <div onClick={handleToggle}>

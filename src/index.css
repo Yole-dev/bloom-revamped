@@ -966,9 +966,11 @@ textarea:focus {
 
 .question-content {
   width: 406px;
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  transition: height 0.5s ease;
 }
 
 .faq-question {
@@ -980,11 +982,24 @@ textarea:focus {
 }
 
 .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-6px);
+
   align-self: end;
   font-size: 18px;
   font-weight: 300;
   line-height: 143%;
   color: var(--faq-answer);
+
+  transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+.faq-answer.open {
+  max-height: 300px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .arrow-icon {
@@ -994,7 +1009,6 @@ textarea:focus {
 }
 
 /* STYLES FOR REQUEST SECTION REUSABLE COMPONENT */
-
 .request-for-call-section {
   width: 100%;
   display: flex;
