@@ -21,7 +21,6 @@ import portfolioImage1 from "../assets/home/portfolio1.png";
 import portfolioImage2 from "../assets/home/portfolio2.png";
 import portfolioImage3 from "../assets/home/portfolio3.png";
 import portfolioImage4 from "../assets/home/portfolio4.png";
-import clientImage from "../assets/home/client2.png";
 
 export default function Home() {
   return (

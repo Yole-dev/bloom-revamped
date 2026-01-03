@@ -55,6 +55,11 @@ button:focus {
   outline: none;
 }
 
+button:hover {
+  transform: scale(0.95);
+  transition: transform 0.5s ease;
+}
+
 input:focus {
   outline: none;
 }
@@ -523,7 +528,7 @@ textarea:focus {
 }
 
 .content-container {
-  width: 491px;
+  width: 50%;
   height: 173px;
   display: flex;
   flex-direction: column;
@@ -538,6 +543,7 @@ textarea:focus {
 }
 
 .detail-text {
+  width: 491px;
   font-size: 16.56px;
   font-weight: 300;
   line-height: 27.09px;
@@ -686,6 +692,11 @@ textarea:focus {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.next,
+.previous {
+  cursor: pointer;
 }
 
 /* embla carousel styling*/
@@ -1514,6 +1525,7 @@ textarea:focus {
 .contact-us-header > p {
   width: 505px;
   align-self: end;
+  text-align: right;
   font-size: 18px;
   font-weight: 300;
   line-height: 143%;
@@ -1621,7 +1633,7 @@ textarea:focus {
 
 .services-grid-form {
   width: 475px !important;
-  height: 152px;
+  height: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
