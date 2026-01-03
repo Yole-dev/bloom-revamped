@@ -1490,9 +1490,14 @@ textarea:focus {
   text-transform: capitalize;
 }
 
+.bloom-policy > div > p:nth-of-type(2),
+p:nth-of-type(3) {
+  font-size: 22px;
+}
+
 .bloom-policy > div > p:last-of-type {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 28px;
 }
 
@@ -1503,7 +1508,7 @@ textarea:focus {
 
 .bloom-policy > div > p > ul li span {
   font-weight: 500;
-  font-size: 19px;
+  font-size: 23px;
 }
 
 /* CONTACT US PAGE STYLES */
