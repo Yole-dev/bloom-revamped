@@ -36,7 +36,7 @@ export default function Layout({ children }) {
         {/* page contents */}
         <main className="main">{children}</main>
 
-        <Footer />
+        <Footer locationPath={location} />
       </div>
     </PageAnimation>
   );
@@ -200,7 +200,11 @@ function NavList({ onNavToggle }) {
           </Link>
 
           {item.name === "More" && isDropDown && (
-            <DropDownNav onNavToggle={onNavToggle} location={location} />
+            <DropDownNav
+              onNavToggle={onNavToggle}
+              location={location}
+              isOpen={isDropDown}
+            />
           )}
         </li>
       ))}
@@ -208,17 +212,17 @@ function NavList({ onNavToggle }) {
   );
 }
 
-function DropDownNav({ onNavToggle, location }) {
+function DropDownNav({ onNavToggle, location, isOpen }) {
   const navItems = [
     { path: "/branding", name: "Branding" },
-    { path: "/webdevelopment", name: "Web Development" },
-    { path: "/mobileapp_development", name: "Mobile App Development" },
-    { path: "/ui_ux", name: "UI/UX Design" },
-    { path: "/ecommerce", name: "Ecommerce" },
+    { path: "/webdevelopment", name: "Website" },
+    { path: "/mobileapp_development", name: "Mobile App" },
+    { path: "/ui_ux", name: "UI/UX" },
+    { path: "/ecommerce", name: "eCommerce" },
   ];
 
   return (
-    <ul className="drop-down-nav">
+    <ul className={`drop-down-nav ${isOpen ? "open" : ""}`}>
       {navItems.map((item) => (
         <li
           key={item?.path}
@@ -232,11 +236,11 @@ function DropDownNav({ onNavToggle, location }) {
   );
 }
 
-function Footer() {
+function Footer({ locationPath }) {
   return (
     <footer className="footer">
       <div className="footer-content-container">
-        <FooterHero />
+        <FooterHero locationPath={locationPath} />
         <div className="footer-sub-container">
           <FooterNav />
           <hr />
@@ -247,42 +251,204 @@ function Footer() {
   );
 }
 
-function FooterHero() {
+function FooterHero({ locationPath }) {
   return (
     <div className="footer-hero">
-      <FooterHeroTexts />
+      <FooterHeroTexts location={locationPath} />
       <FooterIcons />
     </div>
   );
 }
 
-function FooterHeroTexts() {
+function FooterHeroTexts({ location }) {
   return (
     <div className="footer-hero-texts">
-      <p>
-        Need any of <br /> these Services?
-      </p>
+      {location.pathname === "/" && (
+        <p>
+          Want to start <br /> a project?
+        </p>
+      )}
 
-      <Button
-        background="#ffffff"
-        color="#141414"
-        fontSize={13.81}
-        fontWeight={500}
-        width={119.89}
-        height={37.66}
-        borderRadius={62.77}
-      >
-        <Link to="/contactus">Let's talk</Link>
+      {location.pathname === "/portfolio" && (
+        <p>
+          Results You Can <br /> See.
+        </p>
+      )}
 
-        <CircleButton
-          height={27.62}
-          width={27.62}
-          border="none"
-          background="#ff6016"
+      {location.pathname === "/ourservices" && (
+        <p>
+          Need any of <br /> these Services?
+        </p>
+      )}
+
+      {location.pathname === "/aboutus" && (
+        <p>
+          Let's build something <br /> meaningful.
+        </p>
+      )}
+
+      {location.pathname === "/branding" && (
+        <p>
+          Standout With <br /> Purpose
+        </p>
+      )}
+
+      {location.pathname === "/webdevelopment" && (
+        <p>
+          Let's build your <br /> website.
+        </p>
+      )}
+
+      {location.pathname === "/ui_ux" && (
+        <p>
+          Design experiences your <br /> users love.
+        </p>
+      )}
+
+      {location.pathname === "/ecommerce" && (
+        <p>
+          Where strategy meets <br /> sales.
+        </p>
+      )}
+
+      {location.pathname === "/mobileapp_development" && (
+        <p>
+          Mobile experiences, <br /> finely crafted.
+        </p>
+      )}
+
+      {location.pathname === "/contactus" && (
+        <p>
+          We'd love to hear <br /> from you.
+        </p>
+      )}
+
+      {location.pathname === "/privacy_policy" && (
+        <p>
+          Want to start <br /> a project.
+        </p>
+      )}
+
+      {location.pathname === "/terms_of_service" && (
+        <p>
+          Want to start <br /> a project.
+        </p>
+      )}
+
+      {location.pathname === "/" && (
+        <Button
+          background="#ffffff"
+          color="#141414"
+          fontSize={13.81}
+          fontWeight={500}
+          width={119.89}
+          height={37.66}
+          borderRadius={62.77}
         >
-          <ion-icon name="arrow-forward-outline"></ion-icon>
-        </CircleButton>
-      </Button>
+          <Link to="/contactus">Let's talk</Link>
+
+          <CircleButton
+            height={27.62}
+            width={27.62}
+            border="none"
+            background="#ff6016"
+          >
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </CircleButton>
+        </Button>
+      )}
+
+      {location.pathname === "/ourservices" && (
+        <Button
+          background="#ffffff"
+          color="#141414"
+          fontSize={13.81}
+          fontWeight={500}
+          width={119.89}
+          height={37.66}
+          borderRadius={62.77}
+        >
+          <Link to="/contactus">Let's talk</Link>
+
+          <CircleButton
+            height={27.62}
+            width={27.62}
+            border="none"
+            background="#ff6016"
+          >
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </CircleButton>
+        </Button>
+      )}
+
+      {location.pathname === "/portfolio" && (
+        <Button
+          background="#ffffff"
+          color="#141414"
+          fontSize={13.81}
+          fontWeight={500}
+          width={119.89}
+          height={37.66}
+          borderRadius={62.77}
+        >
+          <Link to="/contactus">Let's talk</Link>
+
+          <CircleButton
+            height={27.62}
+            width={27.62}
+            border="none"
+            background="#ff6016"
+          >
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </CircleButton>
+        </Button>
+      )}
+
+      {location.pathname === "/privacy_policy" && (
+        <Button
+          background="#ffffff"
+          color="#141414"
+          fontSize={13.81}
+          fontWeight={500}
+          width={119.89}
+          height={37.66}
+          borderRadius={62.77}
+        >
+          <Link to="/contactus">Let's talk</Link>
+
+          <CircleButton
+            height={27.62}
+            width={27.62}
+            border="none"
+            background="#ff6016"
+          >
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </CircleButton>
+        </Button>
+      )}
+
+      {location.pathname === "/terms_of_service" && (
+        <Button
+          background="#ffffff"
+          color="#141414"
+          fontSize={13.81}
+          fontWeight={500}
+          width={119.89}
+          height={37.66}
+          borderRadius={62.77}
+        >
+          <Link to="/contactus">Let's talk</Link>
+
+          <CircleButton
+            height={27.62}
+            width={27.62}
+            border="none"
+            background="#ff6016"
+          >
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </CircleButton>
+        </Button>
+      )}
     </div>
   );
 }
