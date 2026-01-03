@@ -263,6 +263,8 @@ function FooterHero({ locationPath }) {
 function FooterHeroTexts({ location }) {
   return (
     <div className="footer-hero-texts">
+      {/* Conditional rendering of Footer hero text */}
+
       {location.pathname === "/" && (
         <p>
           Want to start <br /> a project?
@@ -335,6 +337,7 @@ function FooterHeroTexts({ location }) {
         </p>
       )}
 
+      {/* Conditional footer button rendering */}
       {location.pathname === "/" && (
         <Button
           background="#ffffff"
