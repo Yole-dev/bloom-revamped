@@ -2347,7 +2347,7 @@ p:nth-of-type(3) {
 }
 
 .sub-service-goals > p {
-  width: 640px;
+  width: 850px;
   font-size: 40px;
   font-weight: 500;
   line-height: 116%;
@@ -2409,11 +2409,13 @@ p:nth-of-type(3) {
 }
 
 .shama-brand-section {
+  background: #f1f1f1;
   width: 100svw;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
+  padding: 3rem 0;
 }
 
 .shama-brand-heading {
@@ -2422,7 +2424,7 @@ p:nth-of-type(3) {
   align-self: start;
   flex-direction: column;
   gap: 1rem;
-  padding-left: 1rem;
+  padding-left: 3rem;
 }
 
 .shama-brand-heading p:first-of-type {
@@ -2445,7 +2447,7 @@ p:nth-of-type(3) {
   width: 1236px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   gap: 1.5rem;
 }
 
@@ -2468,7 +2470,7 @@ p:nth-of-type(3) {
 }
 
 .sub-service-approach-header {
-  width: 525px;
+  width: 700px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -2481,6 +2483,10 @@ p:nth-of-type(3) {
   font-weight: 400;
   line-height: 100%;
   letter-spacing: -2.5%;
+}
+
+.web-dev-approach-heading {
+  width: 800px;
 }
 
 .sub-service-approach-header p:last-of-type {
@@ -4093,6 +4099,10 @@ p:nth-of-type(3) {
   .sub-service-approach-header p:first-of-type {
     font-size: 20px;
     line-height: 25px;
+  }
+
+  .web-dev-approach-heading {
+    width: 100%;
   }
 
   .sub-service-approach-header p:last-of-type {

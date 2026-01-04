@@ -10,7 +10,7 @@ import Button from "../components/Button";
 
 // imported page image
 import image1 from "../assets/contact_us/contactImage1.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ContactUs() {
   return (
@@ -76,7 +76,7 @@ function ContactFormSection() {
           <p>Chat with us</p>
           <p>Speak to our friendly team via live chat</p>
 
-          <a href="wa.link/qit8ar">
+          <a href="https://wa.link/bttnr9">
             <span>
               <ion-icon name="logo-whatsapp"></ion-icon>
             </span>
@@ -109,6 +109,9 @@ function ContactForm() {
   const [businessName, setBusinessName] = useState("");
   const [message, setMessage] = useState("");
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
   // checkbox states
   const [checkedServices, setCheckedServices] = useState({
     "Web Development": false,
@@ -117,6 +120,60 @@ function ContactForm() {
     Ecommerce: false,
     "Mobile App Development": false,
   });
+
+  // come back and work on this mail submission.
+  useEffect(
+    function () {
+      async function sendEmailMessage() {
+        setIsLoading(true);
+        try {
+          const response = await fetch(
+            "https://api.emailjs.com/api/v1.0/email/send",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+
+              body: JSON.stringify({
+                service_id: "service_d28kg6n",
+                template_id: "template_41wbxsr",
+                user_id: "vx8QI59mM7S0ephc3",
+                template_params: {
+                  firstName: firstName,
+                  lastName: lastName,
+                  email: email,
+                  contact: contact,
+                  businessName: businessName,
+                  message: message,
+                  services: "",
+                },
+              }),
+            }
+          );
+
+          if (!response.ok)
+            throw new Error("Failed to send message, please try again.");
+
+          alert("Message sent successfully");
+          setFirstName("");
+          setLastName("");
+          setEmail("");
+          setContact("");
+          setBusinessName("");
+          setMessage("");
+        } catch (err) {
+          alert(err.message);
+        } finally {
+          setIsSubmitted(false);
+          setIsLoading(false);
+        }
+      }
+
+      if (isSubmitted) sendEmailMessage();
+    },
+    [isSubmitted, firstName, lastName, email, contact, businessName, message]
+  );
 
   const servicesCheck = [
     { service: "Web Development" },
@@ -135,17 +192,12 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    setFirstName("");
-    setLastName("");
-    setEmail("");
-    setContact(0);
-    setBusinessName("");
-    setMessage("");
+    setIsSubmitted(true);
   }
 
   return (
     <LeftComponentAnimation>
-      <form action="#" className="contact-us-form">
+      <form className="contact-us-form" onSubmit={handleSubmit}>
         <div className="grid-form">
           <div>
             <label htmlFor="first name">First name</label>
@@ -154,6 +206,7 @@ function ContactForm() {
               placeholder="First name"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
+              required
             />
           </div>
 
@@ -164,6 +217,7 @@ function ContactForm() {
               placeholder="Last name"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
+              required
             />
           </div>
         </div>
@@ -175,6 +229,7 @@ function ContactForm() {
             placeholder="Email address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </div>
 
@@ -187,6 +242,7 @@ function ContactForm() {
             maxLength={11}
             value={contact}
             onChange={(e) => setContact(e.target.value)}
+            required
           />
         </div>
 
@@ -231,6 +287,7 @@ function ContactForm() {
         </div>
 
         <Button
+          type="submit"
           background="#FF6016"
           width={333}
           height={72.91}
@@ -239,8 +296,9 @@ function ContactForm() {
           fontWeight={400}
           onClick={handleSubmit}
           className="send-message-btn"
+          disabled={isLoading}
         >
-          Send Message
+          {isLoading ? "Sending..." : "Send Message"}
         </Button>
       </form>
     </LeftComponentAnimation>

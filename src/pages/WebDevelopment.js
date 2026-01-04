@@ -105,8 +105,8 @@ function WebDevApproachSection() {
     <ComponentAnimation className="sub-service-approach-container">
       <div className="sub-service-approach-header">
         <p className="web-dev-approach-heading">
-          A strategic, results-driven approach to building high-performance
-          websites.
+          Our Process <br /> A strategic, results-driven approach to building
+          high-performance websites.
         </p>
         <p>
           We follow a proven process to design and build websites that

@@ -20,6 +20,7 @@ export default function Button({
   justifyContent = "center",
   gap = 0.5,
   type = "",
+  disabled,
   className = "",
   onClick = handleClick,
   onSubmit = handleSubmit,
@@ -46,6 +47,7 @@ export default function Button({
       onClick={onClick}
       onSubmit={onSubmit}
       type={type}
+      disabled={disabled}
       className={className}
     >
       {children ? children : "Let's talk"}

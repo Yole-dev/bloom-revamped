@@ -411,33 +411,6 @@ function Testimonials({ emblaApi }) {
       content: `Our brand finally reflects who we are, playful yet professional. The feedback from our partners, team, 
       and community has been incredibly positive, and the new identity feels right.`,
     },
-
-    {
-      name: "Ashley Cooper",
-      role: "unknown",
-      content: `Bloom Digitale delivered the site with the timeline as they requested. In the
-        end, the client found a 50 increase in traffic with in days since its
-        launch. They also had an impressive ability to use technologies that the
-        company hasn't used, which have also proved to be easy to use and
-        reliable.`,
-    },
-
-    {
-      name: "Anton de Swardt",
-      role: "unknown",
-      content: `While the company wishes they had more time to work out the kinks with
-        the Bloom Digitale, they are quite happy with the result of the project. The
-        resulting website that the team devoloped is fast and the communication
-        with the vender was very good. The company will work with them again.`,
-    },
-
-    {
-      name: "Samuel King",
-      role: "unknown",
-      content: `Bloom Digitale of work, our brand now has the image we were looking for -
-        playful yet professionals. We have received positive from partners,
-        the team, and our community to the new look of our Brand`,
-    },
   ];
 
   return (
