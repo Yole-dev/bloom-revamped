@@ -276,18 +276,6 @@ textarea:focus {
   transform: scale(1.2);
 }
 
-.social-icons li:first-of-type:hover {
-  color: #e4405f;
-}
-
-.social-icons li:nth-of-type(2):hover {
-  color: #ea4c89;
-}
-
-.social-icons li:last-of-type:hover {
-  color: #0a66c2;
-}
-
 .footer-nav {
   width: 85%;
   display: flex;
