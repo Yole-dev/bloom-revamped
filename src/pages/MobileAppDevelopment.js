@@ -90,7 +90,7 @@ function DevelopmentGoals() {
       </RightComponentAnimation>
 
       <LeftComponentAnimation className="sub-service-goals-content">
-        <p>AA custom mobile app tailored for scale and long-term growth.</p>
+        <p>A custom mobile app tailored for scale and long-term growth.</p>
         <p>
           From onboarding to advanced in-app features, we build scalable mobile
           solutions aligned with your business goals, integrating third-party
