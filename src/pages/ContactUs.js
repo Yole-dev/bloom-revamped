@@ -105,7 +105,7 @@ function ContactForm() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [contact, setContact] = useState(0);
+  const [contact, setContact] = useState("");
   const [businessName, setBusinessName] = useState("");
   const [message, setMessage] = useState("");
 
