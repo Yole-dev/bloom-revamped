@@ -109,6 +109,7 @@ function ContactForm() {
   const [businessName, setBusinessName] = useState("");
   const [message, setMessage] = useState("");
 
+  const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -121,7 +122,45 @@ function ContactForm() {
     "Mobile App Development": false,
   });
 
-  // come back and work on this mail submission.
+  // Form client-side validation.
+
+  function validateForm() {
+    const newErrors = {};
+
+    if (!firstName.trim()) {
+      newErrors.firstName = "First name is required";
+    } else if (!/^[a-zA-Z\s]+$/.test(firstName)) {
+      newErrors.firstName = "First name must contain letters only";
+    }
+
+    if (!lastName.trim()) {
+      newErrors.lastName = "Last name is required";
+    } else if (!/^[a-zA-Z\s]+$/.test(lastName)) {
+      newErrors.lastName = "Last name must contain letters only";
+    }
+
+    if (!email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      newErrors.email = "Enter a valid email address";
+    }
+
+    if (!contact.trim()) {
+      newErrors.contact = "Phone number is required";
+    } else if (!/^\d{11}$/.test(contact)) {
+      newErrors.contact = "Phone number must be 11 digits";
+    }
+
+    if (!businessName.trim()) {
+      newErrors.businessName = "Business name is required";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  }
+
+  // Sending contact form details via emailJS.
+
   useEffect(
     function () {
       async function sendEmailMessage() {
@@ -146,7 +185,9 @@ function ContactForm() {
                   contact: contact,
                   businessName: businessName,
                   message: message,
-                  services: "",
+                  services: Object.keys(checkedServices)
+                    .filter((key) => checkedServices[key])
+                    .join(", "),
                 },
               }),
             }
@@ -156,12 +197,20 @@ function ContactForm() {
             throw new Error("Failed to send message, please try again.");
 
           alert("Message sent successfully");
+
           setFirstName("");
           setLastName("");
           setEmail("");
           setContact("");
           setBusinessName("");
           setMessage("");
+          setCheckedServices({
+            "Web Development": false,
+            "Brand Design": false,
+            "UI/UX": false,
+            Ecommerce: false,
+            "Web Development": false,
+          });
         } catch (err) {
           alert(err.message);
         } finally {
@@ -172,16 +221,8 @@ function ContactForm() {
 
       if (isSubmitted) sendEmailMessage();
     },
-    [isSubmitted, firstName, lastName, email, contact, businessName, message]
+    [isSubmitted]
   );
-
-  const servicesCheck = [
-    { service: "Web Development" },
-    { service: "Brand Design" },
-    { service: "UI / UX" },
-    { service: "Ecommerce" },
-    { service: "Mobile App Development" },
-  ];
 
   function handleCheckboxChange(service) {
     setCheckedServices((prev) => ({
@@ -192,8 +233,17 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    if (!validateForm()) return;
     setIsSubmitted(true);
   }
+
+  const servicesCheck = [
+    { service: "Web Development" },
+    { service: "Brand Design" },
+    { service: "UI / UX" },
+    { service: "Ecommerce" },
+    { service: "Mobile App Development" },
+  ];
 
   return (
     <LeftComponentAnimation>
@@ -208,6 +258,7 @@ function ContactForm() {
               onChange={(e) => setFirstName(e.target.value)}
               required
             />
+            {errors.firstName && <p className="error"> {errors.firstName} </p>}
           </div>
 
           <div>
@@ -219,6 +270,8 @@ function ContactForm() {
               onChange={(e) => setLastName(e.target.value)}
               required
             />
+
+            {errors.lastName && <p className="error"> {errors.lastName} </p>}
           </div>
         </div>
 
@@ -231,6 +284,8 @@ function ContactForm() {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
+
+          {errors.email && <p className="error"> {errors.email} </p>}
         </div>
 
         <div>
@@ -244,6 +299,8 @@ function ContactForm() {
             onChange={(e) => setContact(e.target.value)}
             required
           />
+
+          {errors.contact && <p className="error"> {errors.contact} </p>}
         </div>
 
         <div>
@@ -254,6 +311,10 @@ function ContactForm() {
             value={businessName}
             onChange={(e) => setBusinessName(e.target.value)}
           />
+
+          {errors.businessName && (
+            <p className="error"> {errors.businessName} </p>
+          )}
         </div>
 
         <div>

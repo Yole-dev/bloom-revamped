@@ -1634,6 +1634,13 @@ p:nth-of-type(3) {
   line-height: 120%;
 }
 
+.error {
+  color: #ff6016;
+  font-style: italic;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
 .grid-form {
   width: 100%;
   display: grid !important;
