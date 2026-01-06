@@ -113,6 +113,8 @@ function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
+  const [showSuccess, setShowSuccess] = useState(false);
+
   const formRef = useRef(null);
 
   // checkbox states
@@ -198,7 +200,8 @@ function ContactForm() {
           if (!response.ok)
             throw new Error("Failed to send message, please try again.");
 
-          alert("Message sent successfully");
+          // Setup for the success popup message.
+          setShowSuccess(true);
 
           setFirstName("");
           setLastName("");
@@ -211,8 +214,12 @@ function ContactForm() {
             "Brand Design": false,
             "UI/UX": false,
             Ecommerce: false,
-            "Web Development": false,
+            "Mobile App Development": false,
           });
+
+          setTimeout(() => {
+            setShowSuccess(false);
+          }, 4000);
         } catch (err) {
           alert(err.message);
         } finally {
@@ -254,128 +261,141 @@ function ContactForm() {
   const servicesCheck = [
     { service: "Web Development" },
     { service: "Brand Design" },
-    { service: "UI / UX" },
+    { service: "UI/UX" },
     { service: "Ecommerce" },
     { service: "Mobile App Development" },
   ];
 
   return (
-    <LeftComponentAnimation>
-      <form ref={formRef} className="contact-us-form" onSubmit={handleSubmit}>
-        <div className="grid-form">
-          <div>
-            <label htmlFor="first name">First name</label>
-            <input
-              type="text"
-              placeholder="First name"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-              required
-            />
-            {errors.firstName && <p className="error"> {errors.firstName} </p>}
+    <>
+      {showSuccess && (
+        <div className="success-overlay">
+          <div className="success-modal">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h3>Message Sent Successfully</h3>
+            <p>Thank you for reaching out. We'll get back to you shortly.</p>
+          </div>
+        </div>
+      )}
+      <LeftComponentAnimation>
+        <form ref={formRef} className="contact-us-form" onSubmit={handleSubmit}>
+          <div className="grid-form">
+            <div>
+              <label htmlFor="first name">First name</label>
+              <input
+                type="text"
+                placeholder="First name"
+                value={firstName}
+                onChange={(e) => setFirstName(e.target.value)}
+                required
+              />
+              {errors.firstName && (
+                <p className="error"> {errors.firstName} </p>
+              )}
+            </div>
+
+            <div>
+              <label htmlFor="last name">Last name</label>
+              <input
+                type="text"
+                placeholder="Last name"
+                value={lastName}
+                onChange={(e) => setLastName(e.target.value)}
+                required
+              />
+
+              {errors.lastName && <p className="error"> {errors.lastName} </p>}
+            </div>
           </div>
 
           <div>
-            <label htmlFor="last name">Last name</label>
+            <label htmlFor="email">Email address</label>
             <input
-              type="text"
-              placeholder="Last name"
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
+              type="email"
+              placeholder="Email address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
 
-            {errors.lastName && <p className="error"> {errors.lastName} </p>}
+            {errors.email && <p className="error"> {errors.email} </p>}
           </div>
-        </div>
 
-        <div>
-          <label htmlFor="email">Email address</label>
-          <input
-            type="email"
-            placeholder="Email address"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+          <div>
+            <label htmlFor="phone number">Phone number</label>
+            <input
+              type="tel"
+              id="phone_number"
+              placeholder="012 3456 7890"
+              maxLength={11}
+              value={contact}
+              onChange={(e) => setContact(e.target.value)}
+              required
+            />
 
-          {errors.email && <p className="error"> {errors.email} </p>}
-        </div>
-
-        <div>
-          <label htmlFor="phone number">Phone number</label>
-          <input
-            type="tel"
-            id="phone_number"
-            placeholder="012 3456 7890"
-            maxLength={11}
-            value={contact}
-            onChange={(e) => setContact(e.target.value)}
-            required
-          />
-
-          {errors.contact && <p className="error"> {errors.contact} </p>}
-        </div>
-
-        <div>
-          <label htmlFor="last name">Business or Company Name</label>
-          <input
-            type="text"
-            placeholder="Business or Company Name"
-            value={businessName}
-            onChange={(e) => setBusinessName(e.target.value)}
-          />
-
-          {errors.businessName && (
-            <p className="error"> {errors.businessName} </p>
-          )}
-        </div>
-
-        <div>
-          <label htmlFor="message"> Tell us about your project</label>
-          <textarea
-            id="message"
-            placeholder="Send us a message"
-            maxLength={1500}
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
-        </div>
-
-        <div>
-          <label htmlFor="services">Services</label>
-
-          <div className="services-grid-form">
-            {servicesCheck.map((service) => (
-              <div key={service.service} className="check-service-container">
-                <input
-                  type="checkbox"
-                  name={service.service}
-                  id={service.service}
-                  checked={checkedServices[service.service]}
-                  onChange={() => handleCheckboxChange(service.service)}
-                />
-                <label htmlFor={service.service}>{service.service}</label>
-              </div>
-            ))}
+            {errors.contact && <p className="error"> {errors.contact} </p>}
           </div>
-        </div>
 
-        <Button
-          type="submit"
-          background="#FF6016"
-          width={333}
-          height={72.91}
-          borderRadius={45}
-          fontSize={21.82}
-          fontWeight={400}
-          onClick={handleSubmit}
-          className="send-message-btn"
-          disabled={isLoading}
-        >
-          {isLoading ? "Sending..." : "Send Message"}
-        </Button>
-      </form>
-    </LeftComponentAnimation>
+          <div>
+            <label htmlFor="last name">Business or Company Name</label>
+            <input
+              type="text"
+              placeholder="Business or Company Name"
+              value={businessName}
+              onChange={(e) => setBusinessName(e.target.value)}
+            />
+
+            {errors.businessName && (
+              <p className="error"> {errors.businessName} </p>
+            )}
+          </div>
+
+          <div>
+            <label htmlFor="message"> Tell us about your project</label>
+            <textarea
+              id="message"
+              placeholder="Send us a message"
+              maxLength={1500}
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            ></textarea>
+          </div>
+
+          <div>
+            <label htmlFor="services">Services</label>
+
+            <div className="services-grid-form">
+              {servicesCheck.map((service) => (
+                <div key={service.service} className="check-service-container">
+                  <input
+                    type="checkbox"
+                    name={service.service}
+                    id={service.service}
+                    checked={checkedServices[service.service]}
+                    onChange={() => handleCheckboxChange(service.service)}
+                  />
+                  <label htmlFor={service.service}>{service.service}</label>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <Button
+            type="submit"
+            background="#FF6016"
+            width={333}
+            height={72.91}
+            borderRadius={45}
+            fontSize={21.82}
+            fontWeight={400}
+            onClick={handleSubmit}
+            className="send-message-btn"
+            disabled={isLoading}
+          >
+            {isLoading ? "Sending..." : "Send Message"}
+          </Button>
+        </form>
+      </LeftComponentAnimation>
+    </>
   );
 }

@@ -1608,6 +1608,55 @@ p:nth-of-type(3) {
   justify-content: space-between;
 }
 
+.success-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.success-modal {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  animation: popIn 0.35s ease;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.success-modal ion-icon {
+  font-size: 4rem;
+  color: #02acb9;
+  margin-bottom: 1rem;
+}
+
+.success-modal h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.success-modal p {
+  font-size: 1rem;
+  color: var(--faq-answer);
+}
+
 .contact-us-form {
   width: 668px;
   display: flex;
@@ -3729,6 +3778,14 @@ p:nth-of-type(3) {
   .contact-form-section {
     flex-direction: column;
     gap: 8rem;
+  }
+
+  .success-modal {
+    padding: 1.5rem;
+  }
+
+  .success-modal h3 {
+    font-size: 1.25rem;
   }
 
   .contact-us-form {
