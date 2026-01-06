@@ -166,10 +166,7 @@ function MobileAppApproachSection() {
 function WhatToExpectSection() {
   return (
     <ComponentAnimation className="expectation-container">
-      <p>
-        What You Can Expect <br />A high performing mobile application that is
-        visually refined, responsive, and built to scale with your business.
-      </p>
+      <p>What You Can Expect</p>
 
       <section className="expectation-section MobileApp-expectations">
         <div className="expectation">

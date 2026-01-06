@@ -49,7 +49,7 @@ function HeaderSection() {
         waves of lasting influence
       </p>
 
-      <div className="sub-service-hero">
+      <div className="sub-service-hero branding-subservice">
         <p>Brand Design</p>
         <img src={image1} alt="" />
         <CircleButton
@@ -65,8 +65,7 @@ function HeaderSection() {
       <p>
         Branding is how people recognize you, trust you, and choose you. At
         Bloom Digitale, we help businesses shape clear, credible brand
-        identities that communicate value instantly and consistently, across
-        every touchpoint.
+        identities that communicate value instantly and consistently.
       </p>
     </ComponentAnimation>
   );

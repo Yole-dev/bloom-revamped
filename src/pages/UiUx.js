@@ -164,11 +164,7 @@ function UiUxApproachSection() {
 function WhatToExpectSection() {
   return (
     <ComponentAnimation className="expectation-container">
-      <p>
-        What You Can Expect <br />A visually compelling, research backed UIUX
-        design that enhances usability, improves engagement, and drives
-        conversions.
-      </p>
+      <p>What You Can Expect</p>
 
       <section className="expectation-section design-expectations">
         <div className="expectation">

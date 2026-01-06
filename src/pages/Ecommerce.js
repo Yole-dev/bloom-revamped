@@ -161,10 +161,7 @@ function EcommerceApproachSection() {
 function WhatToExpectSection() {
   return (
     <ComponentAnimation className="expectation-container">
-      <p>
-        What You Can Expect <br />A high-converting eCommerce website that is
-        fast, responsive, and built to scale.
-      </p>
+      <p>What You Can Expect</p>
 
       <section className="expectation-section ecommerce-expectations">
         <div className="expectation">

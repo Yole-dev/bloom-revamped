@@ -159,10 +159,7 @@ function WebDevApproachSection() {
 function WhatToExpectSection() {
   return (
     <ComponentAnimation className="expectation-container">
-      <p>
-        What You Can Expect <br />A high-performing, data-driven website built
-        to attract, engage, and convert.
-      </p>
+      <p>What You Can Expect</p>
 
       <section className="expectation-section web-dev-expectations">
         <div className="expectation">
