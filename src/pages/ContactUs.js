@@ -15,6 +15,7 @@ import { useEffect, useState, useRef } from "react";
 export default function ContactUs() {
   return (
     <PageAnimation className="contact-us-container">
+      <p className="mobile-heading">Contact Us</p>
       <HeaderSection />
       <MainSection />
     </PageAnimation>
@@ -27,7 +28,7 @@ function HeaderSection() {
       <p>Let’s Bring Your Vision to Life</p>
 
       <div className="contact-us-hero">
-        <p>Contact Us</p>
+        <p className="pc-heading">Contact Us</p>
         <img src={image1} alt="" />
         <CircleButton
           fontSize={30}
