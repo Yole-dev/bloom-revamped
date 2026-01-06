@@ -219,7 +219,7 @@ function ContactForm() {
 
           setTimeout(() => {
             setShowSuccess(false);
-          }, 4000);
+          }, 5000);
         } catch (err) {
           alert(err.message);
         } finally {
