@@ -23,6 +23,8 @@ import image8 from "../assets/about_us/aboutImage8.png";
 export default function AboutUs() {
   return (
     <PageAnimation className="about-us-container">
+      <p className="mobile-heading">About Us</p>
+
       <HeaderSection />
       <MainSection />
       <RequestForCallSection />
@@ -39,7 +41,7 @@ function HeaderSection() {
       </p>
 
       <div className="about-us-hero">
-        <p>About Us</p>
+        <p className="pc-heading">About Us</p>
         <img src={image1} alt="" />
         <CircleButton
           background="#ff6016"

@@ -23,6 +23,7 @@ export default function Branding() {
   return (
     <PageAnimation className="sub-service-main-container">
       <div className="sub-service-sub-container">
+        <p className="mobile-heading branding-mobile-heading">Brand Design</p>
         <HeaderSection />
 
         <MainSection>
@@ -50,7 +51,7 @@ function HeaderSection() {
       </p>
 
       <div className="sub-service-hero branding-subservice">
-        <p>Brand Design</p>
+        <p className="pc-heading">Brand Design</p>
         <img src={image1} alt="" />
         <CircleButton
           fontSize={30}

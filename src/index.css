@@ -94,6 +94,10 @@ textarea:focus {
   }
 }
 
+.mobile-heading {
+  display: none;
+}
+
 /* general layout styles */
 
 .app-container {
@@ -2680,6 +2684,24 @@ p:nth-of-type(3) {
     image-rendering: crisp-edges;
   }
 
+  .mobile-heading {
+    display: block;
+    font-size: 25px;
+    margin-bottom: -5rem;
+  }
+
+  .branding-mobile-heading {
+    margin-bottom: -2rem;
+  }
+
+  .web-mobile-heading {
+    margin-bottom: -2rem;
+  }
+
+  .pc-heading {
+    display: none;
+  }
+
   .mobile-header {
     display: flex;
     flex-direction: column;
@@ -3389,6 +3411,7 @@ p:nth-of-type(3) {
     top: 1rem;
     left: 0;
     margin-top: -1rem;
+    position: static;
   }
 
   .about-us-hero-circle {

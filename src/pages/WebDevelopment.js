@@ -19,6 +19,8 @@ export default function WebDevelopment() {
   return (
     <PageAnimation className="sub-service-main-container">
       <div className="sub-service-sub-container">
+        <p className="mobile-heading web-mobile-heading">Web Development</p>
+
         <HeaderSection />
 
         <MainSection>
@@ -37,7 +39,7 @@ function HeaderSection() {
   return (
     <ComponentAnimation className="sub-service-header">
       <div className="sub-service-hero">
-        <p className="web-dev-heading">Web Development</p>
+        <p className="web-dev-heading pc-heading">Web Development</p>
         <img src={image1} alt="" />
         <p className="web-dev-heading-text">
           Building Stunning, High Performance Websites for Your Success
