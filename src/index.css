@@ -2956,6 +2956,10 @@ p:nth-of-type(3) {
     text-align: center;
   }
 
+  .detail-text {
+    width: 100%;
+  }
+
   .detail-boxes {
     display: grid;
     grid-template-columns: repeat(1, 70%);
@@ -2975,6 +2979,7 @@ p:nth-of-type(3) {
 
   .service-portfolio-footer {
     gap: 4rem;
+    margin-top: 5rem;
   }
 
   .service-portfolio-footer p {
