@@ -302,8 +302,18 @@ textarea:focus {
   transition: transform 0.5s ease;
 }
 
-.footer-nav-list li:hover {
-  transform: scale(1.5);
+/* .footer-nav-list li:hover {
+  transform: scale(1.2);
+} */
+
+/* .footer-nav-list li:active {
+  transform: scale(1.2);
+} */
+
+@media (hover: hover) and (pointer: fine) {
+  .footer-nav-list li:hover {
+    transform: scale(1.2);
+  }
 }
 
 .footer-content-container hr {
