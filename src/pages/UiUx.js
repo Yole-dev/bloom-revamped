@@ -65,7 +65,7 @@ function MainSection({ children }) {
 function DevelopmentGoals() {
   return (
     <ComponentAnimation className="sub-service-goals">
-      <p>
+      <p className="ui-ux-sub-heading">
         No matter your digital product goals, we design user experiences that
         drive clarity, engagement, and long-term growth.
       </p>
