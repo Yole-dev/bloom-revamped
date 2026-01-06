@@ -10,7 +10,7 @@ import Button from "../components/Button";
 
 // imported page image
 import image1 from "../assets/contact_us/contactImage1.png";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 export default function ContactUs() {
   return (
@@ -112,6 +112,8 @@ function ContactForm() {
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+
+  const formRef = useRef(null);
 
   // checkbox states
   const [checkedServices, setCheckedServices] = useState({
@@ -233,7 +235,19 @@ function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (!validateForm()) return;
+
+    const isValid = validateForm();
+
+    // scroll to top feature when there are errors on the form
+    if (!isValid) {
+      formRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+
+      return;
+    }
+
     setIsSubmitted(true);
   }
 
@@ -247,7 +261,7 @@ function ContactForm() {
 
   return (
     <LeftComponentAnimation>
-      <form className="contact-us-form" onSubmit={handleSubmit}>
+      <form ref={formRef} className="contact-us-form" onSubmit={handleSubmit}>
         <div className="grid-form">
           <div>
             <label htmlFor="first name">First name</label>
