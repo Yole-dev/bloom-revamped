@@ -303,13 +303,13 @@ function FooterHeroTexts({ location }) {
 
       {location.pathname === "/ui_ux" && (
         <p>
-          Design experiences your <br /> users love.
+          Design experiences <br /> your users love.
         </p>
       )}
 
       {location.pathname === "/ecommerce" && (
         <p>
-          Where strategy meets <br /> sales.
+          Where strategy <br /> meets sales.
         </p>
       )}
 
@@ -476,13 +476,13 @@ function FooterIcons() {
       </li>
 
       <li>
-        <a href=" https://x.com/BloomDigitale">
+        <a href="https://x.com/BloomDigitale">
           <FontAwesomeIcon icon={faXTwitter} />
         </a>
       </li>
 
       <li>
-        <a href="linkedin.com/company/bloom-digitale">
+        <a href="https://linkedin.com/company/bloom-digitale">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </li>
@@ -530,8 +530,8 @@ function FooterCopyrightText() {
       </span>
       <span>
         All rights reserved. &nbsp;{" "}
-        <Link to="/privacy_policy">Privacy policy</Link>, &nbsp;
-        <Link to="/terms_of_service">Terms of service</Link> .
+        <Link to="/privacy_policy">Privacy policy</Link>. &nbsp;
+        <Link to="/terms_of_service">Terms of service</Link>.
       </span>
     </p>
   );
