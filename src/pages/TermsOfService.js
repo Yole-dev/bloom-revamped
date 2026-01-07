@@ -11,6 +11,7 @@ import image1 from "../assets/terms_of_service/termsImage1.png";
 export default function TermsOfService() {
   return (
     <PageAnimation className="contact-us-container">
+      <p className="mobile-heading">Terms of Service</p>
       <HeaderSection />
       <MainSection />
     </PageAnimation>
@@ -23,7 +24,7 @@ function HeaderSection() {
       <p>Our simple rules for creating great things together</p>
 
       <div className="contact-us-hero">
-        <p>Terms of Service</p>
+        <p className="pc-heading">Terms of Service</p>
         <img src={image1} alt="" />
         <CircleButton
           fontSize={30}

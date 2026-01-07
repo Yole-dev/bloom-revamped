@@ -12,6 +12,7 @@ import image1 from "../assets/privacy_policy/privacyPolicyImage1.png";
 export default function PrivacyPolicy() {
   return (
     <PageAnimation className="contact-us-container">
+      <p className="mobile-heading">Privacy Policy</p>
       <HeaderSection />
       <MainSection />
     </PageAnimation>
@@ -24,7 +25,7 @@ function HeaderSection() {
       <p>Your privacy isn’t just policy — it’s our promise</p>
 
       <div className="contact-us-hero">
-        <p>Privacy Policy</p>
+        <p className="pc-heading">Privacy Policy</p>
         <img src={image1} alt="" />
         <CircleButton
           fontSize={30}
