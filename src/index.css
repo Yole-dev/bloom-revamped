@@ -3730,6 +3730,10 @@ p:nth-of-type(3) {
     font-size: 15px;
   }
 
+  .bloom-policy > div > p > ul {
+    margin-top: 0.7rem;
+  }
+
   /* CONTACT US PAGE STYLES */
   .contact-us-container {
     width: 100svw;
