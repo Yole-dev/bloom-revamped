@@ -36,7 +36,7 @@ function HeaderSection() {
         <p>Our Work</p>
 
         <p>
-          A selection of digital products we have designed and buuilt for
+          A selection of digital products we have designed and built for
           ambitious brands.
         </p>
       </LeftComponentAnimation>
