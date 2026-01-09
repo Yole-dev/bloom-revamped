@@ -8,7 +8,7 @@ import RightComponentAnimation from "../components/RightComponentAnimation";
 import LetUsTalkBtn from "../components/LetUsTalkBtn";
 
 // imported images
-import image1 from "../assets/app_dev/image1.png";
+import image1 from "../assets/app_dev/image1.jpeg";
 import image2 from "../assets/app_dev/image2.png";
 import image3 from "../assets/app_dev/image3.png";
 import image4 from "../assets/app_dev/image4.png";
@@ -43,7 +43,9 @@ function HeaderSection() {
           </p>
         </div>
 
-        <img src={image1} alt="" />
+        <div className="mobile-app-hero">
+          <img src={image1} alt="" />
+        </div>
       </div>
 
       <p className="web-dev-heading-description">

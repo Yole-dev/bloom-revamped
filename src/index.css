@@ -2727,6 +2727,21 @@ p:nth-of-type(3) {
   background: var(--primary-orange);
 }
 
+/* Mobile App development styling */
+
+.mobile-app-hero {
+  width: 1239px;
+  height: 363.4px;
+}
+
+.mobile-app-hero img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 25px;
+}
+
 .MobileApp-expectations {
   background: var(--primary-black);
 }
@@ -4322,6 +4337,16 @@ p:nth-of-type(3) {
     width: 100%;
     font-size: 14px;
     text-align: center;
+  }
+
+  /* Mobile App development styling */
+
+  .mobile-app-hero {
+    height: 111px;
+  }
+
+  .mobile-app-hero img {
+    border-radius: 0.7rem;
   }
 
   .request-for-call-container p {
