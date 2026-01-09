@@ -201,7 +201,7 @@ function OurServiceSection() {
         <RightComponentAnimation>
           <div className="services-card">
             <div className="services-image">
-              <img src={serviceImage7} alt="" />
+              <img src={serviceImage6} alt="" />
             </div>
 
             <div>
@@ -222,7 +222,7 @@ function OurServiceSection() {
         <LeftComponentAnimation>
           <div className="services-card">
             <div className="services-image">
-              <img src={serviceImage6} alt="" />
+              <img src={serviceImage7} alt="" />
             </div>
 
             <div>
