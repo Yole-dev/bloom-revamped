@@ -21,6 +21,7 @@ import portfolioImage1 from "../assets/home/portfolio1.png";
 import portfolioImage2 from "../assets/home/portfolio2.png";
 import portfolioImage3 from "../assets/home/portfolio3.png";
 import portfolioImage4 from "../assets/home/portfolio4.png";
+import portfolioImage5 from "../assets/home/portfolio5.jpg";
 
 export default function Home() {
   return (
@@ -262,7 +263,7 @@ function PortfolioDetails() {
 
       <LeftComponentAnimation>
         <Detail
-          src={portfolioImage4}
+          src={portfolioImage5}
           background="#02ACB9"
           flexDirection="row-reverse"
         >

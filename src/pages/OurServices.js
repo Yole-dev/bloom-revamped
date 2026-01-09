@@ -14,11 +14,11 @@ import Button from "../components/Button";
 // imported images
 import serviceImage1 from "../assets/our_services/service_image1.png";
 import serviceImage2 from "../assets/our_services/service_image2.svg";
-import serviceImage3 from "../assets/our_services/service_image3.png";
-import serviceImage4 from "../assets/our_services/service_image4.png";
-import serviceImage5 from "../assets/our_services/service_image5.png";
-import serviceImage6 from "../assets/our_services/service_image6.png";
-import serviceImage7 from "../assets/our_services/service_image7.png";
+import serviceImage3 from "../assets/our_services/service_image3.jpg";
+import serviceImage4 from "../assets/our_services/service_image4.jpg";
+import serviceImage5 from "../assets/our_services/service_image5.jpg";
+import serviceImage6 from "../assets/our_services/service_image6.jpg";
+import serviceImage7 from "../assets/our_services/service_image7.jpg";
 
 const faqs = [
   {
@@ -140,7 +140,9 @@ function OurServiceSection() {
       <div className="our-services-section">
         <LeftComponentAnimation>
           <div className="services-card">
-            <img src={serviceImage3} alt="" />
+            <div className="services-image">
+              <img src={serviceImage3} alt="" />
+            </div>
 
             <div>
               <p>Branding</p>
@@ -158,7 +160,9 @@ function OurServiceSection() {
 
         <RightComponentAnimation>
           <div className="services-card">
-            <img src={serviceImage4} alt="" />
+            <div className="services-image">
+              <img src={serviceImage4} alt="" />
+            </div>
 
             <div>
               <p>Web Development</p>
@@ -176,7 +180,9 @@ function OurServiceSection() {
 
         <LeftComponentAnimation>
           <div className="services-card">
-            <img src={serviceImage5} alt="" />
+            <div className="services-image">
+              <img src={serviceImage5} alt="" />
+            </div>
 
             <div>
               <p>UI/UX Design</p>
@@ -194,7 +200,9 @@ function OurServiceSection() {
 
         <RightComponentAnimation>
           <div className="services-card">
-            <img src={serviceImage7} alt="" />
+            <div className="services-image">
+              <img src={serviceImage7} alt="" />
+            </div>
 
             <div>
               <p>Mobile App Development</p>
@@ -213,7 +221,9 @@ function OurServiceSection() {
 
         <LeftComponentAnimation>
           <div className="services-card">
-            <img src={serviceImage6} alt="" />
+            <div className="services-image">
+              <img src={serviceImage6} alt="" />
+            </div>
 
             <div>
               <p>Ecommerce Solutions</p>

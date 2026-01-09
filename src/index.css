@@ -884,6 +884,18 @@ textarea:focus {
   gap: 2rem;
 }
 
+.services-image {
+  width: 288px;
+  height: 329px;
+}
+
+.services-image img {
+  width: 288px;
+  height: 329px;
+  border-radius: 11px;
+  object-fit: cover;
+}
+
 .services-card > div {
   display: flex;
   flex-direction: column;
