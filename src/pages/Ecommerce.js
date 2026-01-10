@@ -40,7 +40,9 @@ function HeaderSection() {
           <p>You need a high converting online store that drives sales.</p>
         </div>
 
-        <img src={image1} alt="" />
+        <div className="mobile-app-hero">
+          <img src={image1} alt="" />
+        </div>
       </div>
 
       <p className="web-dev-heading-description">
